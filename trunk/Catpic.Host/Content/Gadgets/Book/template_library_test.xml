@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+   <ModulePrefs title="Loading data via Data Pipelining">
+    <Require feature="opensocial-templates">
+			<Param name="requireLibrary">http://localhost:9999/content/gadgets/book/template_library.xml</Param>
+		</Require>
+		<Require feature="opensocial-1.0"/>
+		<Require feature="opensocial-data" />
+   </ModulePrefs>
+   <Content type="html">
+      <![CDATA[      
+		 <script type="text/os-template" tag="template:footer" xmlns:os="http://opensocial.org/templates" xmlns:template="http://www.mysite.com/template">
+        <os:Render content="footer" />
+    </script>
+      ]]>
+   </Content>
+</Module>
+
+

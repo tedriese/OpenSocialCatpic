@@ -1,0 +1,20 @@
+﻿@using Catpic.Host.Engine.Navigation
+@{
+    var social = NavigationServiceFactory.Social;
+    var navNode = social.GetNavigation(social.GetInventoryId(Request.Url.LocalPath));
+    if (navNode != null)
+    {
+        <div id="nav1-items">
+        @foreach(var node in navNode.Children){
+            var itemClass = "nav1-item";
+            if (node.IsCurrent) { itemClass += " selected"; }
+            <div class="@itemClass">
+                <a href="@Url.Action(node.Inventory.Action, node.Inventory.Controller,new { area = node.Inventory.Area })">
+                    <div class="nav1-icon" style="background-image:url(@Url.Content(node.Properties["image"]));"></div>
+                    <span class="nav1-label">@node.Entry.Label</span>
+                </a>
+            </div>
+        }
+        </div>
+    }
+}

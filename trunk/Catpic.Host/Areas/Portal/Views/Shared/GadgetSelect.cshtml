@@ -1,0 +1,30 @@
+﻿@using Catpic.Host.Engine
+@this.StyleBlock(@<link href="@Url.Content("~/Content/Portal/gadgets.css")" rel="stylesheet" type="text/css" />)
+<div style="padding-left:8px">
+    <select id="combo4" style="width: 800px;" onchange="$('input#gadgetSpecUrl').val($(this).val());reloadGadget();">
+        <option>~/content/gadgets/compliance/reference.xml</option>
+        <option>http://seanregan.com/countdown/countdown.xml</option>
+        <option>~/content/gadgets/oauth/oauth.xml</option>
+        <option>http://catpic.apphb.com/content/gadgets/oauth/contacts.xml</option>
+        <option>http://igother.googlecode.com/svn/trunk/tools/timedate.xml</option>
+        <option>http://widget.devwidget.com/timestamp/igoogle/timestamp.xml</option>
+        <option>http://www.widget-dico.com/wikipedia/google/wikipedia.xml</option>
+        <option>http://www.sms4all.info/worldweather/weather.xml</option>
+        <option>http://hosting.gmodules.com/ig/gadgets/file/107950459797439355026/CGS_Small_English.xml</option>
+        <option>http://www.gadgetwe.com/ig/translate/translate.xml</option>
+        <option>http://www.google.com/ig/modules/calculator.xml</option>
+        <option>http://www.inventivegadget.com/gadget/timer.xml</option>
+        <option>http://hosting.gmodules.com/ig/gadgets/file/108992925851911188600/gtool.xml</option>
+        <option>http://hosting.gmodules.com/ig/gadgets/file/115836554347790990390/astroclock_de.xml</option>
+        <option>http://hosting.gmodules.com/ig/gadgets/file/112581010116074801021/hamster.xml</option>
+        <option>http://www.google.com/ig/modules/youtube.xml</option>
+        <option>http://www.gstatic.com/sites-gadgets/news/news.xml</option>
+        <option>http://www.rareworksllc.com/moonphases/LunarPhaseGadget.xml</option>
+        <option>http://www.calculatorcat.com/gmodules/current_moon.xml</option>
+        <option>http://www.google.com/ig/modules/horoscope.xml</option>
+        <option>http://www.labpixies.com/campaigns/todo/todo.xml</option>
+        <option>~/content/gadgets/social/PeopleSuiteTest.xml</option>
+    </select>
+    <input id="gadgetSpecUrl" type="text" style="width:780px;margin-left: -803px; height: 1.2em; border: 0;" autofocus="" value="@ViewData["url"]">
+    <a href="javascript:reloadGadget();" style="margin-left:23px;"><img alt="" height="25" width="25" src="@Url.Content("/Content/Portal/Images/refresh.png")" /></a>
+</div>

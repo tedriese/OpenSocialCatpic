@@ -1,0 +1,23 @@
+﻿@using Catpic.Host.Engine.Navigation
+@{
+    var navNode = NavigationServiceFactory.Portal.GetNavigation();
+    if (navNode != null)
+    {
+        <ul class="avatarbar-links-list">
+            @foreach (var node in navNode.Children)
+            {
+                if (!node.IsVisible)
+                {
+                    continue;
+                }
+                
+                <li class="avatarbar-links-listitem">
+                    @Html.ActionLink(node.Entry.Label, node.Inventory.Action, node.Inventory.Controller,
+                        new { area = node.Inventory.Area }, htmlAttributes: new { @class = "avatarbar-links-link" })
+                </li>
+            }
+            <li class="avatarbar-links-listitem"><a class="avatarbar-links-link  avatarbar-links-selectedlink" href="#">Social</a></li>
+        </ul>
+    }
+}
+    

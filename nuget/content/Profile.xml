@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Catpic.Host profile">
+    <Require feature="osapi"/>
+    <Require feature="opensocial-data"/>
+    <Require feature="opensocial-0.9"/>
+  </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+    <script type="text/javascript" src="http://ostemplates-demo.appspot.com/ostemplates.js"></script>
+    <style>
+    .userProfile {
+        font-size: 16px
+    }
+    .userProfile tr>td:first-child {
+      font-size: 12px
+    }
+    </style>
+    <script type="text/os-template">
+        <div style="display: block; width: 250px; float: left">
+          <img src="${owner.thumbnailUrl}" height="200" width="200" alt="Johnny"/>    
+        </div>
+        <div style="display: block">
+          <table class="userProfile" width="300px">
+              <tr>
+                  <td>id</td>
+                  <td>${owner.id}</td>
+              </tr>
+              <tr>
+                  <td>display name</td>
+                  <td>${owner.displayName}</td>
+              </tr>
+              <tr>
+                  <td>gender</td>
+                  <td>${owner.gender}</td>
+              </tr>
+              <tr /><tr /><tr />
+              <tr>
+                  <td>family name</td>
+                  <td>${owner.name.familyName}</td>
+              </tr>
+              <tr>
+                  <td>given name</td>
+                  <td>${owner.name.givenName}</td>
+              </tr>
+              <tr>
+                  <td>formatted</td>
+                  <td>${owner.name.formatted}</td>
+              </tr>
+          </table>  
+      </div>
+    </script>     
+    <script>
+      function init() {
+	      var batch = osapi.newBatch();
+	      batch.add('owner', osapi.people.getOwner());
+	      batch.execute(function(response){
+          os.Container.processDocument(response);
+	        }); 
+      }
+		  gadgets.util.registerOnLoadHandler(init);
+    </script>         
+  ]]>
+  </Content>
+</Module>

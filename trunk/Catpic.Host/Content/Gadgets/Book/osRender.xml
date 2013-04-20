@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <ModulePrefs title="Chapter rollup example"
+               title_url="http://www.jcleblanc.com"
+               description="Displays templating and data pipelining 
+                             specifications"
+               author="Jonathan LeBlanc">
+    <Require feature="opensocial-1.0"/>
+    <Require feature="opensocial-data" />
+    <Require feature="opensocial-templates" />
+  </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+    <script type="text/os-template" tag="app:pageTemplate" xmlns:os="http://opensocial.org/templates" xmlns:pageTemplate ="http://www.mysite.com/app">
+      <div class="header"><os:Render content="header"/></div>
+        This is the content of my current page, using a universal header and footer
+      <div class="footer"><os:Render content="footer"/></div>
+    </script>
+    <script type="text/os-template"  xmlns:app="http://www.mysite.com/app">
+    <app:pageTemplate>
+        <app:header>
+          <div id="navItems">
+          <a href="/home">Home</a> |
+          <a href="/profile">Profile</a> |
+          <a href="/tasks">Tasks</a>
+          </div>
+        </app:header>
+        <app:footer>
+          <div id="copyright">
+          Copyright copy; 2011
+          </div>
+          </app:footer>
+        </app:pageTemplate>
+      </script>
+      ]]>
+  </Content>
+</Module>

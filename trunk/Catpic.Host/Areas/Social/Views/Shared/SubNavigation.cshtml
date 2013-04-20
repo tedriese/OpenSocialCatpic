@@ -1,0 +1,25 @@
+﻿@using Catpic.Host.Engine.Navigation
+@{
+    var social = NavigationServiceFactory.Social;
+    var navNode = social.GetNavigation(social.GetInventoryId(Request.Url.LocalPath));
+    if (navNode != null)
+    {
+        foreach (var node in navNode.Children)
+        {
+            if (node.IsCurrent)
+            {
+               <div id="nav2-items" class="fx-scrollbar">
+                @foreach (var subNode in node.Children)
+                {
+                    var itemClass = "nav2-item";
+                    if (subNode.IsCurrent) { itemClass += " selected"; }
+				    <div class="@itemClass">
+					    <span>@subNode.Entry.Label</span>
+				    </div>
+                }
+            </div>
+            break;
+        }
+    }
+    }
+}

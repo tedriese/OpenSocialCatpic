@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<node>
+  <children>
+    <node label="Profile" inventory="Social/Profile" image="~/Content/Social/Images/Self.png">
+      <children>
+        <node label="view" inventory="Social/Profile/Index"></node>
+        <node label="contacts" inventory="Social/Profile/Contacts"></node>
+        <node label="education" inventory="Social/Profile/Education"></node>
+        <node label="job" inventory="Social/Profile/Job"></node>
+      </children>
+    </node>
+    <node label="Friends" inventory="Social/Friends" image="~/Content/Social/Images/Friends.png">
+      <children>
+        <node label="friends" inventory="Social/Friends/Index"></node>
+      </children>
+    </node>
+    <node label="Activity Streams" inventory="Social/ActivityStreams" image="~/Content/Social/Images/ActivityStreams.png">
+      <children>
+        <node label="friends" inventory="Social/ActivityStreams/Index"></node>
+      </children>
+    </node>
+    <node label="Activities" inventory="Social/Activities" image="~/Content/Social/Images/ActivityStreams.png">
+      <children>
+        <node label="friends" inventory="Social/Activities/Index"></node>
+      </children>
+    </node>
+    <node label="Groups" inventory="Social/Groups" image="~/Content/Social/Images/Groups.png">
+      <children>
+        <node label="groups" inventory="Social/Groups/Index"></node>
+      </children>
+    </node>
+    <node label="Messages" inventory="Social/Messages" image="~/Content/Social/Images/Messages.png">
+      <children>
+        <node label="messages" inventory="Social/Messages/Index"></node>
+      </children>
+    </node>
+    <node label="Facebook" inventory="Social/Facebook" image="~/Content/Social/Images/Facebook.png">
+      <children>
+        <node label="friends" inventory="Social/Facebook/Index"></node>
+        <node label="groups" inventory="Social/Facebook/Index"></node>
+        <node label="apps" inventory="Social/Facebook/Index"></node>
+      </children>
+    </node>
+    <node label="Google" inventory="Social/Google" image="~/Content/Social/Images/Google.png">
+      <children>
+        <node label="contacts" inventory="Social/Google/Index"></node>
+      </children>
+    </node>
+  </children>
+  
+</node>

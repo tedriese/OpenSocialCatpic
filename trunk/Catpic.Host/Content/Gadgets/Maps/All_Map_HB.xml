@@ -1,0 +1,302 @@
+<?xml    version="1.0" encoding="UTF-8"?> 
+<Module> 
+<ModulePrefs title='Google Maps, Small Size' 
+description="With this gadget you can search for a place either by name or coordinates (latitude, longitude). In the Settings window you can also turn On - Off the display of the Panoramio photos, the Traffic and set the Default Zoom. By dragging the Human Icon(left top corner) over the Map you will activate the Street View. Available Map type: ROADMAP (displays the default road map view); SATELLITE (displays Google Earth satellite images); HYBRID (displays a mixture of normal and satellite views); TERRAIN (displays a physical map based on terrain information). To Zoom In or Out click the +/- sign, double click over the map or use you mouse wheel. This Gadget uses Google Maps Code and jQuery."    
+author='Cryistyian GP' 
+author_email='cryistyian@gmail.com'
+author_link='http://ymabyts.blogspot.com/'
+title_url='http://ymabyts.blogspot.com/2011/07/google-maps-small-size-gadget.html'
+author_location='Romania'
+screenshot='http://3.bp.blogspot.com/-hV04jVUyTMk/ThwjYKSjTFI/AAAAAAAABaU/dPNBs7wM5so/s200/Maps+small.png'
+thumbnail='http://3.bp.blogspot.com/-hV04jVUyTMk/ThwjYKSjTFI/AAAAAAAABaU/dPNBs7wM5so/s200/Maps+small.png'
+category='Tools' 
+category2='Lifestyle'
+height='520'
+width='310'
+scrolling='true'
+scaling='true'
+/> 
+ 
+<UserPref name='MapDef' display_name='Default Map Type' default_value='ROADMAP' datatype='enum'> 
+<EnumValue value='ROADMAP' display_value='ROADMAP'/> 
+<EnumValue value='TERRAIN' display_value='TERRAIN'/> 
+<EnumValue value='SATELLITE' display_value='SATELLITE'/> 
+<EnumValue value='HYBRID' display_value='HYBRID'/> 
+</UserPref>  
+
+
+<UserPref name='MapLg' display_name='Default Map Language' default_value='en' datatype='enum'> 
+<EnumValue value='en' display_value='English'/> 
+  <EnumValue value='fr' display_value='Français - French'/> 
+  <EnumValue value='de' display_value='Deutsch  - German'/> 
+  <EnumValue value='it' display_value='Italiano - Italian'/> 
+  <EnumValue value='es' display_value='Español - Spanish'/> 
+  <EnumValue value='ro' display_value='Română - Romanian'/> 
+  <EnumValue value='ru' display_value='Русский - Russian'/> 
+  <EnumValue value='af' display_value='Afrikaans - Afrikaans'/> 
+  <EnumValue value='ar' display_value='العربية - Arabic'/> 
+  <EnumValue value='bg' display_value='Български - Bulgarian'/> 
+  <EnumValue value='zh' display_value='中文 - Chinese'/> 
+  <EnumValue value='hr' display_value='Hrvatski - Croatian'/> 
+  <EnumValue value='cs' display_value='Česky - Czech'/> 
+  <EnumValue value='da' display_value='Dansk - Danish'/> 
+  <EnumValue value='nl' display_value='Nederlands - Dutch'/> 
+  <EnumValue value='fi' display_value='Suomi - Finnish'/> 
+  <EnumValue value='el' display_value='Ελληνικά - Greek'/> 
+  <EnumValue value='iw' display_value='עברית - Hebrew'/> 
+  <EnumValue value='hu' display_value='Magyar - Hungarian'/> 
+  <EnumValue value='ja' display_value='日本語 - Japanese'/> 
+  <EnumValue value='lv' display_value='Latviešu - Latvian'/> 
+  <EnumValue value='lt' display_value='Lietuvių - Lithuanian'/> 
+  <EnumValue value='no' display_value='Norsk - Norwegian'/> 
+  <EnumValue value='fa' display_value='فارسی - Persian'/> 
+  <EnumValue value='pl' display_value='Polski - Polish'/> 
+  <EnumValue value='pt' display_value='Português - Portuguese'/> 
+  <EnumValue value='sv' display_value='Svenska - Swedish'/> 
+  <EnumValue value='tr' display_value='Türkçe - Turkish'/> 
+  <EnumValue value='uk' display_value='Українське - Ukrainian'/> 
+ </UserPref> 
+  
+  
+<UserPref name='MapH' display_name='Map Height' default_value='322' datatype='string'> 
+</UserPref> 
+ 
+<UserPref name='MapLat' display_name='Default Latitude' default_value='33.812097' datatype='string'> 
+</UserPref> 
+ 
+<UserPref name='MapLon' display_name='Default Longitude' default_value='-117.918969' datatype='string'> 
+</UserPref> 
+  
+<UserPref name='MapZom' display_name='Default Zoom' default_value='10' datatype='string'> 
+</UserPref>     
+ 
+
+<Content type="html"><![CDATA[ 
+<!--ALm6fM1pcFlffQYQNv1CoZ28RzH+xZOIfDdMLlu/Vx/a2UUZiRZnnVlmJN26ruu6IJHZdApA3qmnvBgDJE0osEEbL1HeTWsqwyweiXB/jej0gVNfbzBJTl6PGOV2o0rHHk5BvAB+ZfrGj1LUbpf2/QZIuUNVqHY9PxraHmL+dd7dZcpna/KDHfj6wMumFnUrJqZIWda7u1tY-->
+
+
+<style type="text/css"> 
+.tabel{
+font-family:arial;
+text-shadow:silver 1px 1px 1px;
+}
+
+#Loc,#harta,#ArAs, #DefZoom,#Lat,#Lon{
+border:solid 1px black;
+border-radius:4px;
+-moz-border-radius:4px;
+}
+
+
+
+#Loc, #DefZoom,#Lat,#Lon{
+font-family:arial;
+font-size:14px;
+padding:3px;
+text-shadow:silver 0px 0px 1px;
+}
+
+#DefZoom,#Lat,#Lon{
+font-weigth:bold;
+font-size:15px;
+}
+
+#DefZoom:hover,#Lat:hover,#Lon:hover, #Loc:hover{
+border:solid 1.5px red;
+}
+
+#harta{
+height:__UP_MapH__px;
+width:275px;
+}
+.ArAsH{background:#D0DFFA;cursor:pointer; color:#006400}
+#ArAs{
+background:#B2CCFF;
+
+text-shadow:white 1px 1px 5px;
+}
+
+#Sett{letter-spacing:15px;}
+
+input:hover{cursor:pointer; } 
+
+
+
+#ButGS{
+background:green;
+color:white;
+border:solid 1px blue;
+border-radius:4px;
+-moz-border-radius:4px;
+font-size:15px;
+font-family:arial;
+font-weight:bold;
+margin-left:-5px;
+box-shadow:white 0px 0px 8px inset;
+-moz-box-shadow:white 0px 0px 8px inset;
+}
+
+#ButGS:hover{
+border: solid 1px green;
+box-shadow:white 0px 0px 15px inset;
+-moz-box-shadow:white 0px 0px 15px inset;
+cursor:hand;
+}
+
+</style> 
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>  
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=places,panoramio&language=__UP_MapLg__"></script> 
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+$('#DeArAs').hide()
+$('#ArAs').click(function(){
+$('#DeArAs').slideToggle()
+})
+
+$("#ArAs").hover(function () {
+ $(this).addClass("ArAsH");
+  }, 
+  function () {
+    $(this).removeClass("ArAsH");
+  });
+
+})
+
+
+function HartaTeste() {
+
+
+
+IaLat=$('#Lat').val();
+IaLon=$('#Lon').val();
+IaZoom=$('#DefZoom').val();
+
+
+IaHarta=document.getElementById('harta')
+
+OpH={center:new google.maps.LatLng(IaLat,IaLon), zoom:parseFloat(IaZoom), mapTypeId:google.maps.MapTypeId.__UP_MapDef__}
+
+Ha = new google.maps.Map(IaHarta, OpH);
+
+
+
+IaLoc=document.getElementById('Loc');
+
+  
+AutoC= new google.maps.places.Autocomplete(IaLoc);
+
+
+Indic = new google.maps.Marker({map:Ha});
+
+google.maps.event.addListener(AutoC, 'place_changed', function() {
+
+var locul = AutoC.getPlace();
+        
+if (locul.geometry.viewport) {Ha.fitBounds(locul.geometry.viewport)} 
+else {Ha.setCenter(locul.geometry.location);
+          Ha.setZoom(16); } 
+
+Semn=new google.maps.MarkerImage(
+            locul.icon, new google.maps.Size(45, 45),
+            new google.maps.Point(0, 0), new google.maps.Point(17, 34),
+            new google.maps.Size(35, 35));
+        Indic.setIcon(Semn);
+        Indic.setPosition(locul.geometry.location);
+
+        
+      });
+ 
+if(document.Paro.Verific[0].checked){
+AratPanoramio = new google.maps.panoramio.PanoramioLayer();
+ AratPanoramio .setMap(Ha);}
+
+if(document.Traf.VerT[0].checked){AratTrafic = new google.maps.TrafficLayer();
+  AratTrafic.setMap(Ha);}
+      }
+   onload=HartaTeste
+  </script> 
+<center><table class='tabel'>
+<tr><th>
+<div id='ArAs'>&#x2666; <span id='Sett'> Settings</span> &#x2666;</div>
+<table id='DeArAs'><tr><th>
+<form name='Paro' style='margin-bottom:2px'>
+Panaoramio <input type='radio' name='Verific' onclick='HartaTeste()'>ON
+<input type='radio' name='Verific' onclick='HartaTeste()'>OFF
+</form>
+</th></tr>   
+<tr><th>
+<form name='Traf'>
+Traffic <input type='radio' name='VerT' onclick='HartaTeste()'>ON
+<input type='radio' name='VerT' onclick='HartaTeste()'>OFF
+</form>
+</th></tr>  
+
+<tr><th>
+Default Zoom = <input type='text' size='5' id='DefZoom'  value='__UP_MapZom__'  onkeyup='HartaTeste()'>
+</th><tr>
+ 
+<tr><th><div>Find a Place by:</div></th></tr>
+<tr><th>Latitude = &nbsp;<input type='text' id='Lat' value='__UP_MapLat__' onkeyup='HartaTeste()'></th></tr>
+<tr><th>Longitude=<input type='text' id='Lon' value='__UP_MapLon__' onkeyup='HartaTeste()'></th></tr></table>
+
+<tr><th>
+<input id="Loc" type="text" size="38" > </th></tr>
+
+<tr><th Hotel, Reservation, Cruise, Restaurant, Travel, Flight, Job>  
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0236001525259777";
+/* Harti-HB */
+google_ad_slot = "7330265511";
+google_ad_width = 234;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<div id="harta"  Hotel, Reservation, Cruise, Restaurant, Travel, Flight, Job></div> </th Hotel, Reservation, Cruise, Restaurant, Travel, Flight, Job></tr>
+
+<tr><td > 
+<center><table>
+<tr>
+<form action="http://www.google.com/cse" id="cse-search-box" target="_blank">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-0236001525259777:9709917003" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="32" />
+    <input type="submit" name="sa" value=" ⇒" id='ButGS'/>
+  </div>
+</form>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+<td>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script><g:plusone size="medium" count="false" href="http://ymabyts.blogspot.com/2011/07/google-maps-small-size-gadget.html"></g:plusone>
+</td>
+ 
+<td> <a href="http://www.twitter.com/YmaByts" target='_blank'><img src="http://twitter-badges.s3.amazonaws.com/t_small-a.png" border='0' alt="YmaByts" height='17' width='17' title='YmaByts on Twitter'/></a></td>
+
+<td><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://www.facebook.com/pages/YmaByts/188870814475712" layout="button_count" show_faces="false" width="70"></fb:like> </td>
+
+
+ 
+<td><!-- AddThis Button BEGIN -->
+<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;username=addkriy"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="85" height="16" alt="Bookmark and Share" style="border:0"/></a>
+<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>   
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=addkriy"></script>
+<!-- AddThis Button END --> </td>
+
+<td>
+<a href="http://feedburner.google.com/fb/a/mailverify?uri=Ymabyts&amp;loc=en_US"  target='_blank'><img src='http://1.bp.blogspot.com/-mBTZ6BGlyRo/TiQtTtVCnDI/AAAAAAAABas/ni7sCWPjNrs/s1600/Plic.png' title='Click to get Free Gadgets via Email' width='25px' height='16px' alt='E' border='0'></a>
+</td>
+ </tr></table></center> 
+
+</td></tr> 
+</table></center>
+
+  
+]]></Content> 
+</Module> 

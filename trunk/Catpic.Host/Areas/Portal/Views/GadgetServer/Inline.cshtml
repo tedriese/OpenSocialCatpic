@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Inline gadget";
+    Layout = "~/Areas/Portal/Views/Shared/_Layout.cshtml";
+}
+<h2>inline mode</h2>
+<p>Gadget's content is below:</p>
+<div class="gadgets-gadget">
+    @Html.Action("RenderInline", "GadgetServer", new {url = "~/content/gadgets/inline/InlineDemo.xml", mode = "inline" })
+</div>
+<h3>notes</h3>
+<p>This page demonstrates how to use inline mode. Some notes:</p>
+<ul class="arrow-bullets">
+    <li>register external gadget scripts in gadget render modules and render them at <i>head</i> of the page to prevent dublication</li>
+    <li>styles of the gadget shouldn't conflict with styles of the page. Use inline mode only if you ensure that gadgets are safe</li>
+</ul>
+
+  

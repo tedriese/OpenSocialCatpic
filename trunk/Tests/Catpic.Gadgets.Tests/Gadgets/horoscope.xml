@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="__MSG_title__"
+             title_url="http://www.dailyhoroscope.com/"
+             directory_title="__MSG_directory_title__"
+             description="__MSG_description__"
+             height="200"
+             author="csindia-gadgets"
+             author_email="googlemodules+gadgetfactory_horoscope+201107051@google.com"
+             thumbnail="http://www.gstatic.com/ig/modules/horoscope/horoscope-thm.cache.png"
+             screenshot="http://www.gstatic.com/ig/modules/horoscope/horoscope.cache.png">
+  <Locale lang="en"
+          messages="/ig/modules/horoscope/horoscope_content/en_ALL.xml"/>
+  <Locale lang="fr"
+          messages="/ig/modules/horoscope/horoscope_content/fr_ALL.xml"/>
+  <Locale lang="de"
+          messages="/ig/modules/horoscope/horoscope_content/de_ALL.xml"/>
+  <Locale lang="pt-br"
+          messages="/ig/modules/horoscope/horoscope_content/pt-br_ALL.xml"/>
+  <Locale lang="es"
+          messages="/ig/modules/horoscope/horoscope_content/es_ALL.xml"/>
+  <Locale lang="bg"
+          messages="/ig/modules/horoscope/horoscope_content/bg_ALL.xml"/>
+  <Locale lang="ca"
+          messages="/ig/modules/horoscope/horoscope_content/ca_ALL.xml"/>
+  <Locale lang="cs"
+          messages="/ig/modules/horoscope/horoscope_content/cs_ALL.xml"/>
+  <Locale lang="da"
+          messages="/ig/modules/horoscope/horoscope_content/da_ALL.xml"/>
+  <Locale lang="de_AT"
+          messages="/ig/modules/horoscope/horoscope_content/de_AT_ALL.xml"/>
+  <Locale lang="de_CH"
+          messages="/ig/modules/horoscope/horoscope_content/de_CH_ALL.xml"/>
+  <Locale lang="el"
+          messages="/ig/modules/horoscope/horoscope_content/el_ALL.xml"/>
+  <Locale lang="en_GB"
+          messages="/ig/modules/horoscope/horoscope_content/en_GB_ALL.xml"/>
+  <Locale lang="en_IE"
+          messages="/ig/modules/horoscope/horoscope_content/en_IE_ALL.xml"/>
+  <Locale lang="en_SG"
+          messages="/ig/modules/horoscope/horoscope_content/en_SG_ALL.xml"/>
+  <Locale lang="en_ZA"
+          messages="/ig/modules/horoscope/horoscope_content/en_ZA_ALL.xml"/>
+  <Locale lang="es_419"
+          messages="/ig/modules/horoscope/horoscope_content/es_419_ALL.xml"/>
+  <Locale lang="es_AR"
+          messages="/ig/modules/horoscope/horoscope_content/es_AR_ALL.xml"/>
+  <Locale lang="es_BO"
+          messages="/ig/modules/horoscope/horoscope_content/es_BO_ALL.xml"/>
+  <Locale lang="es_CL"
+          messages="/ig/modules/horoscope/horoscope_content/es_CL_ALL.xml"/>
+  <Locale lang="es_CO"
+          messages="/ig/modules/horoscope/horoscope_content/es_CO_ALL.xml"/>
+  <Locale lang="es_CR"
+          messages="/ig/modules/horoscope/horoscope_content/es_CR_ALL.xml"/>
+  <Locale lang="es_DO"
+          messages="/ig/modules/horoscope/horoscope_content/es_DO_ALL.xml"/>
+  <Locale lang="es_EC"
+          messages="/ig/modules/horoscope/horoscope_content/es_EC_ALL.xml"/>
+  <Locale lang="es_GT"
+          messages="/ig/modules/horoscope/horoscope_content/es_GT_ALL.xml"/>
+  <Locale lang="es_HN"
+          messages="/ig/modules/horoscope/horoscope_content/es_HN_ALL.xml"/>
+  <Locale lang="es_MX"
+          messages="/ig/modules/horoscope/horoscope_content/es_MX_ALL.xml"/>
+  <Locale lang="es_NI"
+          messages="/ig/modules/horoscope/horoscope_content/es_NI_ALL.xml"/>
+  <Locale lang="es_PA"
+          messages="/ig/modules/horoscope/horoscope_content/es_PA_ALL.xml"/>
+  <Locale lang="es_PE"
+          messages="/ig/modules/horoscope/horoscope_content/es_PE_ALL.xml"/>
+  <Locale lang="es_PR"
+          messages="/ig/modules/horoscope/horoscope_content/es_PR_ALL.xml"/>
+  <Locale lang="es_PY"
+          messages="/ig/modules/horoscope/horoscope_content/es_PY_ALL.xml"/>
+  <Locale lang="es_SV"
+          messages="/ig/modules/horoscope/horoscope_content/es_SV_ALL.xml"/>
+  <Locale lang="es_US"
+          messages="/ig/modules/horoscope/horoscope_content/es_US_ALL.xml"/>
+  <Locale lang="es_UY"
+          messages="/ig/modules/horoscope/horoscope_content/es_UY_ALL.xml"/>
+  <Locale lang="es_VE"
+          messages="/ig/modules/horoscope/horoscope_content/es_VE_ALL.xml"/>
+  <Locale lang="et"
+          messages="/ig/modules/horoscope/horoscope_content/et_ALL.xml"/>
+  <Locale lang="fi"
+          messages="/ig/modules/horoscope/horoscope_content/fi_ALL.xml"/>
+  <Locale lang="fil"
+          messages="/ig/modules/horoscope/horoscope_content/fil_ALL.xml"/>
+  <Locale lang="gsw"
+          messages="/ig/modules/horoscope/horoscope_content/gsw_ALL.xml"/>
+  <Locale lang="hi"
+          messages="/ig/modules/horoscope/horoscope_content/hi_ALL.xml"/>
+  <Locale lang="hr"
+          messages="/ig/modules/horoscope/horoscope_content/hr_ALL.xml"/>
+  <Locale lang="hu"
+          messages="/ig/modules/horoscope/horoscope_content/hu_ALL.xml"/>
+  <Locale lang="hy"
+          messages="/ig/modules/horoscope/horoscope_content/hy_ALL.xml"/>
+  <Locale lang="id"
+          messages="/ig/modules/horoscope/horoscope_content/id_ALL.xml"/>
+  <Locale lang="in"
+          messages="/ig/modules/horoscope/horoscope_content/in_ALL.xml"/>
+  <Locale lang="it"
+          messages="/ig/modules/horoscope/horoscope_content/it_ALL.xml"/>
+  <Locale lang="ja"
+          messages="/ig/modules/horoscope/horoscope_content/ja_ALL.xml"/>
+  <Locale lang="ko"
+          messages="/ig/modules/horoscope/horoscope_content/ko_ALL.xml"/>
+  <Locale lang="ln"
+          messages="/ig/modules/horoscope/horoscope_content/ln_ALL.xml"/>
+  <Locale lang="lt"
+          messages="/ig/modules/horoscope/horoscope_content/lt_ALL.xml"/>
+  <Locale lang="lv"
+          messages="/ig/modules/horoscope/horoscope_content/lv_ALL.xml"/>
+  <Locale lang="mo"
+          messages="/ig/modules/horoscope/horoscope_content/mo_ALL.xml"/>
+  <Locale lang="nl"
+          messages="/ig/modules/horoscope/horoscope_content/nl_ALL.xml"/>
+  <Locale lang="no"
+          messages="/ig/modules/horoscope/horoscope_content/no_ALL.xml"/>
+  <Locale lang="pl"
+          messages="/ig/modules/horoscope/horoscope_content/pl_ALL.xml"/>
+  <Locale lang="pt"
+          messages="/ig/modules/horoscope/horoscope_content/pt_ALL.xml"/>
+  <Locale lang="pt-pt"
+          messages="/ig/modules/horoscope/horoscope_content/pt-pt_ALL.xml"/>
+  <Locale lang="ro"
+          messages="/ig/modules/horoscope/horoscope_content/ro_ALL.xml"/>
+  <Locale lang="ru"
+          messages="/ig/modules/horoscope/horoscope_content/ru_ALL.xml"/>
+  <Locale lang="sk"
+          messages="/ig/modules/horoscope/horoscope_content/sk_ALL.xml"/>
+  <Locale lang="sl"
+          messages="/ig/modules/horoscope/horoscope_content/sl_ALL.xml"/>
+  <Locale lang="sr"
+          messages="/ig/modules/horoscope/horoscope_content/sr_ALL.xml"/>
+  <Locale lang="sv"
+          messages="/ig/modules/horoscope/horoscope_content/sv_ALL.xml"/>
+  <Locale lang="th"
+          messages="/ig/modules/horoscope/horoscope_content/th_ALL.xml"/>
+  <Locale lang="tl"
+          messages="/ig/modules/horoscope/horoscope_content/tl_ALL.xml"/>
+  <Locale lang="tr"
+          messages="/ig/modules/horoscope/horoscope_content/tr_ALL.xml"/>
+  <Locale lang="uk"
+          messages="/ig/modules/horoscope/horoscope_content/uk_ALL.xml"/>
+  <Locale lang="vi"
+          messages="/ig/modules/horoscope/horoscope_content/vi_ALL.xml"/>
+  <Locale lang="zh"
+          messages="/ig/modules/horoscope/horoscope_content/zh_ALL.xml"/>
+  <Locale lang="zh-cn"
+          messages="/ig/modules/horoscope/horoscope_content/zh-cn_ALL.xml"/>
+  <Locale lang="zh-hk"
+          messages="/ig/modules/horoscope/horoscope_content/zh-hk_ALL.xml"/>
+  <Locale lang="zh-tw"
+          messages="/ig/modules/horoscope/horoscope_content/zh-tw_ALL.xml"/>
+  <Locale messages="/ig/modules/horoscope/horoscope_content/en_ALL.xml"/>
+  <Require feature="views"/>
+  <Require feature="tabs"/>
+  <Require feature="setprefs"/>
+  <Require feature="dynamic-height"/>
+  <Require feature="settitle"/>
+  <Icon>http://www.google.com/images/icons/star-16.gif</Icon>
+</ModulePrefs>
+<UserPref name="day" datatype="hidden" default_value=""/>
+<UserPref name="month" datatype="hidden" default_value=""/>
+<UserPref name="selectedTab" datatype="hidden" default_value="0"/>
+<UserPref name="uid" datatype="hidden" default_value=""/>
+<UserPref name="selectedFriend" datatype="hidden" default_value="0"/>
+
+<Content type="html" view="home, canvas, preview">
+<![CDATA[
+<style>div,p,span,td{font-family:arial,sans-serif;font-size:13px}a,a:visited{color:#0000cf}.horoscope-pic{float:left;margin:0 10px 0 5px}.horoscope-bday-pic{float:left;padding:8px 6px 0 0;width:58px}#my-friends-list td{height:30px;margin:0 10px;padding:0 10px}.delete-icon{background-position:12px 13px;height:14px;width:13px}.edit-icon{background-position:1px 14px;height:14px;width:14px}.edit-icon,.delete-icon{background-color:transparent;background-image:url("http://www.gstatic.com/ig/modules/horoscope/sprite.cache.png");cursor:pointer;line-height:13px}.heading{color:#3f3f87;font-size:14px;font-weight:bold}.numerology{padding-top:6px;vertical-align:top}#daily-horoscope-title{clear:left;float:left;padding:5px 0 0 90px;width:80%}.reading{font-size:12px}.tablib_unselected,.tablib_selected{font-size:12px;font-weight:bold;padding:2px;text-align:center;white-space:nowrap}.tablib_unselected{background-color:#9e7db0;border-bottom:1px solid #7f9db9;border-width:0 0 1px;color:#fff;width:90px}.tablib_selected{background-color:#66447b;border:solid #7f9db9;border-width:1px 1px 0;color:#fff;width:90px}.tablib_table{background-color:#fff}.tablib_emptyTab{border-bottom:1px solid #7f9db9;padding:0;width:1px}.tablib_emptyTab_custom{border-bottom:1px solid #7f9db9}.tablib_spacerTab{background-color:#fff;border-bottom:1px solid #7f9db9;padding:0 1px;width:5px}#tabs-container_0,#tabs-container_1,#tabs-container_2,#add-friend-bday,#enter-bday{background-color:#ede4f2}.tablib_content_container{padding:8px}#astrosync-data{padding-top:5px}.get-started{padding-top:5px;text-align:right}.astro-track{float:left;padding-top:5px;width:74%}.blue-box{background-color:#f9f0fe;border:1px solid #bfa7ce}.headlines{padding:11px 0 0 9px}.horoscope-img{border-top:1px solid #c6deff;padding:5px 0;vertical-align:top;width:80px}.horoscope-feed{border-top:1px solid #c6deff;height:111px;padding:10px 0 5px}.astrosync-details{padding:10px 5px 25px 10px}#astro-compatibility{font-weight:bold;float:left}#horoscope-friends{padding-top:7px}.horoscope-rated,.horoscope-unrated{background-color:transparent;background-image:url(http://www.gstatic.com/ig/modules/horoscope/stars.gif);background-repeat:no-repeat;height:10px;width:10px}.horoscope-rated{background-position:-31px}.horoscope-unrated{background-position:-53px}.loading{color:#5580d5;font-size:12px;font-weight:bold;padding-top:50px;height:100px;text-align:center}#edit-err-msg{color:#c00;float:left;padding-left:5px}#friends-dropdown{background-color:#fff;border:3px solid #6080aa;width:100%}.powered{font-size:10px;font-style:italic}.horoscope-tarot-com{font-size:15px;font-style:normal;font-weight:bold}.edit-friend{height:184px;width:343px}.no-friends-added{height:50px;margin-top:30px;text-align:center}#astro-date{color:#666;padding-bottom:3px}.horoscope-dropdown{display:none;height:0;overflow:visible;position:absolute;padding-right:77px;width:0;z-index:100}.list-friends{font-size:12px}.capitalize-text{text-transform:capitalize}.edit-relation{padding:5px 0 10px 5px}.dropdown-frame{border:0;display:none;position:absolute}.horoscope-birth-details{font-size:12px;padding:5px 0 0 5px;text-transform:capitalize}#add-friend-logo{display:none;float:left;width:50px}.date-text{font-size:12px;text-transform:capitalize}.horoscope-row{font-size:12px;font-weight:bold}.image-cropper{display:block;overflow:hidden;text-align:center}.image-cropper div{margin:0 -9999px}.thumbnail{float:left;height:35px;padding-right:7px;width:35px}.thumbnail img{height:41px}#horoscope-add-friend{height:260px}.tarot-link{padding:5px 0 8px 0;text-align:right}#sign-image{padding-top:6px;vertical-align:top}#date{float:right}.sentence-case{text-transform:lowercase}.sentence-case:first-letter{text-transform:uppercase}#numerology-title{display:none;padding:10px 45px 0 0}.score{line-height:18px;padding-right:10px}.error{color:#f60;height:100px;padding-top:50px;text-align:center}.mmlib_table td{color:#000;font-size:10px;font-weight:normal;text-align:left;vertical-align:top}#header-links{color:#0960b0;margin:5px 0;text-align:right}#header-links a{color:#3571ba;vertical-align:top}#about-deatils td{padding:0 5px 5px 0}.author-content{margin:10px 15px 15px 10px}#about-sign td{padding:0 15px 5px 0}.advertisement-label{color:#d6d6d6;margin:10px 0 5px 0;text-align:center}#adv-data{border:1px solid #bfa7ce;background:#f9f0fe;height:266px}.add-background{background-image:url("http://www.gstatic.com/ig/modules/horoscope/canvas-container-bg.cache.png");background-repeat:repeat-x;border:1px solid #f5f0f6;padding:10px;vertical-align:top}#weekly-content-title{padding-left:90px}.add-friend-link{color:#0000cf;cursor:pointer;text-decoration:underline}#friends-list{width:130px}#horosocope-headlines,#addvertisement,#changing-sky{margin-left:15px}#friend-loss-msg{font-weight:bold;padding:5px}.powered_by_row{text-align:right;vertical-align:bottom}</style>
+<script>var isEdited=!1,isOnLoad=!0,ownerDobObj={},prefs=new _IG_Prefs,recentlyAddedFriendData=null,isAddedFromSettingsTab=!1,ValidationResults={VALID_DATE:0,INVALID_DAY:1,INVALID_YEAR:2,INVALID_NAME:3},signName="",ERROR_TPL='<div class="error">'+prefs.getMsg("data_not_available")+"</span>",LOADING_TPL='<div class="loading"><img src="http://www.google.com/ig/images/spinner.gif"/>&nbsp;&nbsp;'+prefs.getMsg("loading")+"</div>",isEnLang=!1,currentLang,SIGN_NAMES={all_signs:prefs.getMsg("all_signs"),capricorn:prefs.getMsg("capricorn"),
+aquarius:prefs.getMsg("aquarius"),pisces:prefs.getMsg("pisces"),aries:prefs.getMsg("aries"),taurus:prefs.getMsg("taurus"),gemini:prefs.getMsg("gemini"),cancer:prefs.getMsg("cancer"),leo:prefs.getMsg("leo"),virgo:prefs.getMsg("virgo"),libra:prefs.getMsg("libra"),scorpio:prefs.getMsg("scorpio"),sagittarius:prefs.getMsg("sagittarius")},birthDateObj={};function getFocus(a){a=_gel(a);a.value="";a.focus()}
+function getSignNumber(){for(var a="all_signs,aries,taurus,gemini,cancer,leo,virgo,libra,scorpio,sagittarius,capricorn,aquarius,pisces".split(","),b=0,c=a.length;b<c;b++)if(signName==a[b])return b}
+function getSign(a,b){var c,b=parseInt(b,10);switch(parseInt(a,10)){case 1:c=b<=19?"capricorn":"aquarius";break;case 2:c=b<=18?"aquarius":"pisces";break;case 3:c=b<=20?"pisces":"aries";break;case 4:c=b<=19?"aries":"taurus";break;case 5:c=b<=20?"taurus":"gemini";break;case 6:c=b<=20?"gemini":"cancer";break;case 7:c=b<=22?"cancer":"leo";break;case 8:c=b<=22?"leo":"virgo";break;case 9:c=b<=22?"virgo":"libra";break;case 10:c=b<=22?"libra":"scorpio";break;case 11:c=b<=21?"scorpio":"sagittarius";break;
+case 12:c=b<=21?"sagittarius":"capricorn"}return c}function getValue(a,b){var d;var c=a.getElementsByTagName(b);return!c?"":(d=(c=c.item(0))?c.firstChild:"",c=d)?c.nodeValue:""}
+function doValidation(a,b,c,d){if(a)if(!b||b.match(/[^\d]/))return ValidationResults.INVALID_DAY;else{if(!d||d.match(/[^\d]/))return ValidationResults.INVALID_YEAR}else return ValidationResults.INVALID_NAME;b=parseInt(b,10);d=parseInt(d,10);c=parseInt(c,10)-1;a=new Date(d,c,b);c=new Date;if(b!=a.getDate())return ValidationResults.INVALID_DAY;else if(d!=a.getFullYear()||d>(new Date).getFullYear()||d<1900)return ValidationResults.INVALID_YEAR;else if(a>c)return ValidationResults.INVALID_DAY;return ValidationResults.VALID_DATE}
+function getCurrentTime(a){var b=a.getHours(),a=a.getMinutes(),b=b<10?"0"+b:b,a=a<10?"0"+a:a;return b+""+a}function getFormatedDate(a,b){var c=a.getDate(),d=a.getFullYear(),e=a.getMonth()+1,c=(c<10?"0":"")+c,e=(e<10?"0":"")+e;return c=b?d+"-"+e+"-"+c:d+e+c}
+function getUsersData(){var a=_gel("error-message");a.style.display="block";a.innerHTML=LOADING_TPL;var b=new Date,a=getCurrentTime(b),c=getFormatedDate(b,!0),b=-b.getTimezoneOffset()/60,a="http://api.tarot.com/api/astrosync/principal/"+_esc(birthDateObj.name)+"/"+birthDateObj.year+"-"+birthDateObj.month+"-"+birthDateObj.day+"/date/"+c+"/time/"+a+"/timezone/"+b+"/type/xml?partner=igoogle&key=a9a51c94bbb165f9";fetchBirthDate(a)}
+function fetchBirthDate(a){var b=setTimeout(function(){showTryAgain()},1E4);_IG_FetchXmlContent(a,_IG_Callback(parseUsersAstroData,b),{refreshInterval:1})}function showSelectedFriendData(a){prefs.set("selectedFriend",a);getTarotData(a)}
+var params={},isCanvas=window.gadgets&&window.gadgets.views&&window.gadgets.views.getCurrentView()&&window.gadgets.views.getCurrentView().getName().toLowerCase()=="canvas",isPreview=window.gadgets&&window.gadgets.views&&window.gadgets.views.getCurrentView()&&window.gadgets.views.getCurrentView().getName().toLowerCase()=="preview",gTabId=[],horoTabs,MONTH_NAMES=[prefs.getMsg("january"),prefs.getMsg("february"),prefs.getMsg("march"),prefs.getMsg("april"),prefs.getMsg("may"),prefs.getMsg("june"),prefs.getMsg("july"),
+prefs.getMsg("august"),prefs.getMsg("september"),prefs.getMsg("october"),prefs.getMsg("november"),prefs.getMsg("december")],DAY_NAMES=[prefs.getMsg("sunday"),prefs.getMsg("monday"),prefs.getMsg("tuesday"),prefs.getMsg("wednesday"),prefs.getMsg("thursday"),prefs.getMsg("friday"),prefs.getMsg("saturday")],DATE_RANGE={capricorn:prefs.getMsg("capricorn_wd"),aquarius:prefs.getMsg("aquarius_wd"),pisces:prefs.getMsg("pisces_wd"),aries:prefs.getMsg("aries_wd"),taurus:prefs.getMsg("taurus_wd"),gemini:prefs.getMsg("gemini_wd"),
+cancer:prefs.getMsg("cancer_wd"),leo:prefs.getMsg("leo_wd"),virgo:prefs.getMsg("virgo_wd"),libra:prefs.getMsg("libra_wd"),scorpio:prefs.getMsg("scorpio_wd"),sagittarius:prefs.getMsg("sagittarius_wd")};
+function getDate(){var a=new Date,b=a.getHours(),c=a.getMinutes(),d="";b>12?(b-=12,d=prefs.getMsg("PM")):b==12?d=prefs.getMsg("PM"):b==0?b=12:d=prefs.getMsg("AM");a=[DAY_NAMES[a.getDay()].substring(0,3),", ",MONTH_NAMES[a.getMonth()].substring(0,3)," ",a.getDate(),", ",a.getFullYear()," ",b<10?"0"+b:b,":",c<10?"0"+c:c," ",d];return a.join("")}function setView(a){gadgets.views.requestNavigateTo(new gadgets.views.View(a))}
+function getDateInLocaleFormat(a,b){var c=b.getDate(),d=c<10?"0"+c:c;return a.replace("%dd%",d).replace("%d%",c).replace("%mmmm%",MONTH_NAMES[b.getMonth()].substring(0,3)).replace("%m%",b.getMonth()).replace("%yyyy%",b.getFullYear())}String.prototype.supplant=function(a){return this.replace(/{([^{}]+)}/g,function(b,c){var d=a[c];return typeof d==="string"||typeof d==="number"?d:b})};
+function wrapText(a){var b=[],c="<wbr/>";if(a.length<10)return a;else for(var d=0,e=a.length;d<e;d+=10){var f=a.substring(d,d+10);b.push(f)}return b.join(c)}var friendsInfo=[],filteredFriends=[],astroData=[],currentIndex=-1,currentEditBoxIndex=-1,fetchedFriendsData=!1;
+function inviteFriend(){_gel(gTabId[1]).innerHTML=_gel("astroSync-invite").value;_gel("add-friend-home").innerHTML=_gel("add-friend-textarea").value;_gel("add-friend-logo").style.display="block";_gel("addname").focus();_IG_AdjustIFrameHeight()}
+function parseAstroSyncData(a){var b,c,d,e,f,g={};astroData=[];for(var h=a.getElementsByTagName("friends")[0].childNodes,i=0,j=h.length;i<j;i++)if(b=h[i],b.nodeType==1){g={};g.relationType=b.tagName;c=b.childNodes;b=0;for(var k=c.length;b<k;b++)if(d=c[b],d.nodeType==1)switch(e=d.childNodes[0].nodeValue,d.nodeName){case "id":g.frndUid=e;break;case "profile_name":g.name=e.replace(/\\\\/g,"\\");break;case "display_name":g.name=e.replace(/\\\\/g,"\\");break;case "birthdate":g.dob=e;e=e.split("-");d=parseInt(e[1],
+10);g.fullDob=MONTH_NAMES[d-1].substring(0,3)+"&nbsp;"+e[2]+",&nbsp;"+e[0];break;case "gender":g.gender=e;break;case "light_color":g.lightColor=e;break;case "next_light_link":g.nextLightLink=e;break;case "compatibility":d=d.childNodes;for(var l=0,m=d.length;l<m;l++)if(f=d[l],f.nodeType==1)switch(e=f.childNodes[0].nodeValue,f.nodeName){case "stars":g.rating=e;break;case "interpretation":g.desc=e}}astroData.push(g)}h=a.getElementsByTagName("principal")[0].childNodes;ownerDobObj={};b=0;for(k=h.length;b<
+k;b++)if(d=h[b],d.nodeType==1)switch(d.nodeName){case "birthdate":e=d.childNodes[0].nodeValue.split("-");ownerDobObj.day=e[2];ownerDobObj.month=e[1];ownerDobObj.year=e[0];break;case "profile_name":a="xyz",g=d.childNodes[0].nodeValue,ownerDobObj.name=g==a?prefs.getMsg("owner"):g.replace(/%20/g," ")}showCompatibilitySection()}
+function showCompatibilitySection(){isEdited&&(isEdited=!1,horoTabs.setSelectedTab(0),prefs.set("selectedTab",0),prefs.set("selectedFriend",0),displayHoroscope());if(isOnLoad)isOnLoad=!1,createTabs();else if(prefs.getInt("selectedTab")==2){displaySettings();return}isCanvas?displayCompatiblity(!1):astroSyncCreateHtml()}
+function displayCompatiblity(a){currentEditBoxIndex=-1;for(var a=['<table cellpadding="0" cellspacing="0" width="100%">'],b=0,c=astroData.length;b<c;b++){var d=astroData[b].name;a.push('<tr><td id="horoscope-img',b,'" ',' class="horoscope-img"><img src="',"http://www.gstatic.com/ig/modules/horoscope/",astroData[b].lightColor,'_light.cache.gif" border="0" width="101px" height="96px" alt="',prefs.getMsg("astro_compatibility"),'" title="',prefs.getMsg("astro_compatibility"),'"/></td><td align="left" valign="top" id="horoscope-feed',
+b,'" class="horoscope-feed">');a.push('<div><span class="heading" title="',astroData[b].fullDob,'">',d,'</span></div><div style="padding-top:5px;padding-bottom:2px;"><span class="score"><b>',prefs.getMsg("communication_score"),"</b>:&nbsp;");for(var d="http://www.gstatic.com/ig/modules/horoscope/transparent.gif",e=0;e<5;e++){var f=e<astroData[b].rating?"horoscope-rated":"horoscope-unrated",g=prefs.getMsg("rated").replace("%RATING%",astroData[b].rating).replace("%MAX_RATING%",5);a.push('<img src="',
+d,'" alt="',prefs.getMsg("rating"),'" title="',g,'" class="',f,'"/>')}a.push('</span><nobr><span class="score"><b>',prefs.getMsg("attraction_score"),'</b>:&nbsp;<a href="',astroData[b].nextLightLink,'" target="_blank">',prefs.getMsg("find_out"),"</a></span><span><b>",prefs.getMsg("assertion_score"),'</b>:&nbsp;<a href="',astroData[b].nextLightLink,'" target="_blank">',prefs.getMsg("find_out"),"</a></span></nobr></div><div>",astroData[b].desc,'</div><div><span style="float:right;padding-top:5px;"><a href="',
+astroData[b].nextLightLink,'" target="_blank">',prefs.getMsg("next_light").replace("%NAME%",astroData[b].name),'&nbsp;&raquo</a></span></div><div id="edit-friend',b,'" style="display:none;padding-top:25px;"></div></td></tr>')}a.push("</table>");_gel("horoscope-friends").innerHTML=a.join("");if(astroData.length==0)_gel("horoscope-friends").innerHTML='<div style="color:#f60;padding:5px 0;"><span>'+prefs.getMsg("no_friends")+'</span>&nbsp;<a href="javascript:showAddFriendBlock();">'+prefs.getMsg("start_adding_friends")+
+"</a></div>";_gel("how_it_works").style.display="block";_gel("how_it_works_desc").innerHTML=prefs.getMsg("how_it_works_desc").replace("%ASTROSYNC%","<b>"+prefs.getMsg("astro_sync")+"</b>");_IG_AdjustIFrameHeight()}function isFriendAdded(a){for(var b=0,c=astroData.length;b<c;b++)if(astroData[b].name.toLowerCase()==a.toLowerCase())return!0;return!1}
+function astroSyncCreateHtml(){if(astroData.length){var a="http://www.gstatic.com/ig/modules/horoscope/"+astroData[0].lightColor+"_light.cache.gif",b=_gel("astrosync-section").value,c=astroData.length-1,c=astroData[c]||astroData[0],d=c.desc.replace(c.name,wrapText(c.name));_gel(gTabId[1]).innerHTML=b.replace(/%ASTRO_IMG%/g,a).replace(/%ASTRO_SYNC%/g,prefs.getMsg("astro_sync")).replace(/%CURRENT_CMP%/g,prefs.getMsg("current_compat")).replace(/%ASTRO_CMP%/g,prefs.getMsg("astro_compatibility")).replace(/%ASTRO_NAME%/g,
+wrapText(c.name)).replace(/%ASTRO_DESC%/g,d).replace(/%ASTRO_DASH%/g,prefs.getMsg("compat_dash")).replace(/%MORE_TAROT%/g,prefs.getMsg("more_from_tarot")).replace(/%ASTRO_DOB%/g,c.fullDob);_gel("astro-date").innerHTML=prefs.getMsg("latest_light_change").replace("%DATE%",getDate());if(isPreview)_gel("see_top_relationships").style.display="none";_IG_AdjustIFrameHeight()}else displayAstroSyncIntro()}
+function fetchAstrosyncData(a,b,c){clearTimeout(b);if(a)try{parseAstroSyncData(a,c)}catch(d){prefs.getInt("selectedTab")==1&&catchAstroDataException()}else catchAstroDataException()}function catchAstroDataException(){var a=isCanvas?"horoscope-friends":gTabId[1];showTryAgain(a)}function requestAstrosyncData(a,b){var c=setTimeout(function(){catchAstroDataException()},1E4);_IG_FetchXmlContent(a,_IG_Callback(fetchAstrosyncData,c,b),{refreshInterval:1})}
+function getThumbUrl(a){for(var b=0,c=filteredFriends.length;b<c;b++)if(filteredFriends[b].name==a)return filteredFriends[b].thumbUrl;return""}
+function createCompatibilityUrl(a){for(var b=new Date,c=getCurrentTime(b),d=getFormatedDate(b,!0),b=-b.getTimezoneOffset()/60,e=prefs.getString("uid"),f=["http://api.tarot.com/api/astrosync/","principal/",_esc(ownerDobObj.name),"/",ownerDobObj.year,"-",ownerDobObj.month,"-",ownerDobObj.day,"/"],g=0,h=astroData.length;g<h;g++)f.push(astroData[g].relationType,"/",encodeName(astroData[g].name),"/",astroData[g].dob,"/",astroData[g].gender,"/",astroData[g].frndUid,g,"/");a&&f.push(a.relationType,"/",encodeName(a.name),
+"/",a.dob,"/",a.gender,"/",a.frndUid,g,"/");f.push("date/",d,"/time/",c,"/timezone/",b,"/type/xml?partner=igoogle&key=a9a51c94bbb165f9");e&&f.push("&uid=",e);requestAstrosyncData(f.join(""),a)}function encodeName(a){a=a.replace(/'/g,"&apos;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;");return encodeURIComponent(a)}
+function addFriend(a){var b=a.addname.value.replace(/^\s*|\s*$/g,"");if(b){var c=_gel("dropdown-addname");c.innerHTML="";c.style.display="none";var c=_gel("hidden-thumb-url")?_gel("hidden-thumb-url").value:getThumbUrl(b),d=a.month.value,e=a.day.value,f=a.year.value,g=_gel("error-msg"),h=doValidation(b,e,d,f);h==ValidationResults.INVALID_DAY?(g.innerHTML=prefs.getMsg("invalid_date"),a.day.value="",a.day.focus(),_IG_AdjustIFrameHeight()):h==ValidationResults.INVALID_YEAR?(g.innerHTML=prefs.getMsg("invalid_year"),
+a.year.value="",a.year.focus(),_IG_AdjustIFrameHeight()):(e=e.length==1?"0"+e:e,d=d.length==1?"0"+d:d,d=f+"-"+d+"-"+e,e=a.gender,e=e[0].checked?prefs.getMsg("male_data"):prefs.getMsg("female_data"),f=a.relation,f=f.options[f.selectedIndex].value.toLowerCase(),b={name:b.replace(/\//g,""),dob:d,relationType:f,gender:e,thumbUrl:c},a.reset(),_gel("error-msg").innerHTML="",createCompatibilityUrl(b))}else _gel("error-msg").innerHTML=prefs.getMsg("invalid_name_empty"),a.addname.value="",a.addname.focus(),
+_IG_AdjustIFrameHeight()}
+function callbackAstroSync(){_gel(gTabId[1]).innerHTML=LOADING_TPL;var a=prefs.getString("uid");if(isCanvas){astroData=[];_gel(gTabId[1]).innerHTML=_gel("astrosync-canvas").value;_gel("powered-by-astro").innerHTML='<span class="powered">'+prefs.getMsg("powered").replace("%TAROT_LINK%",'<a href="http://www.tarot.com/go/igoogle/igoogle-astrosync-tarot" target="_blank" class="horoscope-tarot-com">'+prefs.getMsg("tarot_com")+"</a>")+"</span>";_gel("astrosync-intro").style.display="none";var b=prefs.getMsg("analysis_friends"),
+b=b.replace("%URL%",'<a href="http://www.tarot.com/go/igoogle/igoogle-as-birthchart" target="_blank"><b>').replace("%TAG%","</b></a>");_gel("analysis").innerHTML=b;_gel("astro-compatibility").innerHTML=prefs.getMsg("compatibility").replace("%DATE%",getDate());if(!a){displayCompatiblity(!1);_IG_AdjustIFrameHeight();return}}else if(_gel("enter-bday").style.display="none",!a){displayAstroSyncIntro();return}getAstrosyncData()}
+function displayAstroSyncIntro(){_gel(gTabId[1]).innerHTML=_gel("astrosync-intro").value;_gel("astrosync-data").innerHTML=prefs.getMsg("relationship_advice");_IG_AdjustIFrameHeight()}function getAstrosyncData(){var a=prefs.getString("uid"),b=new Date,c=getCurrentTime(b),d=getFormatedDate(b,!0),b=-b.getTimezoneOffset()/60,a="http://api.tarot.com/api/astrosync/timezone/"+b+"/date/"+d+"/time/"+c+"/type/xml?partner=igoogle&key=a9a51c94bbb165f9&uid="+a;requestAstrosyncData(a)}
+function parseUsersAstroData(a,b){clearTimeout(b);_gel("error-message").style.display="none";if(a)try{for(var c,d,e=a.getElementsByTagName("principal")[0].childNodes,f=0,g=e.length;f<g;f++)if(c=e[f],c.nodeType==1&&c.nodeName=="birthdate"){d=c.firstChild.nodeValue;break}var h=d.split("-");birthDateObj={day:h[2],month:h[1],year:h[0]};var i=a.getElementsByTagName("astrosync_response")[0].attributes.getNamedItem("id").value;signName=getSign(birthDateObj.month,birthDateObj.day);prefs.set("uid",i);isEnLang?
+getAstrosyncData():createTabs()}catch(j){showTryAgain()}else showTryAgain()}
+function showTryAgain(a){var b=['<div class="error">'];if(isOnLoad)b.push(prefs.getMsg("data_not_available"),'<a href="javascript:getAstrosyncData()">'),a="error-message",_gel(a).style.display="block";else if(horoTabs.getSelectedTab()){var c=horoTabs.getSelectedTab().getIndex();c==0?b.push(prefs.getMsg("data_not_available"),'<a href="javascript:displayHoroscope()">'):b.push(prefs.getMsg("friends_not_available"),'<a href="javascript:callbackAstroSync();">');a=a||gTabId[c]}else b.push(prefs.getMsg("data_not_available"),
+'<a href="javascript:getUsersData()">'),a="error-message",_gel(a).style.display="block";b.push(prefs.getMsg("try_again"),"</a></div>");_gel(a).innerHTML=b.join("");_IG_AdjustIFrameHeight()}
+function displayCard(a){if(a.motto&&a.name){var b=['<table cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td valign="top" style="width:90px" align="center">'];a.moreLink&&b.push('<a href="',_hesc(a.moreLink),'" target="_blank"><img border="0" height="80px" alt="',prefs.getMsg("personal_tarot_card"),'" title="',prefs.getMsg("personal_tarot_card"),'" src="',a.imgUrl,'"></a>');b.push('</td><td valign="top" class="add-background">');isEnLang||b.push('<div class="heading" style="margin:5px 0;">',
+prefs.getMsg("personal_tarot_card"),"</div>");b.push('<span style="font-weight:bold;">',_hesc(a.name),": </span>",_hesc(a.motto));a.deckUrl&&b.push("<div>",prefs.getMsg("deck"),' <a href="',_hesc(a.deckUrl),'" target="_blank">',_hesc(a.deck),"</a></div>");isEnLang&&b.push('<div style="padding:10px 0;"><span style="float:left;"><a href="http://www.google.com/ig/directory?hl=en&type=gadgets&url=hosting.gmodules.com/ig/gadgets/file/102182031357524058268/tarot.xml" target="_blank">',prefs.getMsg("get_igoogle_tarot_gadget"),
+'</a></span><span style="float:right;"><a href=" http://www.tarot.com/go/igoogle/igoogle-3-card" target="_blank">',prefs.getMsg("free_three_card"),"</a></span></div>");b.push("</td></tr></table>");_gel("personal-tarot-card-content").innerHTML=b.join("")}else _gel("personal-tarot-card-content").innerHTML=ERROR_TPL}
+function displayNumerology(a){var b=[];a.luckyNumber&&a.imgUrl&&a.content?(b=['<table cellspacing="0" cellpadding="0" border="0"><tr><td valign="top" style="padding-top:6px;" width="5%"><a href="http://www.numerology.com/?',a.dateOfBirth,'" target="_blank"><img border="0" width="75px" height="75px" alt="',prefs.getMsg("numerology")," ",a.luckyNumber,'" title="',prefs.getMsg("numerology")," ",a.luckyNumber,'"','class="horoscope-pic" align="left" src="',a.imgUrl,'"/></a></td><td class="numerology add-background"><b>',
+a.luckyNumber,":</b> ",_hesc(a.content)],b.push(' <div style="padding: 10px 0;"><span style="float:left;"><a href="http://www.numerology.com" target="_blank">',prefs.getMsg("more_from_numerology"),'</a></span><span style="float:right;"><a href="http://www.numerology.com/fun-and-games" target="_blank">',prefs.getMsg("free_numerology_tools"),"</a></span></div></td></tr></table>")):b=[ERROR_TPL];a=_gel("horoscope-number");a.style.paddingTop="5px";a.innerHTML=b.join("")}
+function displayFeaturedData(a){if(a.articleTitle&&a.subheader&&a.articleContent){var b=['<table><tr><td valign="top" style="padding-top:10px;" width="5%"><img class="horoscope-card" height="75px" width="78px" border="0" src="',a.articleImg,'" alt="',prefs.getMsg("featured_article"),'" title="',prefs.getMsg("featured_article"),'"/></td><td style="padding:6px 0 0 3px;"><div class="sentence-case">',a.articleTitle,'</div><div style="font-weight:bold;" class="sentence-case">',a.subheader,'</div><div style="padding-top:5px;">',
+'</div><div style="padding-top:3px;">',a.articleContent,"</div>"];a.moreUrl&&b.push('<a href="',a.moreUrl,'" target="_blank">',prefs.getMsg("more")," &raquo;</a>");b.push("</td></tr></table>");_gel("featured-article-content").innerHTML=b.join("")}else _gel("featured-article-content").innerHTML=ERROR_TPL}
+function displayWeeklyData(a,b){var c=['<div style="padding-top:10px;">'];a.completeDate&&c.push("<b>",prefs.getMsg("for_the_week").replace("%DATE%",a.completeDate),"</b></div><div>");if(a.authorLink&&a.author){var d=prefs.getMsg("by_author").replace("%AUTHOR_NAME%",'<a href="'+a.authorLink+'" target="_blank">'+a.author+"</a>");_gel("weekly-author").innerHTML=d}c.push("</div>");a.reading?c.push('<div style="padding-top:5px;">',_hesc(a.reading),"</div>"):c.push(ERROR_TPL);_gel("horoscope-weekly-reading").innerHTML=
+c.join("");_gel("weekly-title-block").style.paddingTop="15px";_gel("weekly-title-block").style.paddingBottom="10px"}
+function displayTarotData(a){a.date=a.date.replace(/-.*/,"").replace(/.*,/,"");var b=new Date(a.date),b=DAY_NAMES[b.getDay()]+", "+getDateInLocaleFormat(prefs.getMsg("date_format"),b),c=prefs.getMsg("dailyhoroscope_com_horoscope").replace("%SIGN_NAME%",SIGN_NAMES[signName]),d=isEnLang?"_sign.cache.png":".cache.png",e=isEnLang?"http://www.dailyhoroscope.com/horoscope-signs/":"http://www.tarot.com/go/google-ig/rss-horo-dailyhoroitem/?sign=",f=['<a target="_blank" href="',e,signName,'"><img class="horoscope-pic" align="left" src="http://www.gstatic.com/ig/modules/horoscope/',
+signName,d,'" title="',c,'" border="0" height="95px" width="75px" alt="',SIGN_NAMES[signName],'"></a>'],e="&nbsp;"+prefs.getMsg("by_author").replace("%AUTHOR_NAME%",'<a href="'+a.authorUrl+'" target="_blank">'+a.authorName+"</a>"),g=[];if(isCanvas)g=[],c="http://www.dailyhoroscope.com/?date=yesterday&sign="+SIGN_NAMES[signName]+"#daily-horoscopes",d="http://www.dailyhoroscope.com/?date=tomorrow&sign="+SIGN_NAMES[signName]+"#daily-horoscopes",a.yesterday&&a.today&&a.tomorrow&&g.push('<span><a href="',
+c,'" ','target="_blank">',prefs.getMsg("yesterday"),'</a>&nbsp;|&nbsp;<span style="font-weight:bold;">',prefs.getMsg("today"),'&nbsp;|&nbsp;<a href="',d,'" target="_blank">',prefs.getMsg("tomorrow"),"</a></span>"),a.reading?(g.push('<div style="padding-top:6px;"><span style="font-weight:bold;">',b,"</span>&nbsp;--&nbsp;"),g.push(_hesc(a.reading),"</div>")):g.push(ERROR_TPL),_gel("sign-image").innerHTML=f.join(""),_gel("horoscope-daily-reading").innerHTML=g.join(""),isEnLang?(_gel("by_author_link").innerHTML=
+e,a.cosmicLink?_gel("cosmic-link").href=a.cosmicLink:_gel("cosmic-link").innerHTML=""):displayAboutData();else if(f=isEnLang?"tpl-general-horoscope":"tpl-general-horoscope-non-en",f=document.getElementById(f).value,a={signName:signName,aboutText:prefs.getMsg(signName+"_news"),famousText:prefs.getMsg(signName+"_love"),signInfo:_hesc(a.reading),title:c,completeDate:b,byAuthor:e,signNumber:getSignNumber(),displayFriends:isEnLang?"":"none",signImg:signName+d,signNameTranslated:prefs.getMsg(signName)},
+_gel(gTabId[0]).innerHTML=f.supplant(a),isPreview)_gel("date").style.display="none";if(isEnLang){a=_gel("friends-list");a.options[0]=new Option(ownerDobObj.name,ownerDobObj.name);for(b=0;b<astroData.length&&astroData[b].name;b++)a.options[a.options.length]=new Option(astroData[b].name,astroData[b].name);a.selectedIndex=prefs.getInt("selectedFriend")}}
+function displayAboutData(){var a={capricorn:prefs.getMsg("earth"),aquarius:prefs.getMsg("air"),pisces:prefs.getMsg("water"),aries:prefs.getMsg("fire"),taurus:prefs.getMsg("earth"),gemini:prefs.getMsg("air"),cancer:prefs.getMsg("water"),leo:prefs.getMsg("fire"),virgo:prefs.getMsg("earth"),libra:prefs.getMsg("air"),scorpio:prefs.getMsg("water"),sagittarius:prefs.getMsg("fire")},b={capricorn:prefs.getMsg("cardinal"),aquarius:prefs.getMsg("fixed"),pisces:prefs.getMsg("mutable"),aries:prefs.getMsg("cardinal"),
+taurus:prefs.getMsg("fixed"),gemini:prefs.getMsg("mutable"),cancer:prefs.getMsg("cardinal"),leo:prefs.getMsg("fixed"),virgo:prefs.getMsg("mutable"),libra:prefs.getMsg("cardinal"),scorpio:prefs.getMsg("fixed"),sagittarius:prefs.getMsg("mutable")},c="http://gfx.tarot.com/images/astrology/zodiac_central/sign_glyphs/"+signName.toLowerCase()+"_glyph_15x15.gif",d="http://gfx.tarot.com/images/astrology/zodiac_central/sign_colors/"+signName.toLowerCase()+"_colors.gif",a='<div style="padding:5px 0;"><b>'+
+prefs.getMsg("astro_sync")+"&nbsp;"+SIGN_NAMES[signName]+'</b></div><table cellspacing="0" cellpadding="0" id="about-sign"><tr><td><b>'+prefs.getMsg("element")+"</b></td><td><b>"+prefs.getMsg("glyph")+"</b></td><td><b>"+prefs.getMsg("colors")+"</b></td><td><b>"+prefs.getMsg("quality")+'</b></td></tr><tr><td align="center">'+a[signName]+'</td><td align="center"><img src="'+c+'"></td><td align="center"><img src="'+d+'"></td><td align="center">'+b[signName]+"</td></tr></table>";_gel("other-signs").innerHTML=
+a}
+function extractTarot(a,b){var c={};try{var d=a.getElementsByTagName("daily_horoscope").item(0),e=getValue(d,"author_byline");c.authorName=e.replace(/.*com\'s\s/g,"");c.authorUrl=getValue(d,"author_url");var f=d.getElementsByTagName("links").item(0),g=f.getElementsByTagName("link").item(0),h=d.getElementsByTagName("sign_content"),i=h.item(b);c.cosmicLink=getValue(g,"link_url");c.reading=getValue(i,"interp");c.yesterday=getValue(i,"yesterday_url");c.today=getValue(i,"today_url");c.tomorrow=getValue(i,"tomorrow_url");
+c.date=getValue(a,"date");displayTarotData(c)}catch(j){isCanvas?(_gel("horosocope-main").innerHTML=ERROR_TPL,_IG_AdjustIFrameHeight()):_gel(gTabId[0]).innerHTML=ERROR_TPL}}
+function extractCardData(a){var b={};try{var c=a.getElementsByTagName("daily_card").item(0),d=c.getElementsByTagName("card").item(0);b.imgUrl=getValue(d,"img");b.motto=getValue(d,"motto");b.name=getValue(d,"name");b.deck=getValue(d,"deck_name");b.deckUrl=getValue(d,"deck_url");b.moreLink=getValue(d,"url");b.tarotText=getValue(c,"link_text");b.tarotLink=getValue(c,"link_url");displayCard(b)}catch(e){_gel("personal-tarot-card-content").innerHTML=ERROR_TPL}}
+function extractNumerology(a,b){var c={};try{var d=_gel("numerology-title");d.style.display="block";d.innerHTML='<div class="heading" style="clear:left;">'+prefs.getMsg("personal_number_day")+"</div>";var e=a.getElementsByTagName("daily_number").item(0),f=e.getElementsByTagName("personalized_content").item(0);c.imgUrl=getValue(f,"img");c.content=getValue(f,"interp");c.luckyNumber=getValue(f,"id");c.dateOfBirth="birth_date_month="+b.month+"&birth_date_day="+b.day+"&birth_date_year="+b.year;var g=e.getElementsByTagName("link").item(0);
+c.numerologyText=getValue(g,"upsell_link_copy");c.numerologyLink=getValue(g,"upsell_link_url");displayNumerology(c)}catch(h){_gel("horoscope-number").innerHTML=ERROR_TPL}}
+function extractWeeklyInfo(a,b){var c={};_gel("weekly-content-title").style.paddingTop="10px";try{var d=a.getElementsByTagName("weekly_horoscope").item(0),e=d.getElementsByTagName("sign_content"),f=d.getElementsByTagName("links").item(0),g=getValue(d,"week_of"),g=g.split("-");g[1]-=1;c.completeDate=MONTH_NAMES[g[1]].substring(0,3)+" "+g[2]+", "+g[0];c.signText=getValue(f,"sign_text");c.signLink=getValue(f,"sign_url");var h=e.item(b);c.reading=getValue(h,"interp");c.author=getValue(d,"author_byline").replace(/.*com\'s\s/g,
+"");c.authorLink=getValue(d,"author_url");displayWeeklyData(c,b)}catch(i){_gel("weekly-section").innerHTML=ERROR_TPL}}
+function extractChangingSky(a){_gel("changing-sky").style.paddingTop="10px";var b=['<div class="heading" style="padding:5px 0;">',prefs.getMsg("planets_today"),'</div><table cellpadding="1" cellspacing="1" border="0" style="padding-top:5px;width:100%;" class="add-background">'];try{var c=a.getElementsByTagName("astro_news_today")[0],d=c.getElementsByTagName("our_changing_sky")[0],e=d.getElementsByTagName("planet"),f=d.getElementsByTagName("link").item(0),g=getValue(f,"link_url"),a=[];if(e.length){for(var h,
+i,j,c=0,k=e.length;c<k;c++){h=getValue(e.item(c),"planet_name");a=[];i=h;for(d=0;d<3;d++)a.push(i.substr(0,i.indexOf(" "))," "),i=i.substring(i.indexOf(" ")+1);a=a.join("");j=getValue(e.item(c),"planet_url");b.push('<tr><td style="padding-right:5px;"><a href="',j,'" target="_blank">',a,"</a></td><td>",i,"</td></tr>")}b.push('<tr><td colspan="2" style="text-align:right;margin-right:5px;"><a href="',g,'" target="_blank">',prefs.getMsg("view_all"),"</a></td></tr>")}else b.push("<tr><td>",ERROR_TPL,"</td></tr>")}catch(l){b.push("<tr><td>",
+ERROR_TPL,"</td></tr>")}b.push("</table>");e=_gel("changing-sky-data");e.innerHTML=b.join("");e.style.width="325px"}function extractGeneralData(a){var b=_gel("general-data"),c={};try{var d=a.getElementsByTagName("personalized_content")[0],e=d.getElementsByTagName("sign_content")[0];c.imgUrl=getValue(e,"img");c.desc=getValue(e,"interp");displayGeneralData(c)}catch(f){b.innerHTML=ERROR_TPL}}
+function extractLinks(a){try{for(var b=a.getElementsByTagName("daily_horoscope")[0],c=b.getElementsByTagName("links")[0],d=c.getElementsByTagName("link"),a=[],e,b=0;b<d.length;b++)e=d[b].getElementsByTagName("link_url").item(0).firstChild.nodeValue,a.push(e);var f=prefs.getMsg("all_about").replace("%SIGN_NAME%",SIGN_NAMES[signName]),g=prefs.getMsg("famous").replace("%SIGN_NAME%",SIGN_NAMES[signName]),h='<div><span><a target="_blank" href="'+a[0]+'">'+f+'</a></span>&nbsp;&nbsp;|&nbsp;&nbsp;<span><a target="_blank" href="'+
+a[1]+'">'+g+"</a></span></div>";_gel("link-info").innerHTML=h}catch(i){}}
+function displayGeneralData(a){a='<table style="padding-top:6px;" cellpadding="0" cellspacing="0"><tr><td valign="top" width="5%"><img height="95px" width="75px" class="horoscope-pic" src="'+a.imgUrl+'"></td><td valign="top" class="add-background"><div class="heading">'+prefs.getMsg("horo_general")+"</div><div>"+a.desc+'</div><div id="other-signs-data"></div></td></tr></table>';_gel("general-data").innerHTML=a;var a=_gel("cosmic-tpl").value,b=supportsTarotFeed(),a=a.replace(/%LOCALE%/g,b?currentLang:
+"en");_gel("other-signs-data").innerHTML=a;_gel("cosmic-link").style.display="none"}function supportsTarotFeed(){return currentLang=="de"||currentLang=="fr"||currentLang=="es"||currentLang=="pt-br"?!0:!1}
+function extractArticles(a){var b={},c=_gel("articles-section");c.innerHTML='<div class="heading">'+prefs.getMsg("featured_article")+"</div>";c.style.paddingTop="10px";try{var d=a.getElementsByTagName("featured_article")[0],e=d.getElementsByTagName("article")[0],f=getValue(e,"header");b.articleTitle=f?"<b>"+f+":</b><br><br>":"";b.subheader=getValue(e,"subheader");b.articleImg=getValue(e,"img");b.articleContent=getValue(e,"copy");var g=d.getElementsByTagName("link")[0];b.moreUrl=getValue(g,"link_url");
+_gel("featured-article-main").style.width="325px";displayFeaturedData(b)}catch(h){_gel("featured-article-content").innerHTML=ERROR_TPL}}
+function extractAuthorBio(a){var b=_gel("author-box");b.style.display="";try{var c=a.getElementsByTagName("daily_horoscope")[0],d=getValue(c,"author_bio"),e=d.split("<br/>"),f=e[2].match(/<a.*/).join(""),f=f.replace("<a ",'<a target="_blank" '),g={authorName:e[0],heading:e[1],link:f,description:e[2].replace(/<a.*/,"")};displayAuthorData(g)}catch(h){b.innerHTML=ERROR_TPL}}
+function displayAuthorData(a){var b="/ig/modules/horoscope/horoscope_content/author.png",a='<div class="author-content"><table cellpadding="0" cellspacing="0" width="300px" style="margin:5px;"><tr><td valign="middle" style="font-weight:bold;" width="30%"><div>'+a.authorName+'</div></td><td align="right"><img style="height:100px;"src="'+b+'"></td></tr><tr><td colspan="2"><div style="font-weight:bold;">'+a.heading+"</div>"+a.description+'</td></tr><tr><td colspan="2" align="right">'+a.link+"</td></tr></table></div>";
+_gel("author-box").innerHTML=a}
+function createHoroscopeTemplate(a){_gel("enter-bday").style.display="none";var b=['<table width="100%" cellspacing="0" cellpadding="0" ','style="padding-top:6px;"><tr>'];if(isCanvas){_gel("tabs-container_0").style.backgroundColor="#fff";b.push('<td id="sign-image" width="5%"></td><td class="add-background">',_gel("dialy-horoscope-canvas").value,"</td></tr></table>");if(isEnLang){_gel(gTabId[0]).innerHTML=_gel("tarot-textarea").value;var c='<a target="_blank" href="http://www.dailyhoroscope.com/" style="font-weight:bold;font-size:13px;">'+prefs.getMsg("daily_horoscope_com")+
+"</a>";_gel("powered-by-horo").innerHTML=prefs.getMsg("powered_by").replace("%DOMAIN%",c)}else _gel(gTabId[0]).innerHTML=_gel("tarot-textarea-non-en").value;isEnLang?(a=a==0?ownerDobObj.name:astroData[a-1].name,a="<span>"+a+"</span>",_gel("daily-horoscope-title-canvas").innerHTML=prefs.getMsg("user_daily_horoscope").replace("%USER_NAME%",a)):_gel("daily-horoscope-title-row").innerHTML=prefs.getMsg("daily_horoscope").replace("%SIGN_NAME%",prefs.getMsg(signName+"_wd"));_gel("main-cell").innerHTML=b.join("");
+if(!isEnLang)_gel("view-another-horoscope").style.display="none"}}function setFrameSource(){var a="http://feeds.tarot.com/igoogle/intl_adzone1_",b=supportsTarotFeed();a+=(b?currentLang:"en_us")+".html";_gel("adv-data-frame").src=a}
+function parseTarotData(a,b){var c,d,e;b?(e=astroData[b-1].dob.split("-"),c=e[1],d=e[2],e=e[0]):isEnLang?(c=ownerDobObj.month,d=ownerDobObj.day,e=ownerDobObj.year):(c=a.getElementsByTagName("birthdate"),e=c[0].firstChild.nodeValue,c=e.substr(0,2),d=e.substr(2,2),e=e.substr(4));e={day:parseInt(d,10),month:parseInt(c,10),year:e};signName=getSign(c,d);c=prefs.getMsg("todays_horoscope_for").replace("%SIGN_NAME%",SIGN_NAMES[signName]);_IG_SetTitle(c);createHoroscopeTemplate(b);c=getSignNumber();extractTarot(a,
+c);if(isCanvas)_gel("main-section").style.display="block",extractCardData(a),setFrameSource(),isEnLang?(extractChangingSky(a),extractWeeklyInfo(a,c),extractNumerology(a,e),extractDealOfDay(),extractHeadlines()):(extractGeneralData(a),extractLinks(a),extractAuthorBio(a));_IG_AdjustIFrameHeight()}
+function extractDealOfDay(){var a="http://feeds.tarot.com/f/ws/coupon/?partner=igoogle&key=a9a51c94bbb165f9&type=xml",b=setTimeout(function(){_gel("deal-of-day-content").innerHTML='<div class="error">'+prefs.getMsg("data_not_available")+'<a href="javascript:extractDealOfDay()">'+prefs.getMsg("try_again")+"</a></div>"},1E4);_IG_FetchXmlContent(a,function(a){clearTimeout(b);try{parseDealofDay(a)}catch(d){_gel("deal-of-day-content").innerHTML=ERROR_TPL,_IG_AdjustIFrameHeight()}},{refreshInterval:600})}
+function extractHeadlines(){_gel("head-box").style.display="";var a="http://feeds.tarot.com/f/ws/horoscopeheadlines?partner=igoogle&key=a9a51c94bbb165f9&type=xml",b=setTimeout(function(){_gel("head-box").innerHTML='<div class="error">'+prefs.getMsg("data_not_available")+'<a href="javascript:extractHeadlines()">'+prefs.getMsg("try_again")+"</a></div>"},1E4);_IG_FetchXmlContent(a,function(a){clearTimeout(b);try{parseHeadLines(a)}catch(d){_gel("head-box").innerHTML=ERROR_TPL,_IG_AdjustIFrameHeight()}},
+{refreshInterval:600})}
+function showHeadLines(a,b){_gel("head-box").innerHTML=_gel("tpl-headline").value;for(var c=[],d=0,e=a.length;d<e;d++){c.push("<tr>");if(d==0){var f=a[d].teaser?a[d].teaser:"";c.push('<td style="width:65px;vertical-align:top;"><img class="horoscope-pic" style="height:65px;width:65px;" src="',a[d].image,'"/></td><td><div>',b,'</div><a target="_blank" href="',a[d].link,'">',_hesc(a[d].title),"</a><div>",_hesc(f),"</div></td>")}else c.push('<td colspan="2"><a href="',a[d].link,'" target="_blank">',_hesc(a[d].title),
+"</a></td>");c.push("</tr>")}_gel("headlines-list").innerHTML=c.join("")}function parseHeadLines(a){for(var b,c=[],d=a.getElementsByTagName("result")[0].childNodes,e=getValue(a,"date"),f=0,g=d.length;f<g;f++)if(b={},a=d[f],a.nodeType==1&&a.tagName=="item")b.title=getValue(a,"title"),b.teaser=getValue(a,"teaser"),b.link=getValue(a,"link"),b.image=getValue(a,"image"),c.push(b);showHeadLines(c,e)}
+function parseDealofDay(a){var a=a.getElementsByTagName("item").item(0),b=getValue(a,"dollar_discount_pct"),a={img_link:getValue(a,"image"),src_link:getValue(a,"url"),title_link:getValue(a,"link"),content:getValue(a,"content"),title:prefs.getMsg("save_discount").replace("%DISCOUNT%",b)},b=_gel("tpl-deal-of-day").value;_gel("deal-of-day-content").innerHTML=b.supplant(a);_IG_AdjustIFrameHeight()}
+function getTarotData(a){var b=new Date,c=-b.getTimezoneOffset()/60,d=prefs.getString("uid"),e=isEnLang?"http://feeds.tarot.com/f/ws/dh/igoogledh/locale/":"http://feeds.tarot.com/f/ws/igoogleas/locale/";e+=currentLang+"/timezone/"+c;a?(c=astroData[a-1].dob.split("-"),e+="/birthday/"+c[1]+c[2]+c[0]):e+="/uid/"+d;e+="?partner=igoogle&key=a9a51c94bbb165f9&type=xml&time="+b.getTime();var f=setTimeout(function(){showTryAgain(gTabId[0])},1E4);_IG_FetchXmlContent(e,function(b){clearTimeout(f);try{b?parseTarotData(b,
+a):showTryAgain(gTabId[0])}catch(c){_gel(gTabId[0]).innerHTML=prefs.getMsg("horoscope_not_found"),_IG_AdjustIFrameHeight()}},{refreshInterval:600})}function displayHoroscope(){var a=horoTabs.getHeaderContainer();a.style.display="";_gel(gTabId[0]).innerHTML=LOADING_TPL;a=isEnLang?prefs.getInt("selectedFriend"):0;getTarotData(a)}
+function saveEditedDetails(){var a=!0,b=!0,c=_gel("horoscope-day").value,d=_gel("month").value,e=_gel("horoscope-year").value,f=_gel("horoscope-name").value.replace(/^\s*/,"").replace(/\s*$/,"");f!=ownerDobObj.name&&(a=!1);c=c.length==1?"0"+c:c;d=d.length==1?"0"+d:d;if(c!=ownerDobObj.day||d!=ownerDobObj.month||e!=ownerDobObj.year)b=!1;a&&b?hideSelfEdit():(isEdited=!0,saveBirthday())}
+function saveBirthday(){var a=_gel("horoscope-day").value,b=_gel("month").value,c=_gel("horoscope-year").value,d=_gel("horoscope-name").value.replace(/^\s*/,"").replace(/\s*$/,""),e=_gel("error");birthDateObj={day:a.length==1?"0"+a:a,month:b.length==1?"0"+b:b,year:c,name:_esc(d)};a=doValidation(d,a,b,c);a==ValidationResults.INVALID_NAME?(e.innerHTML=prefs.getMsg("invalid_name_empty"),getFocus("horoscope-name"),gadgets.window.adjustHeight()):a==ValidationResults.INVALID_DAY?(e.innerHTML=prefs.getMsg("invalid_date"),
+getFocus("horoscope-day"),_IG_AdjustIFrameHeight()):a==ValidationResults.INVALID_YEAR?(e.innerHTML=prefs.getMsg("invalid_year"),getFocus("horoscope-year"),_IG_AdjustIFrameHeight()):(_gel("enter-bday").style.display="none",document.getElementById("main-content").style.display="",prefs.set("selectedTab",0),prefs.set("selectedFriend",0),getUsersData())}
+function saveFriendDob(){var a=_gel("frnd-horoscope-name").value,b=_gel("frnd-horoscope-day").value,c=_gel("frnd-month").value,d=_gel("frnd-horoscope-year").value,e=_gel("frnd-error"),f=doValidation(a,b,c,d);f==ValidationResults.INVALID_DAY?(e.innerHTML=prefs.getMsg("invalid_date"),getFocus("horoscope-day"),gadgets.window.adjustHeight()):f==ValidationResults.INVALID_YEAR?(e.innerHTML=prefs.getMsg("invalid_year"),getFocus("horoscope-year"),gadgets.window.adjustHeight()):f==ValidationResults.INVALID_NAME?
+(e.innerHTML=prefs.getMsg("invalid_name_empty"),getFocus("horoscope-name"),gadgets.window.adjustHeight()):(e=document.getElementsByName("friend_gender"),e=e[0].checked?prefs.getMsg("male_data"):prefs.getMsg("female_data"),f=document.getElementById("frnd-relation"),c=c<10?"0"+c:c,b=b<10?"0"+b:b,a={name:a,dob:d+"-"+c+"-"+b,relationType:f.options[f.selectedIndex].value.toLowerCase(),gender:e,frndUid:d+c+b+"id"},createCompatibilityUrl(a),hideAddFriendBirthdayBlock())}
+function showAddFriendBlock(a){document.getElementById("main-content").style.display="none";document.getElementById("add-friend-bday").style.display="";document.getElementById("add-friend-bday").innerHTML=document.getElementById("tpl-enter-friend-birthday").value;document.getElementById("frnd-horoscope-name").focus();gadgets.window.adjustHeight()}
+function hideAddFriendBirthdayBlock(){document.getElementById("main-content").style.display="";document.getElementById("add-friend-bday").style.display="none";gadgets.window.adjustHeight()}function deleteFriend(a){prefs.set("selectedFriend",0);astroData.splice(a,1);createCompatibilityUrl()}function displaySettings(){document.getElementById(gTabId[2]).innerHTML=document.getElementById("my-friends").value;showAddedFriends()}
+function showAddedFriends(){var a=[],b,c,d;d=b="";var e;ownerDobObj.month&&(d=ownerDobObj.month<10?ownerDobObj.month.replace("0",""):ownerDobObj.month,b=MONTH_NAMES[d-1].substring(0,3)+"&nbsp;"+ownerDobObj.day+",&nbsp;"+ownerDobObj.year);a.push('<table style="width:100%" cellspacing="0" cellpadding="0">');a.push('<tr style="background-color:#dacde0;" title="',b,'"><td id="settings-owner-name"><b>',wrapText(ownerDobObj.name),"</b></td><td>"+prefs.getMsg("self")+'</td><td style="text-align:right;">',
+'<img title="',prefs.getMsg("edit"),'" class="edit-icon" src="http://www.google.com/c.gif" onclick="editSelf()"></td></tr>');if(astroData.length&&astroData[0].name){for(var f=0;f<astroData.length;f++)d=astroData[f].fullDob,astroData[f].name&&(c=wrapText(astroData[f].name),e=astroData[f].relationType==prefs.getMsg("friend").toLowerCase()?prefs.getMsg("friend_family"):astroData[f].relationType,b=f%2==0?"#ede4f1;":"#dacde0;",a.push('<tr style="background-color:',b,'" title="',d,'"><td>',c,"</td><td>"+
+e+'</td><td style="text-align:right;">','<img title="',prefs.getMsg("delete_friend"),'" class="delete-icon" src="http://www.google.com/c.gif" onclick="deleteFriend(',f,')"></td></tr>'));document.getElementById("add-more-friends-link").style.display=astroData.length>=5?"none":"";a.push("</table>")}else a.push("</table>",_gel("tpl-no-friends-added").value),document.getElementById("add-more-friends-link").style.display="none";document.getElementById("my-friends-list").innerHTML=a.join("");gadgets.window.adjustHeight()}
+function editSelf(){document.getElementById("main-content").style.display="none";document.getElementById("enter-bday").style.display="";document.getElementById("btn-edit-row").style.display="";document.getElementById("friend-loss-msg").style.display="";document.getElementById("btn-ok").style.display="none";document.getElementById("error").innerHTML="";document.getElementById("horoscope-name").focus();document.enterbday.action="javascript:saveEditedDetails();";document.getElementById("horoscope-name").value=
+ownerDobObj.name;document.getElementById("horoscope-day").value=ownerDobObj.day;document.getElementById("month").selectedIndex=ownerDobObj.month-1;document.getElementById("horoscope-year").value=ownerDobObj.year;gadgets.window.adjustHeight()}function hideSelfEdit(){document.getElementById("main-content").style.display="";document.getElementById("enter-bday").style.display="none";_IG_AdjustIFrameHeight()}
+function redierectAnotherHoroscope(a){a!=prefs.getMsg("choose_another_sign")?(a="http://www.dailyhoroscope.com/?date=today&sign="+a.toLowerCase()+"#daily-horoscopes",_gel("another-dialy-horoscope").href=a,_gel("another-dialy-horoscope").target="_blank"):(_gel("another-dialy-horoscope").href="javascript:void(0);",_gel("another-dialy-horoscope").target="")}
+function redierectWeeklyHoroscope(a){if(a!=prefs.getMsg("choose_another_sign")){var b="http://www.dailyhoroscope.com/love-horoscopes/this-week/";_gel("weekly-horoscope").href=b+a.toLowerCase();_gel("weekly-horoscope").target="_blank"}else _gel("weekly-horoscope").href="javascript:void(0);",_gel("weekly-horoscope").target=""}
+function callbackTab(a){var b=horoTabs.getSelectedTab().getIndex();gTabId[b]=a;switch(b){case 0:displayHoroscope();prefs.getInt("selectedTab")!=0&&prefs.set("selectedTab",0);break;case 1:callbackAstroSync();prefs.set("selectedTab",1);break;case 2:displaySettings(),prefs.set("selectedTab",2)}}
+function init(){var a=_args();currentLang=a.lang;currentLang=="en"&&(isEnLang=!0);horoTabs=new _IG_Tabs(null,0,_gel("tabs-container"));(a=prefs.getString("uid"))?isEnLang?getAstrosyncData():createTabs():(_gel("enter-bday").style.display="block",_gel("horoscope-name").focus(),_IG_AdjustIFrameHeight())}
+function createTabs(){_gel("error-message").style.display="none";var a=prefs.getInt("selectedTab");horoTabs.addDynamicTab(prefs.getMsg("my_horo"),callbackTab);isEnLang&&(horoTabs.addDynamicTab(prefs.getMsg("compatibility_tab"),callbackTab),horoTabs.addDynamicTab(prefs.getMsg("settings"),callbackTab));horoTabs.setSelectedTab(a);a=horoTabs.getHeaderContainer();a=a.firstChild;a=a.firstChild;a=a.lastChild;a.className="tablib_emptyTab_custom";a.innerHTML="&nbsp;"}_IG_RegisterOnloadHandler(init);</script>
+<div id=main-content><div id=tabs-container></div></div>
+<textarea id=hidden-area style=display:none;></textarea>
+<div id=error-message style=display:none;></div>
+<div class=horoscope-bday id=enter-bday style=display:none;padding:5px;>
+<form action=javascript:saveBirthday(); name=enterbday style=margin:0;padding:0;>
+__MSG_enter_dob__<br>
+<img alt="__MSG_everyone__" class=horoscope-bday-pic src=http://www.gstatic.com/ig/modules/horoscope/everyone_all.cache.png title="__MSG_everyone__">
+<table id=horoscope-bday-table style=padding-top:12px;>
+<tr>
+<td class=capitalize-text>__MSG_name__</td>
+<td>
+<input id=horoscope-name maxlength=30 style=width:120px;>
+</td>
+<tr>
+<td class=capitalize-text>__MSG_day__</td>
+<td>
+<input id=horoscope-day maxlength=2 style=width:27px;>
+</td>
+<tr>
+<td class=capitalize-text style=padding-right:6px;>
+__MSG_month__
+</td>
+<td>
+<select id=month>
+<option value=1>__MSG_january__
+<option value=2>__MSG_february__
+<option value=3>__MSG_march__
+<option value=4>__MSG_april__
+<option value=5>__MSG_may__
+<option value=6>__MSG_june__
+<option value=7>__MSG_july__
+<option value=8>__MSG_august__
+<option value=9>__MSG_september__
+<option value=10>__MSG_october__
+<option value=11>__MSG_november__
+<option value=12>__MSG_december__
+</select>
+</td>
+<tr>
+<td class=capitalize-text>__MSG_year__</td>
+<td>
+<input id=horoscope-year maxlength=4 style=width:53px; />
+<input id=btn-ok type=submit value="__MSG_ok__" />
+</td>
+<tr id=btn-edit-row style=display:none;>
+<td colspan=2>
+<input id=btn-ok type=submit value="__MSG_ok__" />
+<input onclick=hideSelfEdit(); type=button value="__MSG_cancel__" />
+</td>
+<tr>
+<td align=center colspan=2>
+<div id=error style=color:#f00;></div>
+</td>
+</table>
+<div id=friend-loss-msg style=display:none;>__MSG_friends_loss_note__</div>
+</div>
+</form>
+<div id=add-friend-bday style=display:none;padding:5px;></div>
+<textarea id=tarot-textarea style=display:none;>
+  <div id="main-section">
+    <table cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td id="horoscope-title" style="padding-top:5px;">
+          <div>
+            <b>__MSG_daily_horoscope_for__</b>&nbsp;&nbsp;
+            <select id="friends-list" onchange="showSelectedFriendData(this.selectedIndex)">
+            </select>
+          </div>
+          <div id="daily-horoscope-title">
+            <span class="heading" id="daily-horoscope-title-canvas"></span>
+            <nobr><span id="by_author_link"></span></nobr>
+          </div>
+        </td>
+        <td class="powered_by_row">
+          <div>
+            <span class="powered" id="powered-by-horo">
+              __MSG_powered_by__
+            </span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <div id="horosocope-main" valign="top" width="100%">
+            <div id="main-cell"></div>
+          </div>
+
+          <div valign="top">
+            <table width="100%" cellspacing="0" cellpadding="0">
+              <tr>
+                <td colspan="2">
+                  <div id="weekly-title-block">
+                    <span id="weekly-content-title" class="heading">__MSG_weekly_horoscope_title__&nbsp;</span>
+                    <span id="weekly-author"></span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td id="pic" valign="top" width="90px"></td>
+                <td  class="reading add-background" valign="top">
+                    <div id="horoscope-weekly-reading"></div>
+                    <div style="padding-top:10px;">
+                      <span>
+                        <span style="font-weight:bold">__MSG_view_another_horoscope__</span>
+                        <select onchange="redierectWeeklyHoroscope(this.value)">
+                          <option>__MSG_choose_another_sign__</option>
+                          <option value="aries">__MSG_aries__</option>
+                          <option value="taurus">__MSG_taurus__</option>
+                          <option value="gemini">__MSG_gemini__</option>
+                          <option value="cancer">__MSG_cancer__</option>
+                          <option value="leo">__MSG_leo__</option>
+                          <option value="virgo">__MSG_virgo__</option>
+                          <option value="libra">__MSG_libra__</option>
+                          <option value="scorpio">__MSG_scorpio__</option>
+                          <option value="sagittarius">__MSG_sagittarius__</option>
+                          <option value="capricorn">__MSG_capricorn__</option>
+                          <option value="aquarius">__MSG_aquarius__</option>
+                          <option value="pisces">__MSG_pisces__</option>
+                        </select>&nbsp;&nbsp;
+                        <a href="javascript:void(0);" id="weekly-horoscope" style="text-decoration:none;color:#000;">
+                          <input type="button" value="__MSG_check__" onclick="">
+                        </a>
+                      </span>
+                      <span style="float:right;padding-top:7px;">
+                        <a href="http://www.dailyhoroscope.com/love-horoscopes/this-weekend" target="_blank">__MSG_get_weekend_love_scopes__</a>
+                      </span>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="numerology-title"></div>
+          <div id="horoscope-number" class="reading" valign="top"></div>
+
+          <div id="personal-tarot-card" style="padding-top:10px;">
+            <div class="heading" style="padding:5px 0">__MSG_personal_tarot_card__</div>
+            <div id="personal-tarot-card-content"></div>
+          </div>
+
+          <!-- Deal of the day block. -->
+          <div style="padding-top:10px;">
+            <div class="heading" style="padding:5px 0">__MSG_deal_of_day__</div>
+            <div id="deal-of-day-content"></div>
+          </div>
+
+        </td>
+
+        <td valign="top" width="325px">
+
+          <div style="padding:6px 0 0 0;" id="horosocope-headlines">
+            <div id="head-box" class="blue-box" style="display:none;"></div>
+            <div id="author-box" class="blue-box" style="width:325px;" style="display:none;"></div>
+          </div>
+
+
+          <!--  Html for advertisement  -->
+            <div id="addvertisement">
+            <div class="advertisement-label">__MSG_advertisement__</div>
+            <div id="adv-data">
+            <iframe style= "margin-left:8px;" width="300" height="265" frameborder="0" scrolling="no" id="adv-data-frame">
+            </iframe>
+            </div>
+            </div>
+          <!-- End of advertisement -->
+
+          <div id="featured-article-main" valign="top">
+            <div id="featured-article">
+              <div id="articles-section"></div>
+              <div id="featured-article-content" style="padding-left:0;"></div>
+            </div>
+          </div>
+
+          <div id="changing-sky" valign="top">
+            <div id="changing-sky-data" style="padding-left:0;"></div>
+          </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+</textarea>
+<textarea id=tpl-deal-of-day style=display:none;>
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td width="5%" valign="top" style="padding-top:6px;">
+        <a target="_blank" href="{src_link}">
+          <img width="75px" height="75px" border="0" align="left" src="{img_link}" class="horoscope-pic">
+        </a>
+      </td>
+      <td style="vertical-align:middle;">
+        <a href="{title_link}" target="_blank" class="capitalize-text">{title}</a>
+        <div style="padding:10px 0;">{content}</div>
+      </td>
+    </tr>
+  </table>
+</textarea>
+<textarea id=tarot-textarea-non-en style=display:none;>
+  <div id="main-section">
+    <div id="header-links">
+      <span style="color:#586d7e;vertical-align:top;">__MSG_follow_on_us__</span>&nbsp;
+      <span><img src="/ig/modules/horoscope/horoscope_content/facebook.png" /> <a href="http://www.tarot.com/go/igoogle/igoogle-intl-fb" target="_blank">__MSG_facebook__</a></span>
+      <span><img src="/ig/modules/horoscope/horoscope_content/myspace.png"/> <a href="http://www.tarot.com/go/igoogle/igoogle-intl-mysp" target="_blank">__MSG_myspace__</a></span>
+      <span><img src="/ig/modules/horoscope/horoscope_content/twitter.png"/> <a href="http://www.tarot.com/go/igoogle/igoogle-intl-twt" target="_blank">__MSG_twitter__</a></span>
+    </div>
+    <table cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td valign="top" width="100%">
+          <div id="horosocope-main" valign="top" width="100%">
+          <div style="font-weight:bold;display:none;">__MSG_title__</div>
+          <div class="heading" style="float:none;" id="daily-horoscope-title-row">
+            <span class="heading" id="daily-horoscope-title-canvas"></span>
+            <nobr><span id="by_author_link"></span></nobr>
+          </div>
+            <div id="main-cell"></div>
+          </div>
+
+          <div id="general-data"></div>
+
+          <div id="personal-tarot-card" style="padding-top:10px;">
+
+          <div id="personal-tarot-card-content"></div>
+        </td>
+        <td valign="top" width="325px;">
+          <table cellspacing="0" cellpadding="0"><tr>
+          <td align="right" id="powered-by">
+          </td>
+          <td>
+            <div id="tarot-logo" style="text-align:right;"></div>
+          </td>
+          </tr>
+          </table>
+
+          <div style="padding:15px 0 0 0;" id="horosocope-headlines">
+            <div id="head-box" class="blue-box" style="display:none;"></div>
+            <div id="author-box" class="blue-box" style="width:325px;" style="display:none;"></div>
+            </div>
+          </div>
+
+          <!--  Html for advertisement  -->
+            <div id="addvertisement" style="width:325px;">
+              <div class="advertisement-label">__MSG_advertisement__</div>
+              <div id="adv-data">
+                <iframe style= "margin-left:8px;"  width="300px" height="265px" frameborder="0" scrolling="no" id="adv-data-frame"></iframe>
+              </div>
+            </div>
+          <!-- End of advertisement -->
+        </td>
+      </tr>
+    </table>
+  </div>
+</textarea>
+<textarea id=astrosync-intro style=display:none;>
+  <div align="left">
+    <img width="247px" height="74px" border="0" title="__MSG_astro_sync__" alt="__MSG_astro_sync__" src="http://www.gstatic.com/ig/modules/horoscope/astrosync-hdr-sm_home.cache.png">
+  </div>
+  <div style="padding-top:5px;" class="heading">__MSG_astrosync_head_new__</div>
+  <div style="padding-top:5px;" class="heading">__MSG_track_your_friend_compatibility__</div>
+  <div id="astrosync-data">__MSG_astrosync_data__</div>
+  <div class="astro-track"><b>__MSG_astrosync_track__</b></div>
+  <div class="get-started">
+    <span onclick="showAddFriendBlock();" class="add-friend-link">
+      <nobr>__MSG_get_started__&nbsp;&raquo;</nobr>
+    </span>
+  </div>
+</textarea>
+<textarea id=astrosync-canvas style=display:none;>
+  <div>
+    <table cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td width="88%" style="padding-right:25px;" valign="top">
+          <a href="http://www.tarot.com/go/igoogle/igoogle-as-image" target="_blank">
+            <img border="0" alt="__MSG_astro_sync__" title="__MSG_astro_sync__"
+                 src="http://www.gstatic.com/ig/modules/horoscope/astrosync-hdr_canvas.cache.png"
+                 style="padding-bottom:12px;" />
+          </a>
+          <div style="padding-top:10px;" class="heading">__MSG_your_astro__</div>
+          <div style="padding:6px 0;" id="analysis">__MSG_your_astro__</div>
+          <table cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td align="left" id="astro-compatibility">
+                </td>
+                <td style="text-align:right;">
+                  <a href="http://www.tarot.com/go/igoogle/igoogle-as-about" target="_blank">
+                    __MSG_astro_sync__
+                  </a>
+                </td>
+              </tr>
+            </table>
+          <div id="horoscope-friends"></div>
+        </td>
+        <td style="width:241px;" valign="top">
+          <div class="tarot-link" id="powered-by-astro"></div>
+          <div style="height:10px;width:241px"></div>
+          <div id="how_it_works" class="astrosync-details blue-box" style="display:none">
+            <div style="padding-left:8px;" class="heading">
+              __MSG_how_it__
+            </div>
+            <div style="padding-left:8px;text-align:center;">
+              <img src="http://www.gstatic.com/ig/modules/horoscope/astro-people-diagram_canvas.cache.png"
+                   border="0" alt="__MSG_people_diagram__" title="__MSG_people_diagram__"/>
+            </div>
+            <div style="padding-left:8px;font-size:12px;" id="how_it_works_desc">
+            </div>
+            <div style="padding-left:8px;padding-top:5px;">
+              <table>
+              <tr><td><b>__MSG_planet__</b></td><td style="padding-left:10px;"><b>__MSG_area_of_influence__</b></td></tr>
+              <tr><td>__MSG_moon__</td><td style="padding-left:10px;">__MSG_emotions__</td></tr>
+              <tr><td>__MSG_mercury__</td><td style="padding-left:10px;">__MSG_communicating__</td></tr>
+              <tr><td>__MSG_venus__</td><td style="padding-left:10px;">__MSG_attracting__</td></tr>
+              <tr><td>__MSG_mars__</td><td style="padding-left:10px;">__MSG_asserting__</td></tr>
+              </table>
+            </div>
+            <div style="text-align:right;padding-top:5px;">
+              <a href="http://www.tarot.com/go/igoogle/igoogle-as-about" target="_blank"/>
+                __MSG_more_about__ &raquo;
+              </a>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</textarea>
+<textarea id=astroSync-invite style=display:none;>
+  <div class="heading" style="padding:5px 0 5px 2px;">
+    __MSG_astrosync_head_new__
+  </div>
+  <div style="padding-left:2px;" align="left">
+    __MSG_astro_sub_title__
+  </div>
+  <div id="add-friend-logo">
+    <img src="http://www.gstatic.com/ig/modules/horoscope/img.png" title="__MSG_astrosync_head_new__" alt="__MSG_astrosync_head_new__">
+  </div>
+  <div id="add-friend-home"></div>
+</textarea>
+<! -- --Astrosync section>
+<textarea id=astrosync-section style=display:none;>
+  <img width="123px" height="25px" border="0" title="__MSG_astro_sync__" alt="__MSG_astro_sync__" src="http://www.gstatic.com/ig/modules/horoscope/astrosync-logo-123x25_home.cache.png">
+  <div class="heading"  style="padding-top:10px;">%CURRENT_CMP%</div>
+  <div id="astro-date"></div>
+  <table cellpadding="0" cellspacing="0">
+    <tr>
+      <td valign="top">
+        <img src="%ASTRO_IMG%" width="101px" height="96px" border="0" alt="%ASTRO_CMP%" title="%ASTRO_CMP%"/>
+      </td>
+      <td valign="top">
+        <div style="padding-bottom:2px;" class="heading" title="%ASTRO_DOB%">%ASTRO_NAME%</div>
+        <div style="font-size:12px;">%ASTRO_DESC%</div>
+
+      </td>
+    </tr>
+  </table>
+  <div style="padding-top:5px;">
+    <span>
+      <a href="http://www.tarot.com/go/igoogle/igoogle-astrosync-tarot" target="_blank">
+        %MORE_TAROT%
+      </a>
+    </span>
+    <span style="float:right;" id="see_top_relationships" class="add-friend-link" onclick="setView('canvas');">
+      %ASTRO_DASH%&nbsp;&raquo
+    </span>
+  </div>
+</textarea>
+<! -- --End astrosync of section>
+<div id=add-friend style=display:none;></div>
+<textarea id=cosmic-tpl style=display:none;>
+  <table cellspacing="0" cellpadding="0">
+    <tr>
+      <td style="padding-top:5px;" align="left">
+        <b>__MSG_read_different_signs__</b>
+      </td>
+    </tr>
+    <tr>
+      <td align="left" style="padding-top:5px;">
+        <a href="http://www.tarot.com/go/igoogle/igoogle-%LOCALE%-aries" target="_blank">
+          __MSG_aries__</a>&nbsp;|&nbsp;
+        <a href="http://www.tarot.com/go/igoogle/igoogle-%LOCALE%-taurus/" target="_blank">
+          __MSG_taurus__</a>&nbsp;|&nbsp;
+        <a href="http://www.tarot.com/go/igoogle/igoogle-%LOCALE%-gemini/" target="_blank">
+          __MSG_gemini__</a>&nbsp;|&nbsp;
+        <a href="http://www.tarot.com/go/igoogle/igoogle-%LOCALE%-cancer/" target="_blank">
+          __MSG_cancer__</a>&nbsp;|&nbsp;
+        <a href="http://www.tarot.com/go/igoogle/igoogle-%LOCALE%-leo/" target="_blank">
+          __MSG_leo__</a>&nbsp;|&nbsp;
+        <a href="http://www.tarot.com/go/igoogle/igoogle-%LOCALE%-virgo/" target="_blank">
+          __MSG_virgo__</a>&nbsp;|&nbsp;
+        <a href="http://www.tarot.com/go/igoogle/igoogle-%LOCALE%-libra/" target="_blank">
+          __MSG_libra__</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="left">
+        <a href="http://www.tarot.com/go/igoogle/igoogle-%LOCALE%-scorpio" target="_blank">
+          __MSG_scorpio__</a>&nbsp;|&nbsp;
+        <a href="http://www.tarot.com/go/igoogle/igoogle-%LOCALE%-sagittarius/" target="_blank">
+          __MSG_sagittarius__</a>&nbsp;|&nbsp;
+        <a href="http://www.tarot.com/go/igoogle/igoogle-%LOCALE%-capricorn/" target="_blank">
+          __MSG_capricorn__</a>&nbsp;|&nbsp;
+        <a href="http://www.tarot.com/go/igoogle/igoogle-%LOCALE%-aquarius/" target="_blank">
+          __MSG_aquarius__</a>&nbsp;|&nbsp;
+        <a href="http://www.tarot.com/go/igoogle/igoogle-%LOCALE%-pisces/" target="_blank">
+          __MSG_pisces__</a>
+      </td>
+    </tr>
+  </table>
+</textarea>
+<textarea id=edit-suggested-friend style=display:none;>
+  <form onsubmit="addFriend(this); return false;" style="margin:0;padding:0;">
+  <div class="blue-box" style="height:260px;">
+    <div style="padding-left:15px;font-weight:bold;" align="left">
+    <div style="padding-top:10px;font-size:14px;">__MSG_add_relation__</div>
+      <table align="left" cellpadding="0" cellspacing="0">
+        <tr>
+          <td valign="top" style="padding-top:3px;">
+            <div style="font-weight:bold;font-size:12px;">__MSG_name__</div>
+            <div><input type="text" style="width:190px;" id="addname" name="addname" autocomplete="off"></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top:3px;">
+            <table cellpadding="0" cellspacing="0">
+              <tr>
+                <td align="left">
+                  <div style="font-weight:bold;font-size:12px;">__MSG_gender__</div>
+                  <div style="width:70px;font-size:12px;">
+                    <input type="radio" name="gender" id="gender" value="__MSG_male__" checked>__MSG_male__
+                    <input type="radio" name="gender" value="__MSG_female__">__MSG_female__
+                  </div>
+                </td>
+                <td>
+                  <div style="font-weight:bold;font-size:12px;">__MSG_relation__</div>
+                  <div>
+                    <select id="relation" style="width:120px;">
+                      <option value="__MSG_friend__">__MSG_friend_family__</option>
+                      <option value="__MSG_romantic__">__MSG_romantic__</option>
+                      <option value="__MSG_coworker__">__MSG_coworker__</option>
+                    </select>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top:3px;">
+            <span style="font-weight:bold;font-size:12px;">__MSG_birthdate__</span>
+            <table cellspacing="0" callpadding="0" width="100%">
+              <tr>
+                <td width="10%" style="font-size:12px;text-transform:capitalize;">__MSG_day__</td>
+                <td><input type="text" style="width:30px;text-transform:capitalize;" maxlength="2" id="day"></td>
+              </tr>
+              <tr>
+                <td style="font-size:12px;text-transform:capitalize;">__MSG_month__&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                  <select style="width:105px;" id="month">
+                    <option value="1">__MSG_january__</option>
+                    <option value="2">__MSG_february__</option>
+                    <option value="3">__MSG_march__</option>
+                    <option value="4">__MSG_april__</option>
+                    <option value="5">__MSG_may__</option>
+                    <option value="6">__MSG_june__</option>
+                    <option value="7">__MSG_july__</option>
+                    <option value="8">__MSG_august__</option>
+                    <option value="9">__MSG_september__</option>
+                    <option value="10">__MSG_october__</option>
+                    <option value="11">__MSG_november__</option>
+                    <option value="12">__MSG_december__</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-size:12px;text-transform:capitalize;">__MSG_year__</td>
+                <td><input type="text" style="width:50px;" id="year" maxlength="4"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left:45px;padding-top:10px;" id="button-row">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <div id="error-msg" style="color:#c00;"></div>
+          </td>
+        </tr>
+      </table>
+  </div>
+  </div>
+</form>
+</textarea>
+<textarea id=my-friends style=display:none;>
+  <div id="my-friend-list-block">
+    <div id="my-friends-list"></div>
+    <div style="padding:10px 10px 0 10px;">
+      <span id="add-more-friends-link">
+        <span onclick="showAddFriendBlock();" class="add-friend-link">
+          __MSG_add_more_friends__
+        </span>
+      </span>
+    </div>
+  </div>
+</textarea>
+<textarea id=tpl-enter-friend-birthday style=display:none;>
+    <form onsubmit="saveFriendDob();return false;">
+      __MSG_enter_friend_birthday__<br>
+      <img src="http://www.gstatic.com/ig/modules/horoscope/everyone_all.cache.png" class="horoscope-bday-pic" alt="__MSG_everyone__" title="__MSG_everyone__">
+      <table id="horoscope-bday-table" style="padding-top:12px;">
+        <tr>
+          <td class="capitalize-text">__MSG_name__</td>
+          <td>
+            <input id="frnd-horoscope-name" maxlength="30" type="text" style="width:118px;">
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top:3px;" colspan="2">
+            <table cellpadding="0" cellspacing="0">
+              <tr>
+                <td align="left">
+                  <div class="horoscope-row">
+                    __MSG_gender__
+                  </div>
+                  <div style="width:70px;font-size:12px;">
+                    <input type="radio" name="friend_gender" id="frnd_male" value="__MSG_male__" checked="checked">
+                      __MSG_male__
+                    <input type="radio" name="friend_gender" id="frnd_female" value="__MSG_female__">
+                      __MSG_female__
+                  </div>
+                </td>
+                <td>
+                  <div class="horoscope-row">
+                    &nbsp;__MSG_relation__
+                  </div>
+                  <div>
+                &nbsp;<select id="frnd-relation" style="width:120px;">
+                      <option value="__MSG_friend__">__MSG_friend_family__</option>
+                      <option value="__MSG_romantic__">__MSG_romantic__</option>
+                      <option value="__MSG_coworker__">__MSG_coworker__</option>
+                    </select>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="capitalize-text">__MSG_day__</td>
+          <td>
+            <input id="frnd-horoscope-day" maxlength="2" type="text" style="width:27px;">
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-right:6px;" class="capitalize-text">
+            __MSG_month__
+          </td>
+          <td>
+            <select id="frnd-month">
+              <option value="1">__MSG_january__</option>
+              <option value="2">__MSG_february__</option>
+              <option value="3">__MSG_march__</option>
+              <option value="4">__MSG_april__</option>
+              <option value="5">__MSG_may__</option>
+              <option value="6">__MSG_june__</option>
+              <option value="7">__MSG_july__</option>
+              <option value="8">__MSG_august__</option>
+              <option value="9">__MSG_september__</option>
+              <option value="10">__MSG_october__</option>
+              <option value="11">__MSG_november__</option>
+              <option value="12">__MSG_december__</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="capitalize-text">__MSG_year__</td>
+          <td>
+            <input id="frnd-horoscope-year" maxlength="4" type="text" style="width:53px;" />
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>
+            <input type="submit" value="__MSG_ok__" />&nbsp;
+            <input type="button" onclick="hideAddFriendBirthdayBlock();" value="__MSG_cancel__"/>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <div id="frnd-error" style="color:#f00;"></div>
+          </td>
+        </tr>
+      </table>
+      </div>
+    </form>
+  </textarea>
+<textarea id=tpl-general-horoscope style=display:none;>
+  <div>
+    <div style="padding:0 5px 5px;display:{displayFriends};">
+      <span>
+        <b>__MSG_daily_horoscope_for__</b>&nbsp;&nbsp;
+        <select id="friends-list" onchange="showSelectedFriendData(this.selectedIndex)">
+        </select>
+      </span>
+    </div>
+    <table>
+      <tr>
+        <td style="vertical-align:top;text-align:center;" width="18%">
+          <a href="http://www.dailyhoroscope.com/horoscope-signs/{signName}" target="_blank">
+            <img src="http://www.gstatic.com/ig/modules/horoscope/{signName}_sign.cache.png" title="{title}" border="0" height="95px" width="75px" alt="{signName}">
+          </a>
+          <a href="http://www.dailyhoroscope.com/horoscope-signs?sign={signNumber}" target="_blank" style="font-size:11px;" class="capitalize-text">{aboutText}</a>
+          <div style="padding-top:2px">
+            <a href="http://www.dailyhoroscope.com/free-horoscopes/todays-love-horoscope?sign={signNumber}" target="_blank" style="font-size:11px;" class="capitalize-text">{famousText}</a>
+          </div>
+        </td>
+        <td style="vertical-align:top;">
+          <span style="font-weight:bold;">{completeDate}</span>
+          <div style="padding-top:2px;">{byAuthor}</div>
+          <div>{signInfo}</div>
+        </td>
+      </tr>
+    </table>
+    <div style="vertical-align:bottom;padding-top:7px;">
+      <span id="more">
+        <a target="_blank" href="http://www.dailyhoroscope.com">
+          __MSG_more_from_daily_horoscope__
+        </a>
+      </span>
+      <span id="date">
+        <nobr>
+          <span class="add-friend-link" onclick="setView('canvas');">
+            __MSG_more_info__&nbsp;&raquo;
+          </span>
+        </nobr>
+      </span>
+    </div>
+  </div>
+</textarea>
+<textarea id=tpl-general-horoscope-non-en style=display:none;>
+  <div style="text-align:justify;" id="horoscope-daily-reading">
+    <a href="http://www.tarot.com/go/google-ig/rss-horo-dailyhoroitem/?sign={signName}" target="_blank">
+      <img src="http://www.gstatic.com/ig/modules/horoscope/{signName}.cache.png" title="{title}" border="0" height="80px" width="75px" alt="{signName}" style="float:left;padding:5px;">
+    </a>
+    <div class="heading">{signNameTranslated}</div>
+    <div style="padding-top:2px;">{byAuthor}</div>
+    <div>{signInfo}</div>
+    <div style="vertical-align:bottom;padding-top:7px;">
+      <span id="more">
+        <a target="_blank" href="http://www.tarot.com/astrology/?code=google-ig&feature=rss-horo-dailyhoroitem&sign={signName}">
+          __MSG_more_from_tarot__
+        </a>
+      </span>
+      <span id="date">
+        <nobr>
+          <span class="add-friend-link" onclick="setView('canvas');">
+            __MSG_more_info__&nbsp;&raquo;
+          </span>
+        </nobr>
+      </span>
+    </div>
+  </div>
+</textarea>
+<textarea id=dialy-horoscope-canvas style=display:none;>
+  <div id="horoscope-daily-reading"></div>
+  <div id="other-signs"></div>
+  <div id="link-info" style="padding-top:10px;"></div>
+  <div id="view-another-horoscope">
+    <span>
+      <span style="font-weight:bold">__MSG_view_another_horoscope__</span>
+      <select onchange="redierectAnotherHoroscope(this.value)">
+        <option>__MSG_choose_another_sign__</option>
+        <option value="aries">__MSG_aries__</option>
+        <option value="taurus">__MSG_taurus__</option>
+        <option value="gemini">__MSG_gemini__</option>
+        <option value="cancer">__MSG_cancer__</option>
+        <option value="leo">__MSG_leo__</option>
+        <option value="virgo">__MSG_virgo__</option>
+        <option value="libra">__MSG_libra__</option>
+        <option value="scorpio">__MSG_scorpio__</option>
+        <option value="sagittarius">__MSG_sagittarius__</option>
+        <option value="capricorn">__MSG_capricorn__</option>
+        <option value="aquarius">__MSG_aquarius__</option>
+        <option value="pisces">__MSG_pisces__</option>
+      </select>&nbsp;&nbsp;
+      <a href="javascript:void(0);" id="another-dialy-horoscope" style="text-decoration:none;color:#000;">
+        <input type="button" value="__MSG_check__">
+      </a>
+    </span>
+    <span style="float:right;padding-top:7px;">
+      <a id="cosmic-link" target="_blank" href="">__MSG_complete_cosmic_profile__</a>
+    </span>
+  </div>
+</textarea>
+<textarea id=tpl-no-friends-added style=display:none;>
+    <div class="no-friends-added">
+      <span style="color:#ff6600">
+        __MSG_no_friends_msg__
+      </span>
+      <span onclick="showAddFriendBlock();" class="add-friend-link">
+        __MSG_add_a_friend__
+      </span>
+    </div>
+  </textarea>
+<textarea id=tpl-headline style=display:none;>
+  <div align="left" class="headlines heading">__MSG_horoscope_headlines__</div>
+  <table cellspacing="2" cellpadding="1" style="border:0;margin-left:6px;" id="headlines-list">
+  </table>
+  <div style="text-align:right;padding:5px;">
+    <a target="_blank" href="http://www.dailyhoroscope.com/horoscope-headlines">
+      __MSG_more_horoscope_headlines__&nbsp;&raquo;
+    </a>
+  </div>
+</textarea>
+]]>
+</Content>
+
+<!--
+  For iGoogle v1 compatibility.
+  Todo (rajivb) - To Remove this section when (http://b/issue?id=1890944) is resolved.
+-->
+
+<Content type="html">
+<![CDATA[
+<style>div,td{font-family:arial,sans-serif;font-size:13px}a,a:visited{color:#0000cf}.horoscope-bday-pic{float:left;padding:8px 6px 0 0;width:58px}.horoscope-pic{float:left;margin:0 10px 0 5px}.heading{color:#3f3f87;font-size:14px;font-weight:bold}.loading{color:#5580d5;font-size:12px;font-weight:bold;line-height:100px;height:100px;text-align:center}.error{color:#f60;height:100px;padding-top:50px;text-align:center}.capitalize-text{text-transform:capitalize}#tarot,#enter-bday{background:#ede4f2}</style>
+<script>var isEdited=!1,isOnLoad=!0,ownerDobObj={},prefs=new _IG_Prefs,recentlyAddedFriendData=null,isAddedFromSettingsTab=!1,ValidationResults={VALID_DATE:0,INVALID_DAY:1,INVALID_YEAR:2,INVALID_NAME:3},signName="",ERROR_TPL='<div class="error">'+prefs.getMsg("data_not_available")+"</span>",LOADING_TPL='<div class="loading"><img src="http://www.google.com/ig/images/spinner.gif"/>&nbsp;&nbsp;'+prefs.getMsg("loading")+"</div>",isEnLang=!1,currentLang,SIGN_NAMES={all_signs:prefs.getMsg("all_signs"),capricorn:prefs.getMsg("capricorn"),
+aquarius:prefs.getMsg("aquarius"),pisces:prefs.getMsg("pisces"),aries:prefs.getMsg("aries"),taurus:prefs.getMsg("taurus"),gemini:prefs.getMsg("gemini"),cancer:prefs.getMsg("cancer"),leo:prefs.getMsg("leo"),virgo:prefs.getMsg("virgo"),libra:prefs.getMsg("libra"),scorpio:prefs.getMsg("scorpio"),sagittarius:prefs.getMsg("sagittarius")},birthDateObj={};function getFocus(a){a=_gel(a);a.value="";a.focus()}
+function getSignNumber(){for(var a="all_signs,aries,taurus,gemini,cancer,leo,virgo,libra,scorpio,sagittarius,capricorn,aquarius,pisces".split(","),b=0,c=a.length;b<c;b++)if(signName==a[b])return b}
+function getSign(a,b){var c,b=parseInt(b,10);switch(parseInt(a,10)){case 1:c=b<=19?"capricorn":"aquarius";break;case 2:c=b<=18?"aquarius":"pisces";break;case 3:c=b<=20?"pisces":"aries";break;case 4:c=b<=19?"aries":"taurus";break;case 5:c=b<=20?"taurus":"gemini";break;case 6:c=b<=20?"gemini":"cancer";break;case 7:c=b<=22?"cancer":"leo";break;case 8:c=b<=22?"leo":"virgo";break;case 9:c=b<=22?"virgo":"libra";break;case 10:c=b<=22?"libra":"scorpio";break;case 11:c=b<=21?"scorpio":"sagittarius";break;
+case 12:c=b<=21?"sagittarius":"capricorn"}return c}function getValue(a,b){var d;var c=a.getElementsByTagName(b);return!c?"":(d=(c=c.item(0))?c.firstChild:"",c=d)?c.nodeValue:""}
+function doValidation(a,b,c,d){if(a)if(!b||b.match(/[^\d]/))return ValidationResults.INVALID_DAY;else{if(!d||d.match(/[^\d]/))return ValidationResults.INVALID_YEAR}else return ValidationResults.INVALID_NAME;b=parseInt(b,10);d=parseInt(d,10);c=parseInt(c,10)-1;a=new Date(d,c,b);c=new Date;if(b!=a.getDate())return ValidationResults.INVALID_DAY;else if(d!=a.getFullYear()||d>(new Date).getFullYear()||d<1900)return ValidationResults.INVALID_YEAR;else if(a>c)return ValidationResults.INVALID_DAY;return ValidationResults.VALID_DATE}
+function getCurrentTime(a){var b=a.getHours(),a=a.getMinutes(),b=b<10?"0"+b:b,a=a<10?"0"+a:a;return b+""+a}function getFormatedDate(a,b){var c=a.getDate(),d=a.getFullYear(),e=a.getMonth()+1,c=(c<10?"0":"")+c,e=(e<10?"0":"")+e;return c=b?d+"-"+e+"-"+c:d+e+c}
+function getUsersData(){var a=_gel("error-message");a.style.display="block";a.innerHTML=LOADING_TPL;var b=new Date,a=getCurrentTime(b),c=getFormatedDate(b,!0),b=-b.getTimezoneOffset()/60,a="http://api.tarot.com/api/astrosync/principal/"+_esc(birthDateObj.name)+"/"+birthDateObj.year+"-"+birthDateObj.month+"-"+birthDateObj.day+"/date/"+c+"/time/"+a+"/timezone/"+b+"/type/xml?partner=igoogle&key=a9a51c94bbb165f9";fetchBirthDate(a)}
+function fetchBirthDate(a){var b=setTimeout(function(){showTryAgain()},1E4);_IG_FetchXmlContent(a,_IG_Callback(parseUsersAstroData,b),{refreshInterval:1})}function showSelectedFriendData(a){prefs.set("selectedFriend",a);getTarotData(a)}function init(){var a=_args();currentLang=a.lang;(a=prefs.getString("uid"))?displayHoroscope():(_gel("enter-bday").style.display="block",_IG_AdjustIFrameHeight())}
+function displayHoroscope(){_gel("enter-bday").style.display="none";_gel("tarot").style.display="block";getTarotData()}
+function getTarotData(){var a=_gel("error-message");a.style.display="block";a.innerHTML=LOADING_TPL;var b=prefs.getString("uid"),a=new Date,c=-a.getTimezoneOffset()/60,b="http://feeds.tarot.com/f/ws/dh/igoogledh/locale/"+currentLang+"/timezone/"+c+"/uid/"+b;b+="?partner=igoogle&key=a9a51c94bbb165f9&type=xml&time="+a.getTime();var d=setTimeout(function(){showTryAgain()},1E4);_IG_FetchXmlContent(b,function(a){clearTimeout(d);try{parseTarotData(a)}catch(b){_gel("horoscope-daily-reading").innerHTML=prefs.getMsg("horoscope_not_found"),
+_IG_AdjustIFrameHeight()}},{refreshInterval:600})}
+function parseTarotData(a){_gel("error-message").style.display="none";var b=getSignNumber(),c={},d=a.getElementsByTagName("birthdate"),d=d[0].firstChild.nodeValue;birthDateObj={day:d.substr(2,2),month:d.substr(0,2),year:d.substr(4,4)};signName=getSign(birthDateObj.month,birthDateObj.day);a=a.getElementsByTagName("daily_horoscope").item(0);c.authorName=getValue(a,"author_byline").replace(/.*com\'s\s/g,"");c.authorUrl=getValue(a,"author_url");a=a.getElementsByTagName("sign_content");b=a.item(b);c.reading=
+getValue(b,"interp");displayTarotData(c)}
+function displayTarotData(a){var b=prefs.getMsg("todays_horoscope_for").replace("%SIGN_NAME%",SIGN_NAMES[signName]);_IG_SetTitle(b);var b=prefs.getMsg("dailyhoroscope_com_horoscope").replace("%SIGN_NAME%",SIGN_NAMES[signName]),c=prefs.getMsg("by_author").replace("%AUTHOR_NAME%",'<a href="'+a.authorUrl+'" target="_blank">'+a.authorName+"</a>"),a=['<a target="_blank" href="'," http://www.dailyhoroscope.com/horoscope-signs/",signName,'"><img class="horoscope-pic" align="left" src="',"http://www.gstatic.com/ig/modules/horoscope/",
+signName,'_sign.cache.png" title="',b,'" border="0" height="95px" width="75px" alt="',SIGN_NAMES[signName],'"></a><div class="heading">',SIGN_NAMES[signName],'</div><div style="padding-bottom:1px;">',c,"</div>",_hesc(a.reading)];_gel("horoscope-daily-reading").innerHTML=a.join("");_gel("more").innerHTML='<div style="padding-top:5px;float:right;"><a target="_blank" href="http://www.dailyhoroscope.com">'+prefs.getMsg("more_from_daily_horoscope")+"</a></div>";_IG_AdjustIFrameHeight()}
+function showTryAgain(){var a=['<div class="error">',prefs.getMsg("data_not_available"),'<a href="#" onclick="init();return false;">',prefs.getMsg("try_again"),"</a></div>"],b=_gel("error-message");b.style.display="block";b.innerHTML=a.join("");_IG_AdjustIFrameHeight()}
+function saveBirthday(){var a=_gel("horoscope-day").value,b=_gel("month").value,c=_gel("horoscope-year").value,d=_gel("error"),e=_gel("horoscope-name").value.replace(/^\s*/,"").replace(/\s*$/,"");birthDateObj={day:a.length==1?"0"+a:a,month:b.length==1?"0"+b:b,year:c,saveDOB:!0};a=doValidation(e,a,b,c);a==ValidationResults.INVALID_NAME?(d.innerHTML=prefs.getMsg("invalid_name_empty"),getFocus("horoscope-name"),_IG_AdjustIFrameHeight()):a==ValidationResults.INVALID_DAY?(d.innerHTML=prefs.getMsg("invalid_date"),
+getFocus("horoscope-day"),_IG_AdjustIFrameHeight()):a==ValidationResults.INVALID_YEAR?(d.innerHTML=prefs.getMsg("invalid_year"),getFocus("horoscope-year"),_IG_AdjustIFrameHeight()):(prefs.set("name",e),prefs.getString("uid")?displayHoroscope():getUsersData())}
+function parseUsersAstroData(a,b){clearTimeout(b);_gel("error-message").style.display="none";if(a)try{for(var c,d,e=a.getElementsByTagName("principal")[0].childNodes,f=0,h=e.length;f<h;f++)if(c=e[f],c.nodeType==1&&c.nodeName=="birthdate"){d=c.firstChild.nodeValue;break}var g=d.split("-");birthDateObj={day:g[2],month:g[1],year:g[0]};var i=a.getElementsByTagName("astrosync_response")[0].attributes.getNamedItem("id").value;signName=getSign(birthDateObj.month,birthDateObj.day);prefs.set("uid",i);displayHoroscope()}catch(j){showTryAgain()}else showTryAgain()}
+_IG_RegisterOnloadHandler(init);</script>
+<div class=horoscope-bday id=enter-bday style=display:none;padding:5px;>
+<form action=javascript:saveBirthday(); style=margin:0;padding:0;>
+<b>__MSG_enter_dob__</b><br>
+<img alt="__MSG_everyone__" class=horoscope-bday-pic src=http://www.gstatic.com/ig/modules/horoscope/everyone_all.cache.png title="__MSG_everyone__">
+<table id=horoscope-bday-table style=padding-top:12px;>
+<tr>
+<td class=capitalize-text>__MSG_name__</td>
+<td>
+<input id=horoscope-name maxlength=30 style=width:120px;>
+</td>
+<tr>
+<td class=capitalize-text>__MSG_day__</td>
+<td>
+<input id=horoscope-day maxlength=2 style=width:27px;>
+</td>
+<tr>
+<td class=capitalize-text style=padding-right:6px;>
+__MSG_month__
+</td>
+<td>
+<select id=month>
+<option value=1>__MSG_january__
+<option value=2>__MSG_february__
+<option value=3>__MSG_march__
+<option value=4>__MSG_april__
+<option value=5>__MSG_may__
+<option value=6>__MSG_june__
+<option value=7>__MSG_july__
+<option value=8>__MSG_august__
+<option value=9>__MSG_september__
+<option value=10>__MSG_october__
+<option value=11>__MSG_november__
+<option value=12>__MSG_december__
+</select>
+</td>
+<tr>
+<td class=capitalize-text>__MSG_year__</td>
+<td>
+<input id=horoscope-year maxlength=4 style=width:53px; />
+<input style=width:38px; type=submit value="__MSG_ok__" />
+</td>
+<tr>
+<td align=center colspan=2>
+<div id=error style=color:#f00;></div>
+</td>
+</table>
+</div>
+</form>
+<div id=tarot style=padding:0;>
+<table cellpadding=0 cellspacing=0 style=padding-top:6px; width=100%>
+<tr>
+<td style=vertical-align:top>
+<div id=horoscope-daily-reading style=text-align:justify;></div>
+<div id=more style=vertical-align:bottom;padding-top:7px;>
+</div>
+</td>
+</table>
+</div>
+<div id=error-message style=display:none;></div>
+]]>
+</Content>
+</Module>

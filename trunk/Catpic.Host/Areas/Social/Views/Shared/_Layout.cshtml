@@ -1,0 +1,133 @@
+﻿@using Catpic.Host.Engine
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <link rel="search" href="http://catpic.apphb.com/opensearchdescription.xml" type="application/opensearchdescription+xml" title="catpic.apphb.com" />
+        <title>@ViewBag.Title</title>
+        <link href="@Url.Content("~/Content/Social/main.css")" rel="stylesheet" type="text/css" />
+        @RenderSection("Styles", required:false)
+        <script type="text/javascript" src="@Url.Content("~/scripts/jquery-1.7.1.min.js")"></script> 
+        @RenderSection("Scripts", required:false)
+	</head>
+	<body>
+	 <div id="wallpaper">
+        <div id="wallpaper-b">
+        </div>
+        <div id="wallpaper-a">
+        </div>
+    </div>
+	<div class="drawer-screen" style="opacity: 0; display: none; "></div>
+    <div class="avatarbar avatarbar-container avatarbar-container-expandable">
+		<div class="avatarbar-large">
+			<img class="avatarbar-logo" src="@Url.Content("~/Content/Social/Images/logo.png")" alt="Catpic">
+			<div class="avatarbar-links-container">
+				<nav class="avatarbar-navbar">
+					@Html.Partial("TopNavigation")
+				</nav>
+			</div>
+			<div class="avatarbar-login-container">
+                <div class="avatarbar-privacylinks">
+                    @Html.ActionLink("License", "License", "About", routeValues: new { area = "Portal" }, htmlAttributes: new { id = "avatarbar-legal" })
+                    <span class="avatarbar-separator"> | </span>
+                    <a href="http://opensocial.org" class="avatarbar-privacycookies">OpenSocial</a>
+                </div>
+				<div class="avatarbar-sigoutandfeedback">
+                    @Html.ActionLink("Sign Out", "LogOff", "Account", routeValues: new { area = "Portal" }, htmlAttributes: new { id = "avatarbar-signout" })
+				</div>
+				<span class="avatarbar-username" alt="username@sample.com">@User.Identity.Name</span>
+			</div>
+		</div>
+		<div class="avatarbar-small">
+			<img class="avatarbar-logo" src="@Url.Content("~/Content/Social/Images/logo.png")" alt="Catpic">
+			<div class="avatarbar-login-container">
+				<!--<img class="avatarbar-userpicture" style="display: none; ">-->
+				<span class="avatarbar-username">@User.Identity.Name</span>
+			</div>
+		</div>
+	</div>
+	<div id="navpane">
+		<div id="nav1">
+			@Html.Partial("LeftNavigation")
+		</div>
+	   <div id="nav2" style="left: 200px; ">
+		<a id="nav2-back" href="#">
+			<img src="@Url.Content("~/Content/Social/Images/nav2.back.png")" alt="">
+		</a>
+		<div id="nav2-scroll">
+			<div class="fx-scrollbar-widget scrollable-overflow">
+				<div class="scrollable-area" style="overflow-x: hidden; overflow-y: auto; width: 199px; height: 591px; ">
+					@Html.Partial("SubNavigation")
+				</div>
+				<div class="scrollbar-track axis-x" style="display: none; ">
+					<div class="scrollbar-handle" style="width: 200px; left: 0px;"></div>
+				</div>
+				<div class="scrollbar-track axis-y" style="display: none;">
+					<div class="scrollbar-handle" style="height: 591px; top: 0px; "></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<div id="aux-foreground">
+		<div id="aux-body">
+			<div id="secondary-container">
+				<div id="tabcontainer" style="display: block; ">
+					@RenderBody()
+				</div>
+			</div>
+		</div>
+	</div>
+				
+    <!--/tmpl-->
+    <div id="drawer-surround" style="z-index: 2000;">
+        <!--tmpl() _5-->
+        <div class="drawer" style="overflow-x: visible; overflow-y: visible;">
+               <div class="drawer-container " style="">
+                <div class="drawer-slip" style="top: 0px;">
+                    <!--tmpl() _6-->
+                    <div class="drawer-controlBar">
+                        <button class="drawer-open">
+                            <span class="icon-img"></span>
+							<span>New</span>
+						</button>
+						<div class="drawer-commandBar" style="display: inline-block;">
+							<div class="commandbar-container">
+								<ul class="commandbar-globalcommands-list">
+									<li>
+										<button>
+											<span class="icon-img" style="background: transparent url(@Url.Content("~/Content/Social/Images/icons-action-32-sprites.png")) no-repeat -257px -1988px;"></span>
+											<span>Edit</span>
+										</button>
+									</li>
+									<li>
+										<button>
+											<span class="icon-img" style="background: transparent url(@Url.Content("~/Content/Social/Images/icons-action-32-sprites.png")) no-repeat -255px -1602px;"></span>
+											<span>Delete</span>
+										</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+                        <button class="drawer-help" title="Help">
+							<span class="icon-img">
+								<img src="@Url.Content("~/Content/Social/Images/icon-drawer-help.png")" alt="Help">
+							</span>
+						</button>
+					</div>
+                    <div class="drawer-creation">
+                        <div class="drawer-title" style="display: block;">Help</div>
+                        <button class="drawer-close command-cancel"></button>
+                        <div class="drawer-content scrollbar" style="height: 460px; display: none;">
+                            <iframe class="drawer-help-frame" src=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+		@this.WriteStyleBlocks()
+        <script src="@Url.Content("~/scripts/social/main.js")"></script>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+   <ModulePrefs>
+      <Locale lang="en" country="us" />
+   </ModulePrefs>
+   <Content type="html" view="canvas">
+      <![CDATA[Part1]]>
+   </Content>
+    <Content type="html" view="canvas.error, profile.error, home.error">
+      <![CDATA[error]]>
+    </Content>
+   <Content type="html" view="canvas, home, profile">
+      <![CDATA[Part2]]>
+   </Content>
+</Module>

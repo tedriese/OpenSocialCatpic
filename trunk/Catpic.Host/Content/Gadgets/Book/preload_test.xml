@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+   <ModulePrefs title="Preload test"
+                title_url="http://www.jcleblanc.com"
+                description="Preload test"
+                author="Ilya Builuk">
+      <Require feature="opensocial-1.0"/>
+      <Require feature="views" />
+      <Preload href="http://catpic.apphb.com/content/gadgets/data.txt" />
+      <Preload href="http://catpic.apphb.com/content/gadgets/data2.txt" />
+   </ModulePrefs>
+   <Content type="html" view="canvas, home, profile">
+      <![CDATA[
+      <script>
+        function makeSignedRequest() {
+            var params = {};
+            params[gadgets.io.RequestParameters.AUTHORIZATION] = gadgets.io.AuthorizationType.NONE;
+            params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
+            var url = "http://catpic.apphb.com/content/gadgets/data.txt";
+            gadgets.io.makeRequest(url, response, params);
+            url = "http://catpic.apphb.com/content/gadgets/data2.txt";
+            gadgets.io.makeRequest(url, response, params);
+          };
+      
+        function response(ret) {
+          console.log(ret);
+        };
+        makeSignedRequest();
+     </script>
+      ]]>
+   </Content>
+</Module>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Catpic.Host profile">
+    <Require feature="osapi"/>
+    <Require feature="opensocial-data"/>
+    <Require feature="opensocial-0.9"/>
+  </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+    <script type="text/javascript" src="http://ostemplates-demo.appspot.com/ostemplates.js"></script>
+    <style>
+      .userProfile {
+          font-size: 16px
+      }
+      .friendList{
+          list-style-type: none;
+      }
+      .userProfile tr>td:first-child {
+        font-size: 12px;
+        width:140px
+      }
+    </style>
+    <script type="text/os-template">
+        <ul class="friendList">
+          <li repeat="friends.list">   
+              <div style="display: block; width: 250px; float: left">
+                <img src="${thumbnailUrl}" height="140" width="140" alt="Johnny"/>    
+              </div>
+              <div style="display: block">
+                <table class="userProfile" width="300px">
+                    <tr>
+                        <td>id</td>
+                        <td>${id}</td>
+                    </tr>
+                    <tr>
+                        <td>display name</td>
+                        <td>${displayName}</td>
+                    </tr>
+                    <tr>
+                        <td>gender</td>
+                        <td>${gender}</td>
+                    </tr>
+                    <tr /><tr /><tr />
+                    <tr>
+                        <td>family name</td>
+                        <td>${name.familyName}</td>
+                    </tr>
+                    <tr>
+                        <td>given name</td>
+                        <td>${name.givenName}</td>
+                    </tr>
+                    <tr>
+                        <td>formatted</td>
+                        <td>${name.formatted}</td>
+                    </tr>
+                </table>  
+            </div>
+          </li>
+        </ul>
+    </script>     
+    <script>
+      function init() {
+	      var batch = osapi.newBatch();
+	      batch.add('friends', osapi.people.getOwnerFriends());
+	      batch.execute(function(response){
+          debugger;
+          os.Container.processDocument(response);
+	        }); 
+      }
+		  gadgets.util.registerOnLoadHandler(init);
+    </script>         
+  ]]>
+  </Content>
+</Module>

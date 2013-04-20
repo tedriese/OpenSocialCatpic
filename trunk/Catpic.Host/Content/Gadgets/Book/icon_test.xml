@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <ModulePrefs title="Icon gadget example" description="Icon gadget"  author="Ilya Builuk">
+    <Require feature="opensocial-1.0"/>
+    <Icon>http://catpic.apphb.com/favicon.ico</Icon>
+  </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+      <div>Some content</div>
+      ]]>
+  </Content>
+</Module>

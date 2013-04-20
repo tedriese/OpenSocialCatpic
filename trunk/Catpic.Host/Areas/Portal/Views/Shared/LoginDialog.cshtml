@@ -1,0 +1,13 @@
+﻿@using Catpic.Host.Engine
+@using Catpic.Host.Engine.Security;
+@this.StyleBlock(@<link href="@Url.Content("~/Content/Portal/dialog.css")" rel="stylesheet" type="text/css" />)
+@if((!IdentityHelper.IsAuthenticated(User, Request))&&(ViewBag.Title != "Login")){
+<div id="dialog-overlay"></div>
+<div id="dialog-box">
+	<div class="dialog-content">
+		<div class="dialog-message">
+            @Html.Partial("LoginForm", new ViewDataDictionary(){{"IsHiddenCancelBtn","false"}})
+        </div>
+	</div>
+</div>
+}

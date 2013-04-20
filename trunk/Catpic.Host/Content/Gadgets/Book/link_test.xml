@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <ModulePrefs title="Link gadget example" description="Link gadget"  author="Ilya Builuk">
+    <Require feature="opensocial-1.0"/>
+    <Link rel="event" href="http://www.mysite.com/ping.php" method="POST" />
+    <Link rel="event.addapp" href="http://www.mysite.com/add_app.php" />
+    <Link rel="event.removeapp" href="http://www.mysite.com/remove_app.php" />
+  </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+      <div>Some content</div>
+      ]]>
+  </Content>
+</Module>

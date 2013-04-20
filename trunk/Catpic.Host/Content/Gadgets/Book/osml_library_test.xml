@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+   <ModulePrefs title="Loading data via Data Pipelining">
+    <Require feature="opensocial-templates">
+			<Param name="requireLibrary">http://localhost:9999/content/gadgets/book/OSML_library.xml</Param>
+		</Require>
+		<Require feature="opensocial-1.0"/>
+		<Require feature="opensocial-data" />
+     <Require feature="osml" />
+   </ModulePrefs>
+   <Content type="html">
+      <![CDATA[      
+		 <script type="text/os-template" xmlns:os="http://opensocial.org/templates">
+      <os:PeopleSelector group="${ViewerFriends}" multiple="false" max="10" inputName="viewerFriends"/>
+    </script>
+      ]]>
+   </Content>
+</Module>

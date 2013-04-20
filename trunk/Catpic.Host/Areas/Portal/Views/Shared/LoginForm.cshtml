@@ -1,0 +1,47 @@
+﻿@using Catpic.Host.Engine
+@model Catpic.Host.Areas.Portal.Models.LoginModel
+@this.ScriptBlock(
+    @<script type='text/javascript' src="@Url.Content("~/scripts/portal/login.js")"></script>
+)
+@this.StyleBlock(@<link href="@Url.Content("~/Content/Portal/login.css")" rel="stylesheet" type="text/css" />)
+<p>Try <i>jane.doe</i>, <i>canonical</i>, <i>george.doe</i> with any password. By default you are <i>john.doe</i></p>
+@using (Html.BeginForm("Login", "Account", new { area = "Portal"}, FormMethod.Post))
+{
+    @Html.ValidationSummary(true, "Log in was unsuccessful. Please correct the errors and try again.")
+
+    <fieldset class="login">
+        <ol>
+            <li class="login-box focus">
+                @Html.LabelFor(m => m.UserName)
+                @Html.TextBoxFor(m => m.UserName) 
+            </li>
+            <li class="login-box focus">
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password)
+            </li>
+            <li class="login-box-rememberme">
+                @Html.CheckBoxFor(m => m.RememberMe)
+                @Html.LabelFor(m => m.RememberMe)
+            </li>
+        </ol>
+    </fieldset>
+   @* <p>
+        @Html.ActionLink("Register", "Register", "Account", new {area = "Portal"}, null) if you don't have an account.
+    </p>*@
+
+    <div class="center">
+        <input type="submit" class="button" value="sign in" />
+        @if (ViewBag.IsHiddenCancelBtn != null){
+            <a id="btn-close" href="" class="button">Close</a>
+        }
+    </div>
+}
+<div class="center">
+    <p>or use openid provider</p>
+    <a href="@Url.Action("Authenticate", "OpenId", new { area = "Portal", userOpenId = "https://www.google.com/accounts/o8/id" })">
+        <img src="@Url.Content("~/Content/Portal/images/google.png")" alt="Google" title="Google" />
+    </a>
+    <a href="@Url.Action("Authenticate", "OpenId", new { area = "Portal", userOpenId = "http://myopenid.com/" })">
+        <img src="@Url.Content("~/Content/Portal/images/myopenid.png")" alt="MyOpenID" title="MyOpenID" />
+    </a>
+</div>

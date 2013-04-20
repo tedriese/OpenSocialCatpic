@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC7DE17B-5D85-4B25-AB4D-7C02FDB49C4C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Catpic.Gadgets</RootNamespace>
+    <AssemblyName>Catpic.Gadgets</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\opensocialnet\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Catpic.Gadgets.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.3\lib\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.7\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyInfoCommon.cs">
+      <Link>Properties\AssemblyInfoCommon.cs</Link>
+    </Compile>
+    <Compile Include="Format\EnumValue.cs" />
+    <Compile Include="Format\IconDefinition.cs" />
+    <Compile Include="Format\OAuth2\OAuth2Definition.cs" />
+    <Compile Include="Format\OAuth2\Service2Definition.cs" />
+    <Compile Include="Format\PreloadDefinition.cs" />
+    <Compile Include="Security\AuthType.cs" />
+    <Compile Include="Security\ICatpicPrincipal.cs" />
+    <Compile Include="Security\OAuth2\OAuth2Consumer.cs" />
+    <Compile Include="Security\OAuth2\OAuth2RequestHandler.cs" />
+    <Compile Include="Security\IOAuthRequestHandler.cs" />
+    <Compile Include="Security\IOAuthConsumerProvider.cs" />
+    <Compile Include="Security\ISecurityRequestHandler.cs" />
+    <Compile Include="Security\OAuth\OAuthConsumer.cs" />
+    <Compile Include="Security\OAuthConsumerProvider.cs" />
+    <Compile Include="Security\OAuth\OAuthRequestHandler.cs" />
+    <Compile Include="Security\OAuthSecurityToken.cs" />
+    <Compile Include="Security\SecurityRequestHandler.cs" />
+    <Compile Include="Security\BasicSecurityToken.cs" />
+    <Compile Include="Security\ISecurityToken.cs" />
+    <Compile Include="Security\ISecurityTokenFactory.cs" />
+    <Compile Include="Security\SecurityTokenFactory.cs" />
+    <Compile Include="ContainerContext.cs" />
+    <Compile Include="Containers\ContainerProvider.cs" />
+    <Compile Include="Containers\DefaultContainer.cs" />
+    <Compile Include="Containers\FeatureProvider.cs" />
+    <Compile Include="Containers\FeatureSet.cs" />
+    <Compile Include="Containers\IContainer.cs" />
+    <Compile Include="Containers\IContainerProvider.cs" />
+    <Compile Include="Containers\IFeatureProvider.cs" />
+    <Compile Include="Containers\IFeatureSet.cs" />
+    <Compile Include="ContextFactory.cs" />
+    <Compile Include="Feature.cs" />
+    <Compile Include="Format\ContentParser.cs" />
+    <Compile Include="Format\FeatureDefinition.cs" />
+    <Compile Include="Format\LanguageDirection.cs" />
+    <Compile Include="Format\OAuth\OAuthDefinition.cs" />
+    <Compile Include="Format\LocaleDefinition.cs" />
+    <Compile Include="Format\ScriptDefinition.cs" />
+    <Compile Include="Format\OAuth\ServiceDefinition.cs" />
+    <Compile Include="Format\OAuth\TokenRequest.cs" />
+    <Compile Include="Format\UserPreferencesParser.cs" />
+    <Compile Include="Gadget.cs" />
+    <Compile Include="GadgetConsts.cs" />
+    <Compile Include="GadgetContext.cs" />
+    <Compile Include="GadgetDefinitionFactory.cs" />
+    <Compile Include="IContextFactory.cs" />
+    <Compile Include="IGadgetDefinitionFactory.cs" />
+    <Compile Include="Format\Module.cs" />
+    <Compile Include="Rendering\Container\MetadataContainerRenderModule.cs" />
+    <Compile Include="Rendering\RenderModeType.cs" />
+    <Compile Include="RequestHandler.cs" />
+    <Compile Include="IRequestHandler.cs" />
+    <Compile Include="Format\GadgetDefinition.cs" />
+    <Compile Include="Proxies\IConcatProxy.cs" />
+    <Compile Include="Proxies\IRequestProxy.cs" />
+    <Compile Include="Proxies\ProxyContext.cs" />
+    <Compile Include="Proxies\RequestProxy.cs" />
+    <Compile Include="Proxies\ConcatProxy.cs" />
+    <Compile Include="Rendering\Container\ContainerRenderPipeline.cs" />
+    <Compile Include="Rendering\Container\IContainerRenderModule.cs" />
+    <Compile Include="Rendering\Container\IContainerRenderPipeline.cs" />
+    <Compile Include="Rendering\Container\FeatureContainerRenderModule.cs" />
+    <Compile Include="Rendering\Gadget\ConcatGadgetRenderModule.cs" />
+    <Compile Include="Rendering\Gadget\UserPreferencesGadgetRenderModule.cs" />
+    <Compile Include="Rendering\Gadget\UtilGadgetRenderModule.cs" />
+    <Compile Include="Rendering\Gadget\ViewGadgetRenderModule.cs" />
+    <Compile Include="Rendering\Gadget\FeatureGadgetRenderModule.cs" />
+    <Compile Include="Rendering\Gadget\GadgetRenderPipeline.cs" />
+    <Compile Include="Rendering\Gadget\IGadgetRenderPipeline.cs" />
+    <Compile Include="Rendering\Gadget\IGadgetRenderModule.cs" />
+    <Compile Include="Rendering\Gadget\MessageGadgetRenderModule.cs" />
+    <Compile Include="View.cs" />
+    <Compile Include="Format\MessageBundle.cs" />
+    <Compile Include="Format\ModulePreferences.cs" />
+    <Compile Include="Format\GadgetParser.cs" />
+    <Compile Include="Format\IGadgetParser.cs" />
+    <Compile Include="Format\ModulePreferencesParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Format\UserPreference.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Catpic.Utils\Catpic.Utils.csproj">
+      <Project>{CE5FF68B-C6AC-405C-888A-DF4BB19BB2AA}</Project>
+      <Name>Catpic.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

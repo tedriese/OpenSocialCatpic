@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messagebundle>
+  <msg name="hello_world">
+    こんにちは世界
+  </msg>
+  <msg name="color">色</msg> 
+  <msg name="red">赤い</msg> 
+  <msg name="green">緑</msg> 
+  <msg name="blue">青い</msg> 
+  <msg name="gray">灰色</msg> 
+  <msg name="purple">紫色</msg> 
+  <msg name="black">黒</msg>
+</messagebundle>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<node inventory="Portal/Home">
+  <children>
+    <node label="Home" inventory="Portal/Home">
+      <children>
+        <node label="Welcome" inventory="Portal/Home/Index"></node>
+        <node label="Details" inventory="Portal/Home/Details"></node>
+        <node label="Features" inventory="Portal/Home/Features"></node>
+        <node label="Resources" inventory="Portal/Home/Resources"></node>
+      </children>
+    </node>
+    <node label="Gadget Server" inventory="Portal/GadgetServer">
+      <children>
+        <node label="Single" inventory="Portal/GadgetServer/Index"></node>
+        <node label="Container" inventory="Portal/GadgetServer/Container"></node>
+        <node label="Inline" inventory="Portal/GadgetServer/Inline"></node>
+      </children>
+    </node>
+    <node label="Getting Started" inventory="Portal/GettingStarted">
+      <children>
+        <node label="Overview" inventory="Portal/GettingStarted/Index"></node>
+        <node label="Guide" inventory="Portal/GettingStarted/Guide"></node>
+        <node label="FAQ" inventory="Portal/GettingStarted/FAQ"></node>
+        <node label="Known issues" inventory="Portal/GettingStarted/Issues"></node>
+      </children>
+    </node>
+    <node label="Develop" inventory="Portal/Develop">
+      <children>
+        <node label="Overview" inventory="Portal/Develop/Index"></node>
+        <node label="Server" inventory="Portal/Develop/Server"></node>
+        <node label="Client" inventory="Portal/Develop/Client"></node>
+      </children>
+    </node>
+    <node label="Download" inventory="Portal/Download">
+      <children>
+        <node label="Nuget" inventory="Portal/Download/Index"></node>
+        <node label="Libraries" inventory="Portal/Download/Libraries"></node>
+        <node label="Source code" inventory="Portal/Download/SourceCode"></node>
+      </children>
+    </node>
+    <node label="Account" inventory="Portal/Account">
+      <children>
+        <node label="Profile" inventory="Portal/Account/Index"></node>
+        <node label="Login" inventory="Portal/Account/Login"></node>
+        <node label="Register" inventory="Portal/Account/Register"></node>
+      </children>
+    </node>
+    <node label="About" inventory="Portal/About">
+      <children>
+        <node label="Info" inventory="Portal/About/Index"></node>
+        <node label="License" inventory="Portal/About/License"></node>
+      </children>
+    </node>
+  </children>
+</node>

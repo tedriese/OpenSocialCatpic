@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Container Compliance Tests 0.8" author="OpenSocial QA"
+               author_email="testuser.tom@gmail.com"
+               title_url="content/gadgets/compliance"
+               description="Compliance tests for gadgets and opensocial apis v0.8." scrolling="true">
+    <Require feature="opensocial-0.8"/>
+    <Require feature="dynamic-height"/>
+    <Require feature="views"/>
+    <Require feature="setprefs"/>
+    <Locale messages="content/messagebundle.xml"/>
+    <Locale messages="content/ALL_ALL.xml"/>
+    <Locale lang="en" country="US" messages="content/ALL_ALL.xml"/>
+    <Locale lang="de" country="DE" messages="content/de_ALL.xml"/>
+    <Locale lang="zh-cn" country="CN" messages="content/zh_cn_ALL.xml"/>
+    <Locale lang="fr" country="FR" messages="content/fr_ALL.xml"/>
+    <Locale lang="ja" country="JA" messages="content/ja_ALL.xml"/>
+    <Locale lang="es" country="ES" messages="content/es_ALL.xml"/>
+    <Locale lang="it" country="IT" messages="content/it_ALL.xml"/>
+    <Locale lang="ru" country="RU" messages="content/ru_ALL.xml"/>
+  </ModulePrefs>
+  <UserPref name="myString" display_name="string" default_value="This is my string."/>
+  <UserPref name="myCounter" display_name="counter" default_value="100"/>
+  <UserPref name="myFloat" display_name="floatNum" default_value="3.43"/>
+  <UserPref name="myList" display_name="myList"  datatype="list" default_value="listValue"/>
+  <UserPref name="myBool" display_name="isInterested" default_value="true"/>
+  <UserPref name="size" display_name="size" datatype="enum" default_value="2">
+    <EnumValue value="0" display_value="xsmall"/>
+    <EnumValue value="1" display_value="small"/>
+    <EnumValue value="2" display_value="medium"/>
+    <EnumValue value="3" display_value="large"/>
+    <EnumValue value="4" display_value="xlarge"/>
+  </UserPref>
+  <UserPref name="myKey" display_name="myKey" default_value="initValue"/>
+  <UserPref name="myTestArray" display_name="myArray" datatype="list" default_value="zdnet|pc|Apple Insider"/>
+  <Content type="html">
+    <![CDATA[
+
+  <div id="controlPanel"></div>
+  <div id="testResults"></div>
+  <div id="tl_VisualTabsTest"></div>
+
+  <link rel="stylesheet" type="text/css"
+    href="../content/gadgets/compliance/common/test.css"></link>
+
+  <script src="~/content/gadgets/compliance/common/assert.js"></script>
+  <script src="~/content/gadgets/compliance/common/config.js"></script>
+  <script src="~/content/gadgets/compliance/common/context.js"></script>
+  <script src="~/content/gadgets/compliance/common/validator.js"></script>
+  <script src="~/content/gadgets/compliance/common/htmllogger.js"></script>
+  <script src="~/content/gadgets/compliance/common/testdata.js"></script>
+  <script src="~/content/gadgets/compliance/common/defaultdata.js"></script>
+  <script src="~/content/gadgets/compliance/common/helper.js"></script>
+  <script src="~/content/gadgets/compliance/common/testobjects.js"></script>
+  <script src="~/content/gadgets/compliance/common/parambuilder.js"></script>
+  <script src="~/content/gadgets/compliance/common/resultobjects.js"></script>
+  <script src="~/content/gadgets/compliance/common/xmllogger.js"></script>
+  <script src="~/content/gadgets/compliance/common/testrunner.js"></script>
+  <script src="~/content/gadgets/compliance/common/opensocialtestrunner.js"></script>
+  <script src="~/content/gadgets/compliance/common/restfultestrunner.js"></script>
+
+
+  <script src="~/content/gadgets/compliance/common/activitiessuite.js"></script>
+  <script src="~/content/gadgets/compliance/common/appdatasuite.js"></script>
+  <script src="~/content/gadgets/compliance/common/environmentsuite.js"></script>
+  <script src="~/content/gadgets/compliance/common/iosuite.js"></script>
+  <script src="~/content/gadgets/compliance/common/prefssuite.js"></script>
+  <script src="~/content/gadgets/compliance/common/utilsuite.js"></script>
+  <script src="~/content/gadgets/compliance/common/makerequestsuite.js"></script>
+  <script src="~/content/gadgets/compliance/common/miscsuite.js"></script>
+  <script src="~/content/gadgets/compliance/common/navigationsuite.js"></script>
+  <script src="~/content/gadgets/compliance/common/peoplesuite.js"></script>
+  <script src="~/content/gadgets/compliance/common/controller.js"></script>
+
+  <script>
+    gadgets.util.registerOnLoadHandler(Master.start);
+  </script>
+
+]]>
+  </Content>
+</Module>

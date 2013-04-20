@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="Request Send Message" >
+  <Require feature="opensocial"/>
+  <Require feature="osapi"/>
+</ModulePrefs>
+<Content type="html">
+  <![CDATA[
+<script>
+
+function sendMessage(){
+debugger;
+var messageParams = {}; 
+/*
+EMAIL: "email"
+NOTIFICATION: "notification"
+PRIVATE_MESSAGE: "privateMessage"
+PUBLIC_MESSAGE: "publicMessage"
+*/
+messageParams[opensocial.Message.Field.TYPE] = opensocial.Message.Type.PRIVATE_MESSAGE;
+messageParams[opensocial.Message.Field.COLLECTION_IDS] = [opensocial.Message.Type.PRIVATE_MESSAGE];
+messageParams[opensocial.Message.Field.TITLE] = 'Message Title';
+messageParams[opensocial.Message.Field.BODY] = 'Body of email';
+messageParams[opensocial.Message.Field.RECIPIENTS] = ['jane.doe'];
+// var message = opensocial.newMessage('Body of email', messageParams); 
+// var recipients = opensocial.DataRequest.Group.OWNER_FRIENDS;
+// opensocial.requestSendMessage(recipients,message,init);
+ osapi.messages.send({userId:"jane.doe", message: messageParams}).execute(function(result){
+  
+ });
+ osapi.messages.create({userId:"jane.doe", name: 'new collection'}).execute();
+
+}
+
+
+
+function init(){
+try{
+
+}
+catch(err){
+alert(err);
+}
+
+}
+gadgets.util.registerOnLoadHandler(init);
+</script>
+   <div style="margin-bottom: 1em">
+     <input type="button" value="Send Message" onclick="sendMessage(); return false;"/>
+   </div>
+   <div id="helloworlds" style="margin: 4px">
+   </div>
+]]></Content>
+</Module>

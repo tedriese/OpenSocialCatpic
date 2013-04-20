@@ -1,0 +1,11 @@
+.login-box{padding:0}
+.login-box.focus,.login-box:hover{width:152px}
+.login-box input{border:0;color:#f2f2f2;float:left;font-family:inherit;padding:8px 0;line-height:15px;height: 15px;}
+.login-box.focus input,.login-box:hover input{color:#000;background-color:#white;width:200px;padding:8px 0 8px 7px}
+.login > ol {list-style: none;}
+.login > ol li {display: block;}
+.login-box-rememberme {padding-top:50px;display: block;}
+fieldset.login{background:#eee;}
+.login > legend {font-size:large;}
+
+

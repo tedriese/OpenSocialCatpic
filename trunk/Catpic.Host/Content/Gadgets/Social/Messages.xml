@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="Catpic messages list">
+  <Require feature="opensocial"/>
+  <Require feature="opensocial-templates"/>
+  <Require feature="osapi"/>
+</ModulePrefs>
+<Content type="html">
+  <![CDATA[
+  
+<style>
+  .author-name{color: #0B5829;font-weight: bold;vertical-align: top;}
+  .post-comment{background: #EDEFF4;padding: 6px;margin: 2px 0 0 0;}
+  .comment{vertical-align: top;display: block;margin: 6px 6px 6px 80px;max-width: 600px;}
+  .comment-author,.comment-author img{float: left;display: inline; width: 60px;height: 60px;}
+  .comment-text{display: inline;}    
+  .comment-date {padding-top:6px; display: block;  text-align: right; }
+  .msg-collection{vertical-align: top;display: block;height:60px;background-color: #f2f2f2;padding: 6px;margin: 2px 0 0 0;border: 1px solid #e3e3e3;	  width: 100%;	border-radius: 6px;	-webkit-border-radius: 6px;	-moz-border-radius: 6px;}
+  .msg-collection:hover{background-color: #fff; cursor: hand; cursor: pointer;}
+  .msg-collection-title{color: #0B5829;font-size:14pt;padding: 20px 0 0 80px;vertical-align: middle; text-transform:uppercase;}
+  .msg-collection-total{display: block;text-align: right;margin-top:-20px;}
+</style>
+    <script type="text/javascript">
+      function getCollections(){
+           osapi.messages.get({userId:"@viewer"}).execute(function(result){
+            var nav2 = $('#nav2-items');
+            nav2.empty();
+             $.each(result.list, function(i, val){
+                var str = '<div class="nav2-item" collectionid="'+ val.id +'"><span>'+ val.title.toLowerCase() +'</span></div>'
+                nav2.append(str);
+             }); 
+            $('#nav2-back').click(function(){
+                $('#messages').empty();
+                renderCollections(result);
+            });
+            renderCollections(result);
+         });
+      }
+      
+      function renderCollections(result){
+          var template = opensocial.template.getTemplate("gadget:collections");
+          var target = document.getElementById("collections");
+          template.renderInto(target, result);
+            
+          $('.msg-collection, .nav2-item').click(function(){
+            $('#collections').empty();
+		        var collectionId = $(this).attr("collectionid");
+            getMessages(collectionId);
+	        });
+      }
+      
+     function getMessages(collectionId){
+        osapi.messages.get({userId:"@viewer", messageCollectionId:collectionId}).execute(function(result){
+            var template = opensocial.template.getTemplate("gadget:messages");
+            var target = document.getElementById("messages");
+            template.renderInto(target, result);
+            
+
+            // ui
+            $('#nav2').animate({left:'60px'}, 500);
+         });
+        }
+        gadgets.util.registerOnLoadHandler(getCollections);
+    </script>
+    <script type="text/os-template"  tag="gadget:messages" xmlns:gadget="http://catpic.apphb.com/social">    
+      <div class="thread-conversation">    
+          <div class="post-comment" repeat="${list}" >
+              <div class="comment-author">
+                  <img src="/Content/social/avatars/any.png" />
+              </div>
+              <div class="comment">
+                  <div class="author-name">${Cur.title}</div>
+                  <div class="comment-text">${Cur.body}</div>
+                  <div class="comment-date">10 hours ago</div>
+              </div>
+          </div>
+      </div>
+    </script>
+    <script type="text/os-template"  tag="gadget:collections" xmlns:gadget="http://catpic.apphb.com/social">    
+      <div>
+          <div class="msg-collection" repeat="${list}" collectionid="${Cur.id}">
+              <div class="comment-author">
+                  <img src="/Content/social/avatars/folder.png" />
+              </div>
+              <div class="msg-collection-title">${Cur.title}</div>
+              <div class="msg-collection-total">5 new</div>
+          </div>
+      </div>
+    </script>
+    <div id="collections"></div>
+    <div id="messages"></div>
+]]></Content>
+</Module>

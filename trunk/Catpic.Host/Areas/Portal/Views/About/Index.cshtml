@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Catpic Info";
+    Layout = "~/Areas/Portal/Views/Shared/_Layout.cshtml";
+}
+<h2>current build</h2>
+<ul class="arrow-bullets">
+    <li>version @(Catpic.Host.MvcApplication.BuildVersion)</li>
+    <li>build date @(Catpic.Host.MvcApplication.BuildDate)</li>
+</ul> 
+<p>This site is continuous integration build of <a  href="http://catpic.codeplex.com" class="vwo_loaded">catpic project</a>. If you have any questions, please let <a href="mailto:ilya.builuk@gmail.com">me</a> know. Follow on <a href="https://twitter.com/catpic_software">twitter</a> to get the latest information about development process.</p>
+<p><b>Note:</b> Windows Azure design is used as template for this site</p>

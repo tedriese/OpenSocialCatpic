@@ -1,0 +1,15 @@
+﻿@using Catpic.Host.Engine.Security;
+@if (IdentityHelper.IsAuthenticated(User, Request)){
+<ul id="site-login">
+    <li class="sign-in">
+	    <span class="sign-in-email">@User.Identity.Name</span>
+	    @Html.ActionLink("Sign Out", "LogOff", "Account", routeValues: new { area = "Portal" }, htmlAttributes: new { id = "header-sign-in" })
+    </li>
+</ul>
+} else {
+<ul id="site-login">
+	<li class="sign-in">
+        <a href="#" class="" id="header-sign-in">Sign In</a>
+	</li>
+</ul>
+}

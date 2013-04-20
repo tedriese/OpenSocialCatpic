@@ -1,0 +1,139 @@
+ul { padding: 0pt; margin: 0pt; }
+body { font-family: "Segoe UI",Verdana,Helvetica,Sans-Serif; font-size: 12px; margin: 0pt; border: 0pt none; height: 100%; max-height: 100%; color: rgb(50, 50, 50);  overflow-y: scroll; background: none repeat scroll 0% 0% rgb(238, 238, 238);}
+a { color: rgb(32, 134, 191); text-decoration: none; }
+img { border: 0pt none; }
+h1 { font-family: "Segoe UI Light",Verdana,Helvetica,Sans-Serif; font-weight: normal; font-size: 1.25em; }
+h2 { font-family: "Segoe UI Light",Verdana,Helvetica,Sans-Serif; font-weight: normal; font-size: 1.15em; }
+h3 { font-family: "Segoe UI Light",Verdana,Helvetica,Sans-Serif; font-weight: normal; font-size: 1em; }
+#aux-foreground { position: absolute; min-height: 100%; left: 50%; width: 960px; margin-left: -480px; background: none repeat scroll 0% 0% rgb(255, 255, 255); box-shadow: 0pt 0pt 85px rgba(0, 0, 0, 0.3); }
+#aux-body { margin-left: 200px; margin-top: 20px; margin-bottom: 60px; padding: 30px; -moz-transition: all 0.3s ease-in-out 0s ; }
+#navpane { z-index: 1; position: fixed; top: 30px; bottom: 60px; left: 50%; margin-left: -480px; width: 199px; overflow: hidden; }
+#nav1 { position: absolute; width: 199px; top: 0pt; bottom: 0pt; border-right: 1px solid rgb(206, 206, 206); background-color: #665B99; } /*88849E*/
+.nav1-item { position: relative; height: 50px; background-position: 20px center; background-repeat: no-repeat; cursor: pointer; border-bottom: 1px solid transparent; border-top: 1px solid transparent; }
+.nav1-item:first-child { margin-top: 30px; }
+.nav1-item:last-child { margin-bottom: 30px; }
+.nav1-item:hover{background-color:#510051}
+.nav1-item.selected { background-color: rgb(255, 255, 255); }
+.nav1-icon { position: absolute; left: 13px; width: 40px; top: 6px; height: 39px; background-position: -39px 0pt; }
+.nav1-label { position: absolute; top: 12px; left: 60px; right: 0pt; overflow: hidden; font: bold 11px/11px "Segoe UI",Verdana,Helvetica,Sans-Serif; color: rgb(255, 255, 255); text-transform: uppercase; white-space: nowrap; }
+.nav1-item.selected .nav1-label ,.nav1-item.selected .nav1-count { color: rgb(50, 50, 50); }
+.nav1-item.selected .nav1-icon { background-position: 0pt 0pt; }
+.itemtitle { font: 28px/40px "Segoe UI Light"; text-transform: lowercase; color: rgb(68, 68, 68); margin: 0pt; white-space: nowrap; text-overflow: ellipsis; position: relative; display: inline-block; }
+#wallpaper { position: fixed; left: 0pt; right: 0pt; top: 0pt; bottom: 0pt; }
+#wallpaper-b,#wallpaper-a { position: absolute; left: 0pt; right: 0pt; top: 0pt; bottom: 0pt; }
+#wallpaper-b{ background: none repeat fixed 0pt bottom transparent; }
+#wallpaper-a { background: url("images/wallpaper-white.png") repeat fixed 0pt bottom transparent; }
+.aux-tabcontent { position: relative; margin-top: 20px;}
+.avatarbar-container{position:fixed;top:0;height:32px;left:50%;width:960px;margin-left:-480px;z-index:1000;overflow:hidden;background: #330033; /* Old browsers */
+background: -moz-linear-gradient(top, #330033 0%, #490049 50%, #490049 53%, #330033 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#330033), color-stop(50%,#490049), color-stop(53%,#490049), color-stop(100%,#330033)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #330033 0%,#490049 50%,#490049 53%,#330033 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #330033 0%,#490049 50%,#490049 53%,#330033 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #330033 0%,#490049 50%,#490049 53%,#330033 100%); /* IE10+ */
+background: linear-gradient(top, #330033 0%,#490049 50%,#490049 53%,#330033 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#330033', endColorstr='#330033',GradientType=0 );transition:height .3s ease-in-out,background-position .2s ease-in-out;-moz-transition:height .3s ease-in-out,background-position .2s ease-in-out;-webkit-transition:height .3s ease-in-out,background-position .2s ease-in-out;-o-transition:height .3s ease-in-out,background-position .2s ease-in-out}
+.avatarbar-container-expandable:hover{cursor:pointer}
+.avatarbar-container.avatarbar-expanded{cursor:default;background: #330033; /* Old browsers */
+background: -moz-linear-gradient(top, #330033 0%, #490049 50%, #490049 53%, #330033 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#330033), color-stop(50%,#490049), color-stop(53%,#490049), color-stop(100%,#330033)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #330033 0%,#490049 50%,#490049 53%,#330033 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #330033 0%,#490049 50%,#490049 53%,#330033 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #330033 0%,#490049 50%,#490049 53%,#330033 100%); /* IE10+ */
+background: linear-gradient(top, #330033 0%,#490049 50%,#490049 53%,#330033 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#330033', endColorstr='#330033',GradientType=0 );height:80px}
+.avatarbar-expanded.avatarbar-container:hover{background-position:99% 45px}
+.avatarbar-expanded.avatarbar-container .avatarbar-large{top:0}
+.avatarbar-expanded.avatarbar-container .avatarbar-small{top:80px}
+.avatarbar-links-container{position:relative;left:20px;top:16px;padding:0;margin:0}
+.avatarbar-links-list{list-style:none outside none;padding:0;margin:0;}
+.avatarbar-links-listitem{display:inline-block}
+.avatarbar-links-link{display:inline-block;font-family:"Segoe UI Semibold",Verdana,Helvetica,Sans-Serif;font-size:11px;text-transform:uppercase;margin-right:19px;text-decoration:none;color:#fff}
+.avatarbar-links-link:hover{color:#509ed8;text-decoration:none}
+.avatarbar-links-selectedlink.avatarbar-links-link{color:#509ed8}
+.avatarbar-login-container{color:#fff;font-family:"Segoe UI Semibold",Verdana,Helvetica,Sans-Serif;font-size:11px}
+.avatarbar-large .avatarbar-login-container .avatarbar-username{bottom:13px;position:absolute;right:35px}
+.avatarbar-login-container a:hover{text-decoration:none;color:#509ed8;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.avatarbar-login-container>*{-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.avatarbar-large{position:relative;top:-80px;height:80px;width:100%;transition:top .3s ease-in-out;-moz-transition:top .3s ease-in-out;-webkit-transition:top .3s ease-in-out;-o-transition:top .3s ease-in-out}
+.avatarbar-large .avatarbar-logo{position:relative;left:20px;top:0px}
+.avatarbar-large .avatarbar-login-container .avatarbar-userpicture{position:relative;top:-40px;float:right;width:80px;height:80px;padding-right:16px}
+.avatarbar-sigoutandfeedback{color:#fff;height:40px;padding-right:16px;position:absolute;text-transform:uppercase;text-align:right;top:22px;width:200px;right:20px}
+.avatarbar-feedback{position:absolute;left:50%;top:4px;padding-left:45px}
+.avatarbar-privacylinks{color:#fff;height:40px;padding-right:16px;position:absolute;right:20px;text-align:right;text-transform:uppercase;top:7px;width:200px}
+.avatarbar-privacylinks a{color:#99a4b0;text-decoration:none;font-size:10px}
+.avatarbar-sigoutandfeedback a{color:#fff;text-decoration:none}
+.avatarbar-username{display:block;text-transform:none;padding-bottom:6px;font-family:"Segoe UI",Verdana,Helvetica,Sans-Serif;font-size:12px}
+.avatarbar-small{position:relative;top:-80px;height:30px;width:100%;transition:top .3s ease-in-out;-moz-transition:top .3s ease-in-out;-webkit-transition:top .3s ease-in-out;-o-transition:top .3s ease-in-out}
+.avatarbar-small .avatarbar-logo{position:relative;left:20px;top:0px}
+.avatarbar-small .avatarbar-login-container .avatarbar-userpicture{float:right;height:30px;position:relative;right:0;top:-18px;width:30px}
+.avatarbar-small .avatarbar-login-container .avatarbar-username{position:relative;top:-30px;left:-20px;float:right;padding-right:16px;width:200px;text-align:right;font:12px/30px "Segoe UI",Verdana,Helvetica,Sans-Serif}
+
+.drawer { background-color: rgb(60, 69, 79); color: rgb(255, 255, 255); height: 60px; position: relative; }
+.drawer-screen { background-color: rgb(0, 0, 0); bottom: 0pt; display: none; left: 0pt; position: absolute; right: 0pt; top: 0pt; }
+#drawer-surround { position: fixed; bottom: 0pt; left: 50%; width: 960px; margin-left: -480px; z-index: 2000; }
+.drawer-container { height: 60px; overflow: hidden; position: relative; }
+.drawer-slip { left: 0pt; position: absolute; right: 0pt; }
+.drawer-creation { height: 530px; position: relative; }
+.drawer-title,.drawer-helptitle { font: bold 14px/59px "Segoe UI"; #FFFFFF; padding: 0pt 0pt 0pt 35px; text-transform: uppercase; background: url("images/drawer-controlbar-bkg.jpg") repeat-x scroll left bottom transparent;}
+.drawer-close { background: url("images/icons-action-32-sprites.png") no-repeat scroll 0pt -127px transparent; border: 0pt none; cursor: pointer; height: 32px; position: absolute; right: 20px; top: 12px; width: 32px; }
+.drawer-close:hover{background-position:-64px -127px}
+.drawer-content { margin: 0pt auto; text-align: left; height: 100%; }
+.drawer-help-frame { background-color: #665B99; border-style: none; width: 100%; height: 100%; }
+.drawer-controlBar { font-size: 10px; height: 60px; overflow: hidden; text-align: center; text-transform: uppercase; background: url("images/drawer-controlbar-bkg.jpg") repeat-x scroll left bottom transparent; }
+.commandbar-container { height: 60px; max-width: 600px; }
+.commandbar-container ul.commandbar-globalcommands-list { display: inline; }
+.commandbar-container ul.commandbar-globalcommands-list button { padding-left: 3px; padding-right: 3px; }
+.commandbar-globalcommands-list { display: inline-block; height: 60px; width: auto; }
+.drawer-controlBar .icon-img { background: none no-repeat scroll 0pt 0pt transparent; display: inline-block; height: 34px; left: 30px; position: absolute; width: 34px; }
+.drawer-controlBar button { background: none repeat scroll 0% 0% transparent; border: 0pt none; color: rgb(255, 255, 255); cursor: pointer; font-size: inherit; height: 60px; text-transform: uppercase; }
+button.drawer-open { left: 0pt; padding: 0pt 15px 0pt 0pt; position: absolute; font: 14px/25px "Segoe UI Semibold",Verdana,Helvetica,Sans-Serif; text-align: left; text-indent: 64px; }
+button.drawer-open .icon-img { background-image: url("images/icon-drawer-add.png"); }
+button.drawer-help { line-height: 0; padding: 0pt 30px 0pt 0pt; position: absolute; right: 0pt; text-align: right; }
+button.drawer-help .icon-img { position: static; line-height: 43px; }
+.drawer-commandBar { display: inline-block; margin: 0pt auto; text-align: center; }
+.drawer-commandBar li { display: inline-block; vertical-align: top; }
+.drawer-commandBar li button { display: block; position: relative; width: 85px; padding-bottom: 11px; font-size: 9px; text-align: center; text-decoration: none; cursor: pointer; }
+.drawer-commandBar li button .icon-img { display: block; margin: 0pt auto 1px; position: static; width: 32px; opacity: 0.95; }
+
+@media(min-width:0)and (max-width:1199px){
+.avatarbar-container{width:960px;margin-left:-480px}
+#aux-foreground{width:960px;margin-left:-480px}
+#tabspinner{width:760px;margin-left:-280px}
+#navpane{margin-left:-480px}
+#drawer-surround{width:960px;margin-left:-480px}
+.preview-positioner{width:960px;margin-left:-380px}}
+
+@media(min-width:1200px){
+.avatarbar-container{width:960px;margin-left:-480px}
+#aux-foreground{width:960px;margin-left:-480px}
+#tabspinner{width:960px;margin-left:-380px}
+#navpane{margin-left:-480px}
+#drawer-surround{width:960px;margin-left:-480px}
+.preview-positioner{width:960px;margin-left:-480px}
+}
+
+
+button.drawer-open:hover{background-color:#510051}
+
+.drawer-controlBar button:hover{background-color:#510051}
+
+#nav2{position:absolute;top:0;bottom:0;left:200px;width:199px;background:#6C70C0}
+#nav2-back{display:block;height:76px;width:181px;padding:7px 0 0 18px;font-size:18px;line-height:69px;white-space:nowrap;text-transform:lowercase;text-decoration:none;color:#fff;background:#665B99}
+#nav2-back:hover{background-color:#510051}
+#nav2-back img{padding-right:10px;position:relative;top:-1px}
+#nav2-scroll{position:absolute;top:82px;bottom:0;left:0;right:0}
+#nav2-items{position:absolute;top:0;bottom:0;left:0;right:0;overflow:auto;overflow-y:auto;overflow-x:hidden}
+.nav2-item{cursor:pointer;width:164px;padding:0 17px 0 20px;font-size:0;}
+.nav2-item:first-child{border-top:none}
+.nav2-item:hover{background-color:#510051}
+.nav2-item span{width:164px;font-size:12px;line-height:29px;white-space:nowrap;overflow:hidden;display:inline-block;color:#fff}
+.nav2-item.selected span{color:#323232}
+.nav2-item.selected{background-color:#fff}
+
+ /*table*/
+ .table {	border: 1px solid #e3e3e3;	background-color: #f2f2f2;  width: 100%;	border-radius: 6px;	-webkit-border-radius: 6px;	-moz-border-radius: 6px;}
+.table td, .table th {	padding: 5px;	color: #333;}
+.table thead {	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;	padding: .2em 0 .2em .5em;	text-align: left;	color: #4B4B4B;	background-color: #C8C8C8;	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e3e3e3), color-stop(.6,#B3B3B3));	background-image: -moz-linear-gradient(top, #D6D6D6, #B0B0B0, #B3B3B3 90%);	border-bottom: solid 1px #999;}
+.table th {	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;	font-size: 17px;	line-height: 20px;	font-style: normal;	font-weight: normal;	text-align: left;	text-shadow: white 1px 1px 1px;}
+.table td {	line-height: 20px;	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;	font-size: 14px;	border-bottom: 1px solid #fff;	border-top: 1px solid #fff;}
+.table tr:hover {background-color: #fff;}

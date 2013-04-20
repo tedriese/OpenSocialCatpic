@@ -1,0 +1,5 @@
+<messagebundle>
+  <msg name="LISTEN_TO_THIS_SONG">
+      ${Subject.DisplayName} told ${Owner.DisplayName} to listen to ${Song} by ${Artist}.
+  </msg>
+</messagebundle>

@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Gadget Container";
+    Layout = "~/Areas/Portal/Views/Shared/_Layout.cshtml";
+}
+@section Scripts{
+    <script type="text/javascript" src="@Url.Content("~/gadgets/environment?container=default")"></script>
+    @*<script type="text/javascript" src="@Url.Content("~/Scripts/cookiebaseduserprefstore.js")"></script>*@
+    <script type="text/javascript">
+        function reloadGadget() {
+            var specUrl = $('input#gadgetSpecUrl').val();
+            $('input#gadgetSpecUrlForm').val(specUrl);
+            document.forms[0].submit();
+        }
+        function renderGadgets() {
+            var specUrl = document.getElementById('gadgetSpecUrl').value;
+            var gadget = shindig.container.createGadget({ specUrl: specUrl });
+            shindig.container.addGadget(gadget);
+            shindig.container.layoutManager.setGadgetChromeIds(['gadget-chrome-x']);
+            shindig.container.renderGadget(gadget);
+
+            //todo make metadata request and extract preferences from it
+            //note: don't know how to extract data from built-in metadata call while gadget is rendered
+            //note: seems like this should be fixed in certain implementation of container API
+            $.ajax({
+                type: "POST",
+                url: '/gadgets/metadata?st=@ViewData["token"]',
+                contentType: "application/json; charset=utf-8",
+                dataType: 'json',
+                async: false,
+                data: '{"context":{"country":"default","language":"default","view":"default","container":"default"},"gadgets":[{"url":"' + specUrl + '","moduleId":1}]}',
+                success: function (response) {
+                    var gadget = response.gadgets[0];
+                    var userPrefs = gadget.userPrefs;
+                    //header properties
+                    //metadata.append('<h4>header</h4>')
+                    var headerTable = '<table class="table">';
+                    for (var key in gadget) {
+                        if (gadget.hasOwnProperty(key) && key != 'userPrefs') {
+                            headerTable += '<tr><td><b>' + key + '</b></td><td>' + gadget[key] + '</td></tr>';
+                        }
+                    }
+                    headerTable += '</table>';
+                    var metadata = $("div#metadata");
+                    metadata.append(headerTable);
+
+                    //user preferences
+                    //metadata.append('<h4>user preferences</h4>')
+                    var userPrefTable = '<table class="table"><tr><th>NAME</th><th>TYPE</th><th>DISPLAY NAME</th></tr>';
+                    for (var key in userPrefs) {
+                        if (userPrefs.hasOwnProperty(key)) {
+                            userPrefTable += '<tr><td>' + key + '</td><td>' + userPrefs[key].datatype + '</td><td>' + userPrefs[key].displayName + '</td></tr>';
+                            //metadata.append('<div>' + key + '</div>')
+                        }
+                    }
+                    userPrefTable += '</table>';
+                    var preferences = $("div#preferences");
+                    preferences.append(userPrefTable);
+                }
+            });
+        };
+    </script>
+    <script type="text/javascript">    renderGadgets();</script>
+}
+<h2>container environment</h2>
+ @{Html.BeginForm("Container", "GadgetServer", new { area = "Portal" }, FormMethod.Post);}
+@Html.Partial("GadgetSelect", new ViewDataDictionary { { "url", ViewData["url"] } })
+    <input type="hidden" name="url" id="gadgetSpecUrlForm" />
+@{Html.EndForm();}
+<div id="gadget-chrome-x" class="gadgets-gadget-chrome"></div>
+<div id="metadata">
+    <h3>metadata</h3> 
+</div>
+<div  id="preferences">
+    <h3>preferences</h3> 
+</div>

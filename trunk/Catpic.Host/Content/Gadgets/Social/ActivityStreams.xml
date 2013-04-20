@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Catpic activities gadget">
+    <Require feature="opensocial"/>
+    <Require feature="opensocial-templates"/>
+    <Require feature="osapi"/>
+  </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+	<style>
+  .activity-title{font-weight: bold;vertical-align: top;}
+  .activity-entry{min-height:80px;background: #EDEFF4;padding: 6px;margin: 2px 0 0 0;}
+  .activity{vertical-align: top;display: block;margin: 6px 6px 6px 80px;max-width: 600px;}
+  .activity-icon,.activity-icon img{float: left;display: inline; width: 60px;height: 60px;}
+  .activity-text{display: inline;}    
+  .activity-streamTitle{padding-top:2px; display: block;  text-align: right;color: #0B5829;font-weight: bold;vertical-align: top;}
+  .activity-date {padding-top:2px; display: block;  text-align: right; }
+  .activity-user{padding:6px 0 0 8px; display: block;  text-align: left;color: #0B5829;font-weight: bold; }
+  .activity-image,.activity-image img{width:120px; height: auto;display: inline;float: left;}
+  
+  .activitystream-collection{min-height:80px;vertical-align: top;display: block;height:60px;background-color: #f2f2f2;padding: 6px;margin: 2px 0 0 0;border: 1px solid #e3e3e3;	  width: 100%;	border-radius: 6px;	-webkit-border-radius: 6px;	-moz-border-radius: 6px;}
+  .activitystream-collection:hover{background-color: #fff; cursor: hand; cursor: pointer;}
+  .activitystream-collection-title{color: #0B5829;font-size:14pt;padding: 20px 0 0 80px;vertical-align: middle; text-transform:uppercase;}
+  .activitystream-collection-total{display: block;text-align: right;margin-top:-20px;}
+  
+</style>
+    <script type="text/javascript">
+       function render(templateName, targetName, result ){
+          var template = opensocial.template.getTemplate(templateName);
+          var target = document.getElementById(targetName);
+          template.renderInto(target, result);
+       }
+       
+       function getActivities(groupId){
+         osapi.activitystreams.get({userId:"@viewer", groupId:groupId}).execute(function(result){
+            render("gadget:activitystreams","activitystreams", result);
+            $('#nav2').animate({left:'60px'}, 500);
+         });       
+
+      }
+      
+      function getCollections(){
+        var result = {"list":[{"id":"@self","title":"My activities"},{"id":"@friends","title":"Friend's activities"}]};
+        var nav2 = $('#nav2-items');
+        nav2.empty();
+        $.each(result.list, function(i, val){
+              var str = '<div class="nav2-item" collectionid="'+ val.id +'"><span>'+ val.title.toLowerCase() +'</span></div>'
+              nav2.append(str);
+            });
+        $('#nav2-back').click(function(){
+                $('#activitystreams').empty();
+                renderCollections(result);
+         });
+        renderCollections(result);
+      }
+      
+      function renderCollections(result){
+          render("gadget:collections", "collections",result);
+          $('.activitystream-collection, .nav2-item').click(function(){
+            $('#collections').empty();
+		        var collectionId = $(this).attr("collectionid");
+            getActivities(collectionId);
+	        });
+      }
+
+      gadgets.util.registerOnLoadHandler(getCollections);
+    </script>
+    
+    <script type="text/os-template"  tag="gadget:collections" xmlns:gadget="http://catpic.apphb.com/social">    
+      <div>
+          <div class="activitystream-collection" repeat="${list}" collectionid="${Cur.id}">
+              <div class="activity-icon">
+                  <img src="/Content/social/avatars/folder.png" />
+              </div>
+              <div class="activitystream-collection-title">${Cur.title}</div>
+              <div class="activitystream-collection-total">5 new</div>
+          </div>
+      </div>
+    </script>
+    
+    <script type="text/os-template"  tag="gadget:activitystreams" xmlns:gadget="http://catpic.apphb.com/social">    
+      <div>    
+          <div class="activity-entry" repeat="${list}" >
+                <div class="activity-icon">
+                    <img src="/Content/social/avatars/activity.png" />
+                    <div class="activity-user">${Cur.actor.displayName}</div>
+                </div>
+                <div class="activity">
+                    <div class="activity-title">${Cur.title}</div>
+                    <div class="activity-text">under construction..</div>
+                    <div class="activity-date">${Cur.published}</div>
+                </div>
+                <br style="clear:both" />
+          </div>
+      </div>
+    </script>
+    <div id="collections"></div>
+    <div id="activitystreams"></div>
+	]]>
+  </Content>
+</Module>

@@ -1,0 +1,8 @@
+﻿@{
+    ViewBag.Title = "Google contacts";
+    Layout = "~/Areas/Social/Views/Shared/_Layout.cshtml";
+}
+@using Catpic.Host.Engine
+@this.StyleBlock(@<link href="@Url.Content("~/Content/Social/gadgets.css")" rel="stylesheet" type="text/css" />)
+<h1 class="itemtitle">google contacts</h1>
+<iframe id="gadgetframe" class="gadgets-gadget" src="/gadgets/ifr?url=@Url.Encode(ViewData["url"].ToString())&st=@ViewData["token"]" ></iframe>

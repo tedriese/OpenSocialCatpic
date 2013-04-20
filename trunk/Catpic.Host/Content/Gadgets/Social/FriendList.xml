@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="My Friends">
+    <Require feature="opensocial-0.7"/>
+    <Optional feature="content-rewrite">
+      <Param name="include-tags"></Param>
+    </Optional>
+  </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+      <!-- Load the bundled code for OpenSocial Templates -->
+      <script type="text/javascript"
+          src="http://ostemplates-demo.appspot.com/ostemplates.js"></script>
+
+      <script type="text/os-template">
+        <b>${viewer.displayName}'s friends</b>
+        <ul>
+          <li repeat="friends">${displayName}</li>
+        </ul>
+      </script>
+
+      <script type="text/javascript">
+        function init() {
+          loadData();
+        }
+        function loadData() {
+          var req = opensocial.newDataRequest();
+          req.add(req.newFetchPersonRequest('VIEWER'), 'viewer');
+          req.add(req.newFetchPeopleRequest('VIEWER_FRIENDS'), 'friends');
+
+          req.add(req.newFetchPersonRequest(opensocial.IdSpec.PersonId.VIEWER), "get_viewer");
+          req.send(function(data) {
+            debugger;
+            os.Container.processDocument(data);
+          });
+        }
+        gadgets.util.registerOnLoadHandler(init);
+      </script>
+    ]]>
+  </Content>
+</Module>

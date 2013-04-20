@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Open Social Test for version 0.8 for VIEWER(ticket: Rave-252)">
+    <Require feature="opensocial-0.8"/>
+  </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+    <script type="text/javascript">
+      /**
+       * Request the VIEWER.
+       */
+      function request() {
+        var idspec = opensocial.newIdSpec({ "userId" : "VIEWER", "groupId" : "FRIENDS" });
+        var req = opensocial.newDataRequest();
+        req.add(req.newFetchPersonRequest(opensocial.IdSpec.PersonId.VIEWER), "get_viewer");
+        req.send(response);
+      };
+ 
+      /**
+       * Parses the response and generates html to list the name of the viewer.
+       *
+       * @param {Object} dataResponse Friend information that was requested.
+       */
+      function response(dataResponse) {
+        var viewer = dataResponse.get('get_viewer').getData();
+        if(viewer == null) {
+           alert("viewer is null");
+        }
+
+        else {
+           alert("viewer is not null");
+           var html = 'Viewer: ' + viewer.getDisplayName();
+           document.getElementById('message').innerHTML = html;
+        }
+      };
+ 
+      // Execute the request function when the application is finished loading.
+      gadgets.util.registerOnLoadHandler(request);
+ 
+    </script>
+    <div id="message"> </div>
+  ]]>
+  </Content>
+</Module>

@@ -1,0 +1,87 @@
+﻿@using Catpic.Host.Engine
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1" />
+        <meta name="google-site-verification" content="-ANdRBvyFLQ6cleLy_EzyY2mrUEfayiZpqVumSwYS8A" />
+        <link rel="search" href="http://catpic.apphb.com/opensearchdescription.xml" type="application/opensearchdescription+xml" title="catpic.apphb.com" />
+		<title>@ViewBag.Title</title>
+        <link href="@Url.Content("~/Content/Portal/main.css")" rel="stylesheet" type="text/css" />
+        @RenderSection("Styles", required:false)
+        <script type="text/javascript" src="@Url.Content("~/scripts/jquery-1.7.1.min.js")"></script> 
+	</head>
+	<body id="top" class="page-">
+		<div id="page">
+			<header>
+				<a id="site-logo" href="#"><img src="@Url.Content("~/Content/Portal/Images/logo.png")" alt="Catpic"></a>   
+                @Html.Partial("LoginPanel")  
+			</header>
+			<div id="main-container">
+				<span class="topnav-rightlink">
+					@Html.ActionLink("Social", "Index", "Profile", new {area ="Social"}, null)
+				</span>
+				<nav>
+					@Html.Partial("TopNavigation")
+				</nav>
+				<section id="content-container">
+					 @RenderBody()
+				</section>
+				 <footer class="clearfix">
+					<div class="footer-sitemap">
+						@Html.Partial("FooterNavigation")
+					</div>
+					<div class="footer-bottom">
+						<ul>
+							<li class="footer-copyright">
+								<a href="#">
+									<img alt="catpic" src="@Url.Content("~/Content/Portal/Images/logo_small.png")">
+								</a>
+							</li>
+							<li ><a href="#">Feedback</a></li>
+							<li><a href="#">License</a></li>        
+                            <li style="width:100px">&nbsp;</li>
+							<li>© 2012 Catpic version @Catpic.Host.MvcApplication.BuildVersion</li>
+						</ul>
+					</div>
+					
+					<span class="languages-selector">
+						<div class="locale-selector" style="position: relative;">
+							<a class="current-locale">English</a>
+							<div class="locale-selection-panel site-flag site-flag-lang">
+								<a class="close">&nbsp;</a>
+								<div class="content">
+									<table class="all-locales" cellspacing="0" style="border-collapse:collapse;">
+										<tbody>
+											<tr>
+												<td>
+													<a title="English" class="locale-link selected">English</a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a title="Russian" class="locale-link selected">Russian</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="arrow">&nbsp;</div>
+								</div>
+							</div>
+						</div>
+					</span>
+				</footer>
+            </div>    
+		</div>
+        <div class="soc-fixed">
+            <a class="soc-facebook" href="http://www.facebook.com/CatpicTestCommunity" target="_blank" title="Facebook"><span>facebook</span></a>
+            <a class="soc-twitter" href="https://twitter.com/catpic_software" target="_blank" title="Twitter"><span>twitter</span></a>                       
+        </div>
+        @Html.Partial("LoginDialog")
+        @this.WriteStyleBlocks()
+
+		<script src="@Url.Content("~/scripts/portal/main.js")"></script>
+        @RenderSection("Scripts", required:false)
+        @this.WriteScriptBlocks()
+        
+	</body>
+</html>

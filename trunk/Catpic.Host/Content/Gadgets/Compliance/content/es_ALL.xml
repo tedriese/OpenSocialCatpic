@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messagebundle>
+  <msg name="hello_world">
+    Hola Mundo.
+  </msg>
+  <msg name="color">Color</msg> 
+  <msg name="red">Rojo</msg> 
+  <msg name="green">Verde</msg> 
+  <msg name="blue">Azul</msg> 
+  <msg name="gray">Gris</msg> 
+  <msg name="purple">Púrpura</msg> 
+  <msg name="black">Negro</msg>
+</messagebundle>

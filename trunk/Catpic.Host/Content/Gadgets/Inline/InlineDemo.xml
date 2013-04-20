@@ -1,0 +1,9 @@
+﻿<Module>
+  <ModulePrefs title="Inline gadget">
+  </ModulePrefs>
+  <Content type="html" view="home, canvas, preview">
+    <![CDATA[
+<p>Hello from gadget!</p>
+]]>
+  </Content>
+</Module>

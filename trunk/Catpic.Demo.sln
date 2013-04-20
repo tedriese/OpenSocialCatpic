@@ -1,0 +1,117 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catpic.Gadgets", "Catpic.Gadgets\Catpic.Gadgets.csproj", "{DC7DE17B-5D85-4B25-AB4D-7C02FDB49C4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catpic.Utils", "Catpic.Utils\Catpic.Utils.csproj", "{CE5FF68B-C6AC-405C-888A-DF4BB19BB2AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D98787F0-3BDE-47C5-8AFC-D4BA71CE84F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{9F72ACD0-EB1F-46F6-94B2-6DF0730CA06F}"
+	ProjectSection(SolutionItems) = preProject
+		AssemblyInfoCommon.cs = AssemblyInfoCommon.cs
+		LICENSE = LICENSE
+		Settings.StyleCop = Settings.StyleCop
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catpic.Host", "Catpic.Host\Catpic.Host.csproj", "{12A63F65-95A0-4973-80E7-FD246F05D647}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{6FC0B657-B466-497A-AFC3-0E1C17CFC051}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catpic.Utils.Tests", "Tests\Catpic.Utils.Tests\Catpic.Utils.Tests.csproj", "{2ACF2DA5-8253-4C67-BC93-0D781108E693}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catpic.Host.Tests", "Tests\Catpic.Host.Tests\Catpic.Host.Tests.csproj", "{FEE7E1A2-4BBE-4562-8A86-ACB809FE15C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catpic.Social", "Catpic.Social\Catpic.Social.csproj", "{7F151198-3E69-4D19-82A6-058F549FDBE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catpic.Social.Tests", "Tests\Catpic.Social.Tests\Catpic.Social.Tests.csproj", "{3F3D26BF-98AF-463A-8A73-A0A735CC4DE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catpic.Web", "Catpic.Web\Catpic.Web.csproj", "{3198C211-E0AC-424D-9734-7CEBF5E830CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catpic.Gadgets.Tests", "Tests\Catpic.Gadgets.Tests\Catpic.Gadgets.Tests.csproj", "{15CE9D07-842D-42D1-A211-38E1F10A8A74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{1E0F1BD5-D83A-4156-B2D9-69257EE69333}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Specification", "Specification", "{76D22444-40A8-4571-A8D0-27B99065A203}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\Specification\OpenSocial Social API Server Specification 2.0.1.xml = Documentation\Specification\OpenSocial Social API Server Specification 2.0.1.xml
+		Documentation\Specification\OpenSocial.xslt = Documentation\Specification\OpenSocial.xslt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catpic.Data.EntityFramework", "Data\Catpic.Data.EntityFramework\Catpic.Data.EntityFramework.csproj", "{D9A25BDA-7F49-4D7D-9B6A-1419B6C3D6DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catpic.Data.Tests", "Tests\Catpic.Data.Tests\Catpic.Data.Tests.csproj", "{D79A4010-C8C9-4DC6-BCAF-C28B51EE6C95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{AF144C0C-EEA4-4978-AA45-3BCAAF7C39C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC7DE17B-5D85-4B25-AB4D-7C02FDB49C4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC7DE17B-5D85-4B25-AB4D-7C02FDB49C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC7DE17B-5D85-4B25-AB4D-7C02FDB49C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC7DE17B-5D85-4B25-AB4D-7C02FDB49C4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE5FF68B-C6AC-405C-888A-DF4BB19BB2AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE5FF68B-C6AC-405C-888A-DF4BB19BB2AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE5FF68B-C6AC-405C-888A-DF4BB19BB2AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE5FF68B-C6AC-405C-888A-DF4BB19BB2AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12A63F65-95A0-4973-80E7-FD246F05D647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12A63F65-95A0-4973-80E7-FD246F05D647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12A63F65-95A0-4973-80E7-FD246F05D647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12A63F65-95A0-4973-80E7-FD246F05D647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ACF2DA5-8253-4C67-BC93-0D781108E693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ACF2DA5-8253-4C67-BC93-0D781108E693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ACF2DA5-8253-4C67-BC93-0D781108E693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ACF2DA5-8253-4C67-BC93-0D781108E693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEE7E1A2-4BBE-4562-8A86-ACB809FE15C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEE7E1A2-4BBE-4562-8A86-ACB809FE15C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEE7E1A2-4BBE-4562-8A86-ACB809FE15C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEE7E1A2-4BBE-4562-8A86-ACB809FE15C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F151198-3E69-4D19-82A6-058F549FDBE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F151198-3E69-4D19-82A6-058F549FDBE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F151198-3E69-4D19-82A6-058F549FDBE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F151198-3E69-4D19-82A6-058F549FDBE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F3D26BF-98AF-463A-8A73-A0A735CC4DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F3D26BF-98AF-463A-8A73-A0A735CC4DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F3D26BF-98AF-463A-8A73-A0A735CC4DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F3D26BF-98AF-463A-8A73-A0A735CC4DE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3198C211-E0AC-424D-9734-7CEBF5E830CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3198C211-E0AC-424D-9734-7CEBF5E830CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3198C211-E0AC-424D-9734-7CEBF5E830CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3198C211-E0AC-424D-9734-7CEBF5E830CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15CE9D07-842D-42D1-A211-38E1F10A8A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15CE9D07-842D-42D1-A211-38E1F10A8A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15CE9D07-842D-42D1-A211-38E1F10A8A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15CE9D07-842D-42D1-A211-38E1F10A8A74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9A25BDA-7F49-4D7D-9B6A-1419B6C3D6DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9A25BDA-7F49-4D7D-9B6A-1419B6C3D6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9A25BDA-7F49-4D7D-9B6A-1419B6C3D6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9A25BDA-7F49-4D7D-9B6A-1419B6C3D6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D79A4010-C8C9-4DC6-BCAF-C28B51EE6C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D79A4010-C8C9-4DC6-BCAF-C28B51EE6C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D79A4010-C8C9-4DC6-BCAF-C28B51EE6C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D79A4010-C8C9-4DC6-BCAF-C28B51EE6C95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2ACF2DA5-8253-4C67-BC93-0D781108E693} = {D98787F0-3BDE-47C5-8AFC-D4BA71CE84F1}
+		{FEE7E1A2-4BBE-4562-8A86-ACB809FE15C5} = {D98787F0-3BDE-47C5-8AFC-D4BA71CE84F1}
+		{3F3D26BF-98AF-463A-8A73-A0A735CC4DE6} = {D98787F0-3BDE-47C5-8AFC-D4BA71CE84F1}
+		{15CE9D07-842D-42D1-A211-38E1F10A8A74} = {D98787F0-3BDE-47C5-8AFC-D4BA71CE84F1}
+		{D79A4010-C8C9-4DC6-BCAF-C28B51EE6C95} = {D98787F0-3BDE-47C5-8AFC-D4BA71CE84F1}
+		{76D22444-40A8-4571-A8D0-27B99065A203} = {1E0F1BD5-D83A-4156-B2D9-69257EE69333}
+		{D9A25BDA-7F49-4D7D-9B6A-1419B6C3D6DC} = {AF144C0C-EEA4-4978-AA45-3BCAAF7C39C8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal

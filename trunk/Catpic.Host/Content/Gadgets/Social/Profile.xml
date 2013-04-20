@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Catpic.Host profile">
+    <Require feature="opensocial-templates"/>
+    <Require feature="opensocial-1.0"/>
+    <Require feature="opensocial-data" />
+  </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+    <style>
+      .userProfile {font-size: 16px;}
+      .userProfile tr>td:first-child {font-size: 12px;}
+      .table tr>td:first-child {font-size: 12px; width:180px; text-transform:uppercase; }
+    </style>
+    
+    <script xmlns:os="http://ns.opensocial.org/2008/markup" type="text/os-data">
+      <os:OwnerRequest key="owner" fields="@all" />
+    </script>
+    <script type="text/os-template" require="owner">
+          <table class="table" width="100%">
+              <tr>
+                  <td rowspan="6" width="200px"><img src="${owner.thumbnailUrl}" height="180" width="180" alt="${displayName}"/></td>
+                  <td>id</td>
+                  <td>${owner.id}</td>
+              </tr>
+              <tr>
+                  <td>display name</td>
+                  <td>${owner.displayName}</td>
+              </tr>
+              <tr>
+                  <td>gender</td>
+                  <td>${owner.gender.displayValue}</td>
+              </tr>
+              <tr>
+                  <td>family name</td>
+                  <td>${owner.name.familyName}</td>
+              </tr>
+              <tr>
+                  <td>given name</td>
+                  <td>${owner.name.givenName}</td>
+              </tr>
+              <tr>
+                  <td>formatted</td>
+                  <td>${owner.name.formatted}</td>
+              </tr>
+          </table>  
+    </script>       
+  ]]>
+  </Content>
+</Module>

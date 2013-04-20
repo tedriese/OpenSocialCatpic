@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Catpic Home";
+    Layout = "~/Areas/Portal/Views/Shared/_Layout.cshtml";
+}
+@section Scripts{
+    <script>
+        function GoTo(url) {
+            parent.location = url;
+        }
+    </script>
+}
+<div class="homepage-hero">
+	<h1>
+		<span>Scalable.</span> 
+		<span>Open.</span> 
+		<span>Extensible.</span>
+	</h1>
+    <p>Gadget server</p>
+	<p>OpenSocial container</p>
+	<p>written on .NET</p>
+	<div class="homepage-feature-boxes">
+		<div class="col2" onclick="GoTo('@Url.Action("Index", "Download", new { area = "Portal" })');">
+			<h2>download</h2>
+			<a href="#">use now</a>
+		</div>
+		<div class="col3" onclick="GoTo('@Url.Action("Details", "Home", new { area = "Portal" })');">
+			<h2>details</h2>
+			<a href="#">learn now</a>
+		</div>
+		<div class="col1" onclick="GoTo('@Url.Action("Index", "GadgetServer", new { area = "Portal" })');">
+			<h2>gadget</h2>
+            <a href="#">try now</a>
+		</div>
+	</div>
+</div>
+<div class="home-infobox vwo_loaded">
+    <b>Catpic</b> is <i>OpenSocial Container</i> for .NET developers that provides extensible <i>component hosting environment</i> and <i>social facilities</i> to existing  .NET applications using best practices.
+</div>

@@ -1,0 +1,33 @@
+﻿@using Catpic.Host.Engine.Navigation
+@{
+    var portal = NavigationServiceFactory.Portal;
+    var navNode = portal.GetNavigation(portal.GetInventoryId(Request.Url.LocalPath));
+    if(navNode != null){
+<ul id="topNavigation">
+    @foreach (var node in navNode.Children)
+    {
+        if (!node.IsVisible){
+            continue;
+        }
+        var current = node.IsCurrent ? " class=current" : "";
+        <li@current>@Html.ActionLink(node.Entry.Label, node.Inventory.Action, node.Inventory.Controller, 
+                       new { area = node.Inventory.Area }, null)</li>
+    }
+</ul>
+<ul id="topSubNavigation">
+    @foreach (var node in navNode.Children)
+    {
+        if (node.IsCurrent)
+        {
+            foreach (var subNode in node.Children)
+            {
+                var current = subNode.IsCurrent ? " class=current" : "";
+                <li@current>@Html.ActionLink(subNode.Entry.Label, subNode.Inventory.Action, subNode.Inventory.Controller,
+                                new { area = subNode.Inventory.Area }, null)</li>
+            }
+            break;
+        }
+    }
+</ul>
+    }
+}

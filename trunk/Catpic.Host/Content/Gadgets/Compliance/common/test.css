@@ -1,0 +1,198 @@
+hr {
+  border: none 0;
+  border-top: 1px dotted cadetblue;
+  width: 50%;
+  height: 1px;
+}
+
+hr.separator {
+  margin: 0;
+  padding: 0;
+  background-color: #004400;
+  border: 0;
+  height: 1px;
+}
+
+table {
+  width: 100%;
+  border: 1px solid black;
+}
+
+table.resultList td {
+  border-bottom: 1px dotted green;
+  height: 25px;
+}
+
+table.pass {
+  border-color: green;
+  color: darkgreen;
+}
+
+table.fail {
+  border-color: red;
+  color: darkred;
+}
+
+table.fail td {
+  border-bottom: 1px dotted red;
+  border-left: 1px dotted red;
+}
+
+table.pass td {
+  border-bottom: 1px dotted green;
+  border-left: 1px dotted green;
+}
+
+table td.note {
+  background-color: white;
+  color: blue; 
+}
+
+table.unv {
+  border-color: darkgoldenrod;
+  color: goldenrod;
+}
+
+table.warn {
+  border-color: khaki;
+  color: darkkhaki;
+}
+
+table.gadget-summary {
+  border-spacing: 10px;
+}
+
+table.suitesummary {
+  border-spacing: 10px;
+}
+
+table.gadget-pass {
+  color: green;
+  font-weight: bold;
+  background-color: beige;
+  border-spacing: 10px;
+}
+
+table.gadget-warn {
+  color: goldenrod;
+  font-weight: bold;
+  background-color: lightgoldenrodyellow;
+  border-spacing: 10px;
+}
+
+table.gadget-unv {
+  color: khaki;
+  font-weight: bold;
+  background-color: ivory;
+  border-spacing: 10px;
+}
+
+table.gadget-fail {
+  color: red;
+  font-weight: bold;
+  background-color: mistyrose;
+  border-spacing: 10px;
+}
+
+table td.header {
+  font-weight: bold;
+  font-size: 80%;
+  background-color: #dcdcdc;
+  border-bottom: 1px gray;
+}
+
+table td.gadget-summary {
+  font-weight: bold;
+  border-bottom: 1px gray;
+}
+
+table td.execution-status {
+  color: blue;
+}
+
+table.resultList tr.suiteHeader {
+  font-weight: bold;
+  background-color: #4682B4;
+}
+
+table.resultList td.category {
+  width: 100%;
+  font-weight: bold;
+  background-color: #F0F8FF;
+}
+
+table.resultList td.category-changed {
+  font-weight: bold;
+  background-color: #FFF85C;
+}
+
+table.resultList td.verification {
+  border-bottom: 1px dotted green;
+  height: 25px;
+}
+
+table.resultList td.verification-changed-broken {
+  background-color: #FF6666;
+  border-bottom: 1px dotted green;
+  height: 25px;
+}
+
+table.resultList td.verification-changed-fixed {
+  background-color: #FFF85C;
+  border-bottom: 1px dotted green;
+  height: 25px;
+}
+
+div#testResults span.status {
+  font-weight: bold;
+}
+
+span.desc {
+  color: blue;
+}
+
+span.suitename {
+  color: black;
+}
+
+span.pass {
+  color: green;
+}
+
+span.fail {
+  color: red;
+}
+
+span.testname {
+  color: black;
+}
+
+span.stable {
+  color: blue;
+  font-weight: bold;
+}
+
+span.INFO, span.warning, span.error {
+  font-weight: bold;
+}
+
+span.actual, span.expected {
+  color: gray;
+}
+
+span.passed {
+  color: green;
+}
+
+span.failed, span.error {
+  color: red;
+}
+
+span.warning {
+  color: yellow;
+}
+
+span.exceptionStack {
+  font-size: 10px;
+  color: red;
+}

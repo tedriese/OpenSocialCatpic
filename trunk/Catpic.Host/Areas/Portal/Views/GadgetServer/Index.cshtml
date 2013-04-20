@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Gadget link";
+    Layout = "~/Areas/Portal/Views/Shared/_Layout.cshtml";
+}
+@section Scripts{
+    <script type="text/javascript">
+        function reloadGadget() {
+            var specUrl = $('input#gadgetSpecUrl').val();
+            $('input#gadgetSpecUrlForm').val(specUrl);
+            var url = "/gadgets/ifr?url=" + encodeURI(specUrl) + "&st=@ViewData["token"]";
+            loadIframe("gadgetframe", url);
+        }
+
+        function loadIframe(iframeName, url) {
+            var $iframe = $('#' + iframeName);
+            if ($iframe.length) {
+                $iframe.attr('src', url);
+                return false;
+            }
+            return true;
+        }
+
+    </script>
+}
+<h2>direct link</h2>
+<p>The page demonstrates how to render gadget using direct link like: 
+<ul>
+    <li><b>/gadgets/ifr?url=http://www.google.com/ig/modules/horoscope.xml</b>
+        <p>Renders gadget with default settings </p>
+    </li>
+    <li><b>/gadgets/ifr?url=http://www.google.com/ig/modules/calculator.xml
+    &view=default&up_default_mode=1&lang=ru</b>
+        <p>Renders gadget with the following settings:</p>
+        <ul>
+            <li><i>view</i> is set to default</li>
+            <li>"default_mode" <i>user preference</i> which is specific to the gadget is set to 1</li>
+            <li><i>language</i> is set to russian</li>         
+        </ul>
+        </li>
+</ul>
+<p>The gadget settings (e.g. views, user preferences, supported languages) can be explored from its xml definition.</p>
+
+@Html.Partial("GadgetSelect", new ViewDataDictionary { { "url", ViewData["url"] } })
+<iframe id="gadgetframe" class="gadgets-gadget" src="/gadgets/ifr?url=@Url.Encode(ViewData["url"].ToString())&st=@ViewData["token"]" ></iframe>

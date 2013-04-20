@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Social/Views/Shared/_Layout.cshtml";
+}
+<h1 class="itemtitle">friends</h1>
+<div class="aux-tabcontent" style="display: block; ">
+    @Html.Action("RenderInline", "GadgetServer", new {url = "~/content/gadgets/social/Friends.xml", mode = "inline", area= "Portal" })
+    <!--<button class="click" style="text-align: right" >details</button>-->
+</div>

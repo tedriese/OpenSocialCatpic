@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Social REST API";
+    Layout = "~/Areas/Portal/Views/Shared/_Layout.cshtml";
+}
+@using Catpic.Host.Engine
+@this.StyleBlock(@<link href="@Url.Content("~/Content/Portal/gadgets.css")" rel="stylesheet" type="text/css" />)
+@section Scripts{
+<script type="text/javascript" src="@Url.Content("~/gadgets/environment?container=default")"></script>
+<script type="text/javascript">
+    var specUrl0 = '~/content/gadgets/social/peoplesuitetest.xml';
+    var specUrl1 = '~/content/gadgets/social/ActivitiesSuiteTest.xml';
+    var specUrl2 = '~/content/gadgets/social/ActivityStreamGadget.xml';
+    function renderGadgets() {
+        var gadget0 = shindig.container.createGadget({ specUrl: specUrl0 });
+        var gadget1 = shindig.container.createGadget({ specUrl: specUrl1 });
+        var gadget2 = shindig.container.createGadget({ specUrl: specUrl2 });
+
+        shindig.container.addGadget(gadget0);
+        shindig.container.addGadget(gadget1);
+        shindig.container.addGadget(gadget2);
+        shindig.container.layoutManager.setGadgetChromeIds(
+            ['gadget-chrome-0', 'gadget-chrome-1', 'gadget-chrome-2']);
+
+        shindig.container.renderGadget(gadget0);
+        shindig.container.renderGadget(gadget1);
+        shindig.container.renderGadget(gadget2);
+    }
+</script>
+<script type="text/javascript">    renderGadgets();</script>
+}
+<h2>social tests</h2>
+<p><b>NOTE:</b> you should be signed in as john.doe for proper results</p>
+<div id="gadget-chrome-0" class="gadgets-gadget-chrome"></div>
+<div id="gadget-chrome-1" class="gadgets-gadget-chrome"></div>
+<div id="gadget-chrome-2" class="gadgets-gadget-chrome"></div>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<node>
+  <children>
+    <node label="Profile" inventory="Social/Profile">
+      <children>
+        <node label="view" inventory="Social/Profile/Index"></node>
+        <node label="contacts" inventory="Social/Profile/Contacts"></node>
+        <node label="education" inventory="Social/Profile/Education"></node>
+        <node label="job" inventory="Social/Profile/Job"></node>
+      </children>
+    </node>
+    <node label="Applications" inventory="Social/Applications">
+      <children>
+      </children>
+    </node>
+    <node label="People" inventory="Social/People">
+      <children>
+      </children>
+    </node>
+    <node label="Groups" inventory="Social/Groups">
+      <children>
+      </children>
+    </node>
+    <node label="Activities" inventory="Social/Activities">
+      <children>
+      </children>
+    </node>
+    <node label="Messages" inventory="Social/Messages">
+      <children>
+      </children>
+    </node>
+    <node label="Albums" inventory="Social/Albums">
+      <children>
+      </children>
+    </node>
+  </children>
+</node>

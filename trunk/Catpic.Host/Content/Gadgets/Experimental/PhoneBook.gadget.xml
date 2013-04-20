@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><Module><ModulePrefs author="Gadglet Team" author_affiliation="Gadglet Team." author_email="info@gadglet.com" description="This cool gadget creates a phonebook from your contact list.  Quickly and easily find any phone number simply by clicking on a letter" directory_title="Phone Book" height="350" screenshot="screenshot.png" thumbnail="thumbnail.png" title="__MSG_gadgetTitlePhoneBook__" title_url="http://gadglet.appspot.com">
+  
+    <Require feature="locked-domain"/>
+    <Require feature="dynamic-height"/>
+    <OAuth>
+      <Service>
+        <Access method="GET" url="https://www.google.com/accounts/OAuthGetAccessToken"/> 
+        <Request method="GET" url="https://www.google.com/accounts/OAuthGetRequestToken?scope=http://www.google.com/m8/feeds/"/> 
+        <Authorization url="https://www.google.com/accounts/OAuthAuthorizeToken"/> 
+      </Service>
+    </OAuth>
+ <Locale lang="ALL" language_direction="ltr" messages="http://gadglet.appspot.com/static/gadgets/messages/ALL_ALL.xml"/>
+ 	<Locale lang="iw" language_direction="rtl" messages="http://gadglet.appspot.com/static/gadgets/messages/iw_ALL.xml"/>
+ 	<Locale lang="en" language_direction="ltr" messages="http://gadglet.appspot.com/static/gadgets/messages/en_ALL.xml"/>
+ 	<Locale lang="es" language_direction="ltr" messages="http://gadglet.appspot.com/static/gadgets/messages/es_ALL.xml"/>
+ 	<Locale lang="de" language_direction="ltr" messages="http://gadglet.appspot.com/static/gadgets/messages/de_ALL.xml"/>
+ 	<Locale lang="fr" language_direction="ltr" messages="http://gadglet.appspot.com/static/gadgets/messages/fr_ALL.xml"/>
+ 	<Locale lang="ru" language_direction="ltr" messages="http://gadglet.appspot.com/static/gadgets/messages/ru_ALL.xml"/>
+ 	</ModulePrefs><Content type="html"><![CDATA[<!DOCTYPE html><!-- ALm6fM1w9mN4yNyZw7idLJmzc6ykb4BSGVRVoWjXT6eYVkpUwAJFoMFauAfKS9kcXGra0gFvEG3rdJOC+HTfPLC1eSSKZvPMjJFGZo+V1kbQwoeX3jvjiEEy6Ni7l4li+lnUy0Y/0APaihKDNE8O22sUaA6U10kB2wlJjfXUb6CAcWRVhQloUFk= -->
+<link rel="stylesheet" type="text/css" href="http://gadglet.appspot.com/static/gwt/standard/standard.css"/>
+<script src="http://gadglet.appspot.com/static/js/popup.js"></script>
+
+<div id="message" class="div-hidden"></div>
+<div id="approval" class="div-hidden">
+     <a href="#" id="personalize">__MSG_gadgetMsgPleaseApproveContacts__</a>
+</div>
+
+<div id="waiting" class="div-hidden">
+   <a href="#" id="approvaldone"> __MSG_gadgetMsgApproveInProcess__</a>
+</div>
+<div id="ananGadgets" class="div-hidden"><div id="ananGadgetsRoot" ></div></div>
+
+ <script type="text/javascript">
+    function showOneSection(toshow) {
+      var sections = [ 'message', 'approval', 'waiting','ananGadgets' ];
+      for (var i=0; i < sections.length; ++i) {
+        var s = sections[i];
+        var el = document.getElementById(s);
+        if (s === toshow) {
+          el.style.display = "block";
+        } else {
+          el.style.display = "none";
+        }
+      }
+    }
+
+    function testConn() {
+        var params = {};
+        url = "http://www.google.com/m8/feeds/contacts/default/base?alt=json&max-results=1";
+        params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
+        params[gadgets.io.RequestParameters.AUTHORIZATION] = gadgets.io.AuthorizationType.OAUTH;
+        params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.GET;
+
+        gadgets.io.makeRequest(url, function (response) { 
+          if (response.oauthApprovalUrl) {
+            var popup = shindig.oauth.popup({
+              destination: response.oauthApprovalUrl,
+              windowOptions: null,
+              onOpen: function() { showOneSection('waiting'); },
+              onClose: function() { testConn(); }
+            });
+        
+            var personalize = document.getElementById('personalize');
+            personalize.onclick = popup.createOpenerOnClick();
+            var approvaldone = document.getElementById('approvaldone');
+            approvaldone.onclick = popup.createApprovedOnClick();
+            showOneSection('approval');
+          } else if (response.data) {
+            showOneSection('ananGadgets');
+           
+          } else {
+            var message = document.getElementById('message');
+            var prefs = new gadgets.Prefs();
+            var err = document.createTextNode(prefs.getMsg("approveError"));
+            message.appendChild(err);
+            showOneSection('message');
+          }
+        }, params);
+      }
+      
+      gadgets.util.registerOnLoadHandler(testConn);
+ </script>    
+<script>function PhoneBook(){var J='',R='" for "gwt:onLoadErrorFn"',T='" for "gwt:onPropertyErrorFn"',vb='"><\/script>',Z='&',tb='.cache.js',sb='.cache.js$',O='/',mb='014A7A2A7C57CBCC96F149C91DE8E5A6',nb='156C9E71044A7C37761D74F2F44889EF',lb='2.1',ob='697EE681D9975DE134800CA0B10B24CE',pb='8E1E5E6C2C8C502A24E1519D8E787D2D',qb='9A55EFC4E345CF1CD3CEA08B24EA446D',rb=':',ub='<script src="',V='=',Q='Bad handler "',L='PhoneBook',Y='_',X='country',M='external.gwtOnLoad failed: ',fb='gecko',gb='gecko1_8',K='gwt.hybrid',P='gwt:onLoadErrorFn',S='gwt:onPropertyErrorFn',U='gwt:property',eb='ie6',db='ie8',W='lang',jb='moduleStartup',cb='msie',kb='onModuleLoadStart',_='opera',bb='safari',ib='startup',hb='unknown',N='url',$='user.agent',ab='webkit';var h=window,i=document,j=h.external,k,l,m=J,n={},o=[],p=[],q=[],r=0,s,t,u=h.__gwtStatsEvent?function(a){return h.__gwtStatsEvent(a)}:null;if(!h.__gwt_stylesLoaded){h.__gwt_stylesLoaded={}}if(!h.__gwt_scriptsLoaded){h.__gwt_scriptsLoaded={}}function v(){try{return j&&(j.gwtOnLoad&&h.location.search.indexOf(K)==-1)}catch(a){return false}}
+function w(){if(l){if(v()){try{j.gwtOnLoad(h,L,r)}catch(a){h.alert(M+a)}}else if(k){k(s,L,m,r)}}}
+function x(){m=h.gadgets.util.getUrlParameters()[N];m=m.substring(0,m.lastIndexOf(O)+1)}
+function y(){var b;var c=new h.gadgets.Prefs;if(b=c.getString(P)){try{s=eval(b)}catch(a){alert(Q+e+R)}}if(b=c.getString(S)){try{t=eval(b)}catch(a){alert(Q+e+T)}}if(b=c.getArray(U)){for(var d=0;d<b.length;d++){var e=b[d];if(e){var f,g=e.indexOf(V);if(g>=0){name=e.substring(0,g);f=e.substring(g+1)}else{name=e;f=J}n[name]=f}}}}
+function z(){var a=h.location.search;var b=A(a,W);if(b!=null){country=A(a,X);if(country!=null){h.__gwt_Locale=b+Y+country}else{h.__gwt_Locale=b}}}
+function A(a,b){var c=a.indexOf(b+V);if(c<0){return undefined}var d=a.substring(c);var e=d.indexOf(V)+1;var f=d.indexOf(Z);if(f==-1){f=d.length}return d.substring(e,f)}
+function D(a,b){var c=q;for(var d=0,e=a.length-1;d<e;++d){c=c[a[d]]||(c[a[d]]=[])}c[a[e]]=b}
+function E(a){var b=p[a](),c=o[a];if(b in c){return b}var d=[];for(var e in c){d[c[e]]=e}if(t){t(a,d,b)}throw null}
+p[$]=function(){var b=navigator.userAgent.toLowerCase();var c=function(a){return parseInt(a[1])*1000+parseInt(a[2])};if(b.indexOf(_)!=-1){return _}else if(b.indexOf(ab)!=-1){return bb}else if(b.indexOf(cb)!=-1){if(document.documentMode>=8){return db}else{var d=/msie ([0-9]+)\.([0-9]+)/.exec(b);if(d&&d.length==3){var e=c(d);if(e>=6000){return eb}}}}else if(b.indexOf(fb)!=-1){return gb}return hb};o[$]={gecko1_8:0,ie6:1,ie8:2,opera:3,safari:4};PhoneBook.onScriptLoad=function(a){PhoneBook=null;k=a;w()};x();y();z();h.gadgets.util.registerOnLoadHandler(function(){if(!l){l=true;w()}});if(v()){h.$wnd=h;h.$doc=i;h.$moduleName=L;h.$moduleBase=m;h.__gwt_getProperty=E;h.__gwt_initHandlers=PhoneBook.__gwt_initHandlers;h.__gwt_module_id=0;h.fireOnModuleLoadStart=function(a){u&&u({moduleName:$moduleName,subSystem:ib,evtGroup:jb,millis:(new Date).getTime(),type:kb,className:a})};h.onunload=function(){j.gwtOnLoad(h,null,lb)}}else{var F;try{D([bb],mb);D([eb],nb);D([gb],ob);D([db],pb);D([_],qb);F=q[E($)];var G=F.indexOf(rb);if(G!=-1){r=Number(F.substring(G+1));F=F.substring(0,G)}}catch(a){return}var H=m+F;if(H.search(sb)<0){H=H.concat(tb)}var I=h.gadgets.io.getProxyUrl(H,{refreshInterval:31536000});i.write(ub+I+vb)}}
+PhoneBook.__gwt_initHandlers=function(d,e,f){var g=window,h=g.onresize,i=g.onbeforeunload,j=g.onunload;g.onresize=function(a){try{d()}finally{h&&h(a)}};g.onbeforeunload=function(a){var b,c;try{b=e()}finally{c=i&&i(a)}if(b!=null){return b}if(c!=null){return c}};g.onunload=function(a){try{f()}finally{j&&j(a)}}};PhoneBook();</script>
+<div id="__gwt_gadget_content_div"></div>]]></Content></Module>

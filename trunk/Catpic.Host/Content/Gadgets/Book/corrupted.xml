@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <ModulePrefs title="Corrupted gadget" description="Corrupted gadget" author="eiskalt">
+    <Require feature="opensocial-1.0"/>
+    <Require feature="opensocial-data" />
+    <Require feature="opensocial-templates" />
+  </Module1Prefs>
+  <Content type="html">
+    <![CDATA[
+      <div>Content</div>
+      ]]>
+  </Content>
+</Module>

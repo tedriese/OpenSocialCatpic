@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D9A25BDA-7F49-4D7D-9B6A-1419B6C3D6DC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Catpic.Data.EntityFramework</RootNamespace>
+    <AssemblyName>Catpic.Data.EntityFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyInfoCommon.cs">
+      <Link>Properties\AssemblyInfoCommon.cs</Link>
+    </Compile>
+    <Compile Include="CatpicContext.cs" />
+    <Compile Include="Configuration\ActivityEntryCollectionConfiguration.cs" />
+    <Compile Include="Configuration\ActivityEntryConfiguration.cs" />
+    <Compile Include="Configuration\GroupCollectionConfiguration.cs" />
+    <Compile Include="Configuration\GroupConfiguration.cs" />
+    <Compile Include="Configuration\MessageCollectionConfiguration.cs" />
+    <Compile Include="Configuration\MessageConfiguration.cs" />
+    <Compile Include="Configuration\PersonCollectionConfiguration.cs" />
+    <Compile Include="Configuration\PersonConfiguration.cs" />
+    <Compile Include="Repositories\ActivityRepository.cs" />
+    <Compile Include="Rules\SortByRule.cs" />
+    <Compile Include="SocialFactory.cs" />
+    <Compile Include="Repositories\ActivityEntryRepository.cs" />
+    <Compile Include="Repositories\GroupRepository.cs" />
+    <Compile Include="Repositories\MessageRepository.cs" />
+    <Compile Include="Repositories\PersonRepository.cs" />
+    <Compile Include="Helpers\QueryTranslator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Catpic.Gadgets\Catpic.Gadgets.csproj">
+      <Project>{DC7DE17B-5D85-4B25-AB4D-7C02FDB49C4C}</Project>
+      <Name>Catpic.Gadgets</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Catpic.Social\Catpic.Social.csproj">
+      <Project>{7F151198-3E69-4D19-82A6-058F549FDBE9}</Project>
+      <Name>Catpic.Social</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Catpic.Utils\Catpic.Utils.csproj">
+      <Project>{CE5FF68B-C6AC-405C-888A-DF4BB19BB2AA}</Project>
+      <Name>Catpic.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Catpic.Web\Catpic.Web.csproj">
+      <Project>{3198C211-E0AC-424D-9734-7CEBF5E830CA}</Project>
+      <Name>Catpic.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

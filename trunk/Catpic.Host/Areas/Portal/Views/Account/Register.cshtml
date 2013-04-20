@@ -1,0 +1,41 @@
+﻿@model Catpic.Host.Areas.Portal.Models.RegisterModel
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Areas/Portal/Views/Shared/_Layout.cshtml";
+}
+<hgroup class="title">
+    <h3>Create a new account. Passwords must be at least @Membership.MinRequiredPasswordLength characters long.</h3>
+</hgroup>
+
+@using (Html.BeginForm("Register", "Account", new { area = "Portal"}, FormMethod.Post)){
+    @Html.ValidationSummary()
+
+    <fieldset class="login">
+        <ol>
+            <li class="login-box focus">
+                @Html.LabelFor(m => m.UserName)
+                @Html.TextBoxFor(m => m.UserName)
+            </li>
+            <li class="login-box focus">
+                @Html.LabelFor(m => m.Email)
+                @Html.TextBoxFor(m => m.Email)
+            </li>
+            <li class="login-box focus">
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password)
+            </li>
+            <li class="login-box focus">
+                @Html.LabelFor(m => m.ConfirmPassword)
+                @Html.PasswordFor(m => m.ConfirmPassword)
+            </li>
+            <li class="login-box focus">&nbsp;</li>
+        </ol>
+        
+    </fieldset>
+    <p>
+        @Html.ActionLink("Login", "Login", new { area = "Portal" }) if you have already an account.
+    </p>
+    <div class="center">
+         <input type="submit" class="button" value="Register" />
+    </div>
+}

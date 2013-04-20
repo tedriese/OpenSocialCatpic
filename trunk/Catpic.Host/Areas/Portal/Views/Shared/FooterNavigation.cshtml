@@ -1,0 +1,14 @@
+﻿@using Catpic.Host.Engine.Navigation
+@foreach (var node in NavigationServiceFactory.Portal.GetNavigation(
+        NavigationServiceFactory.Portal.GetInventoryId(Request.Url.LocalPath)).Children)
+{
+<ul>
+    <li>@Html.ActionLink(node.Entry.Label, node.Inventory.Action, node.Inventory.Controller, 
+                new { area = node.Inventory.Area }, null)</li>
+    @foreach (var subNode in node.Children)
+    {
+     <li>@Html.ActionLink(subNode.Entry.Label, subNode.Inventory.Action, subNode.Inventory.Controller,
+                        new { area = subNode.Inventory.Area }, null)</li>
+    }
+</ul>
+}
