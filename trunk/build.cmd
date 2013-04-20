@@ -12,7 +12,7 @@ if '%1'=='' (
 
 set doPause=1
 if not "%2" == "" set doPause=0
-%systemroot%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe "Catpic.sln" /t:Build /p:Configuration=%Mode%;TargetFrameworkVersion=v4.0
+%systemroot%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe "Catpic.Demo.sln" /t:Build /p:Configuration=%Mode%;TargetFrameworkVersion=v4.0
 @if ERRORLEVEL 1 goto fail
 
 :fail
